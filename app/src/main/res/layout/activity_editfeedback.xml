@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editfeedback"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ebrimabd"
+        android:text="@string/givefeedback"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="310dp"
+        android:layout_height="50sp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="Seungwan"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="310dp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="312dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="wendy99@gmail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="310dp"
+        android:layout_height="180sp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="This app is trash"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="162dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="@font/ebrimabd"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="162dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="@font/ebrimabd"
+        android:text="@string/delete"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
