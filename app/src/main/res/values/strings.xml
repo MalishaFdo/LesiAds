@@ -1,4 +1,5 @@
 <resources>
+    //welcome page
     <string name="app_name">LesiAdsPro</string>
     <string name="hello_there">HELLO THERE !</string>
     <string name="sign_up">Sign Up</string>
@@ -6,19 +7,20 @@
     <string name="good_to_see_you">Good to see you !</string>
     <string name="sign_in">Sign In</string>
     <string name="already_in">Already In ?</string>
+    //sign in and sign up, edit profile, delete
     <string name="username">Username</string>
     <string name="firstname">First Name</string>
     <string name="lastname">Last Name</string>
     <string name="email">Email</string>
     <string name="addphoto">Add Photo</string>
-
+    //customer dashboard
     <string name="viewnewspaper">View Newspaper</string>
     <string name="postad">Post Ad</string>
     <string name="myads">My Ads</string>
     <string name="editprofile">Edit Profile</string>
     <string name="paymenthistory">Payment History</string>
     <string name="givefeedback">Give Feedback</string>
-
+    //feedback,edit,delete
     <string name="save">Save</string>
     <string name="delete">Delete</string>
     <string name="submit">Submit</string>
