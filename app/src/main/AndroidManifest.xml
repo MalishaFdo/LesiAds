@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
+        <activity android:name=".AddPhoto"></activity>
         <activity android:name=".Editfeedback" />
         <activity android:name=".Givefeedback" />
         <activity android:name=".EditProfile" />

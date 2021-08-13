@@ -27,13 +27,13 @@
     <string name="update">Update</string>
 
 
-
     //profile names
     <string name="adsubmission">Ad Submission</string>
     <string name="wendy99_gmail_com">wendy99@gmail.com</string>
     <string name="wendyshon94">wendyshon94</string>
     <string name="son">Son</string>
     <string name="seungwan">Seungwan</string>
+    <string name="add_photo">Add Photo</string>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>
