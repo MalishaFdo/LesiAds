@@ -46,6 +46,7 @@
 
     //Payment Page
     <string name="payment">Payment</string>
+    <string name="name1">Full Name</string>
     <string name="email1">Email</string>
     <string name="payamount">Pay Amount Rs.2300.00</string>
     <string name="cardname">Card Name</string>
@@ -53,4 +54,15 @@
     <string name="cvv">CVV</string>
     <string name="cardex">Card Expiery</string>
     <string name="text">Cost of the first 15 words for Rs 1500.00 and cost of remaining words per Rs 10.00</string>
+    <string name="buttn">ADD</string>
+    
+    
+    //Edit Payment Page
+    <string name="edit">Edit Payment</string>
+    <string name="name2">Aruna Gamage</string>
+    <string name="email2">aruna@gmail.com</string>
+    <string name="cardno1">5432123456789012</string>
+    <string name="cardex1">03/2021</string>
+    <string name="cvv1">395</string>
+    <string name="buttn1">SUBMIT</string>
 </resources>
