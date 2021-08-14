@@ -125,6 +125,7 @@
         android:layout_marginStart="85dp"
         android:layout_marginTop="170dp"
         android:layout_marginEnd="63dp"
+        android:onClick="next1"
         android:text="@string/admin_"
         android:textSize="20sp"
         android:textStyle="bold"

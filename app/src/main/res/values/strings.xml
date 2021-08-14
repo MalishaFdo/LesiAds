@@ -71,8 +71,8 @@
     //Confirmation Newspaper List
     <string name="confirmation">Confirmation</string>
     <string name="name1">Name : Sunday Observer</string>
-    <string name="date0">Date : 15th August 2021 - Sunday</string>
-    <string name="article">Article Name : Marriage Proposals</string>
+    <string name="date0">Date : 15th August 2021 </string>
+    <string name="article">Article Names : Marriage Proposals</string>
     <string name="observe_job">Observe Job</string>
     <string name="youth_observer1">Youth Observer</string>
     <string name="junior_observer2">Junior Observer</string>

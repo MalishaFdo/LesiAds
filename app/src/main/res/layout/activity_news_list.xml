@@ -172,6 +172,7 @@
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="77dp"
         android:backgroundTint="@color/larkblue"
+        android:onClick="next"
         android:text="@string/submit"
         android:textColor="@color/black"
         android:textSize="18sp"

@@ -78,6 +78,7 @@
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="148dp"
         android:backgroundTint="@color/larkblue"
+        android:onClick="next1"
         android:text="@string/edit"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -122,15 +123,15 @@
 
     <TextView
         android:id="@+id/txtView1"
-        android:layout_width="258dp"
-        android:layout_height="28dp"
+        android:layout_width="271dp"
+        android:layout_height="34dp"
         android:layout_marginStart="78dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="144dp"
         android:layout_marginEnd="75dp"
-        android:text="@string/name_sunday_observer"
+        android:text="Name : Sunday Observer"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -139,12 +140,12 @@
         android:layout_width="297dp"
         android:layout_height="39dp"
         android:layout_marginStart="78dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="48dp"
-        android:text="@string/date_15th_august_2021_sunday"
+        android:text="Date : 15th August 2021"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -153,12 +154,12 @@
         android:layout_width="278dp"
         android:layout_height="45dp"
         android:layout_marginStart="77dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="77dp"
-        android:text="@string/article_name_marriage_proposals"
+        android:text="Article Names : Marraige Proposal"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -167,12 +168,12 @@
         android:layout_width="152dp"
         android:layout_height="36dp"
         android:layout_marginStart="197dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="248dp"
         android:layout_marginEnd="63dp"
         android:text="@string/observe_job"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
