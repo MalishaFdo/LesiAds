@@ -59,14 +59,14 @@
         android:layout_width="193dp"
         android:layout_height="33dp"
         android:layout_marginStart="138dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="155dp"
         android:text="@string/add_newspaper"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintHorizontal_bias="0.386"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -66,4 +66,18 @@
     <string name="junior_observer">Junior Observer</string>
     <string name="upload1">Upload</string>
     <string name="subm">Submit</string>
+
+
+    //Confirmation Newspaper List
+    <string name="confirmation">Confirmation</string>
+    <string name="name_sunday_observer">Name : Sunday Observer</string>
+    <string name="date_15th_august_2021_sunday">Date : 15th August 2021 - Sunday</string>
+    <string name="article_name_marriage_proposals">Article Name : Marriage Proposals</string>
+    <string name="observe_job">Observe Job</string>
+    <string name="youth_observer1">Youth Observer</string>
+    <string name="junior_observer2">Junior Observer</string>
+    <string name="logo">Logo</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+
 </resources>
