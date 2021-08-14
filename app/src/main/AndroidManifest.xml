@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
         <activity
+            android:name=".AdReview"
+            android:exported="true" />
+        <activity
+            android:name=".AdUpdateDelete"
+            android:exported="true" />
+        <activity
             android:name=".AdSubmission"
             android:exported="true" />
         <activity android:name=".AddPhoto" />

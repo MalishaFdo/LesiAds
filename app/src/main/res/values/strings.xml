@@ -35,6 +35,16 @@
     <string name="seungwan">Seungwan</string>
     <string name="add_photo">Add Photo</string>
 
+    //JINADASA U.G.O.C
+    <string name="newspaper">Newspaper</string>
+    <string name="ad_submission">Ad Submission</string>
+    <string name="todo">TODO</string>
+    <string name="language">Language</string>
+    <string name="date_to_be_published">Date to be published</string>
+    <string name="category">Category</string>
+    <string name="advertisement">Advertisement</string>
+    <string name="word_count_00">Word Count : 00</string>
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>
         <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
