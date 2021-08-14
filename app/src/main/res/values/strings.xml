@@ -45,6 +45,7 @@
 
     </style>
 
+
     //Add Newspaper List
     <string name="add_newspaper">Add Newspaper</string>
     <string name="name">Name</string>
@@ -54,4 +55,15 @@
     <string name="upload">Upload</string>
     <string name="submit1">Submit</string>
 
+
+    //Edit Newspaper List
+    <string name="edit_newspaper">Edit Newspaper</string>
+    <string name="sunday_observer">Sunday Observer</string>
+    <string name="_15_8_2021">15 / 8 / 2021</string>
+    <string name="marriage_proposals">Marriage Proposals</string>
+    <string name="observer_jobs">Observer Jobs</string>
+    <string name="youth_observer">Youth Observer</string>
+    <string name="junior_observer">Junior Observer</string>
+    <string name="upload1">Upload</string>
+    <string name="subm">Submit</string>
 </resources>
