@@ -1,6 +1,10 @@
 package com.example.lesiadspro;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,10 +16,12 @@ public class Givefeedback extends AppCompatActivity {
     Button submit;
     Button update;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_givefeedback);
+
 
         submit = findViewById(R.id.button11);
         submit.setOnClickListener(new View.OnClickListener() {
@@ -35,4 +41,5 @@ public class Givefeedback extends AppCompatActivity {
             }
         });
     }
+
 }

@@ -43,6 +43,7 @@
     <string name="this_app_is_trash">This app is trash</string>
     <string name="go_back">Go Back</string>
     <string name="photo">photo</string>
+    <string name="edit_feedback">Edit Feedback</string>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>
