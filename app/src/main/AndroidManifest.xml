@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
-        <activity android:name=".cusPayHistory"></activity>
+        <activity android:name=".AdminpayHistory"></activity>
+        <activity android:name=".cusPayHistory" />
         <activity android:name=".RateApp" />
         <activity android:name=".payCheckout" />
         <activity android:name=".Editpayment" />

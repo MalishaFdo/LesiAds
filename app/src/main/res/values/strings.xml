@@ -101,4 +101,24 @@
     <string name="time1">18:36PM</string>
     <string name="amount4">Card Rs 2000.00</string>
     <string name="buttn5">DELETE</string>
+
+    //Admin side payment history page
+    <string name="history2">Payment History</string>
+    <string name="name6">Aruna Gamage</string>
+    <string name="email6">aruna@gmail.com</string>
+    <string name="amount5">Card Rs 2300.00</string>
+    <string name="date2">08/08/2021</string>
+    <string name="time2">9:00AM</string>
+    <string name="bank">BOC Bank</string>
+    <string name="branch">Galle</string>
+    <string name="buttn7">DELETE</string>
+
+    <string name="name7">Kamal Perera</string>
+    <string name="email7">kamal@gmail.com</string>
+    <string name="amount6">Card Rs 2000.00</string>
+    <string name="date3">19/12/2021</string>
+    <string name="time3">18:36AM</string>
+    <string name="bank1">NSB Banak</string>
+    <string name="branch1">Malabe</string>
+    <string name="buttn8">DELETE</string>
 </resources>
