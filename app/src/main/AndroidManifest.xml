@@ -9,16 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
-        <activity android:name=".AddPhoto"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Editfeedback"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Givefeedback"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".EditProfile"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".profile"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".sidebar"></activity>
+        <activity
+            android:name=".AddPhoto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Editfeedback"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Givefeedback"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".profile"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">

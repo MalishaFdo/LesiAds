@@ -26,6 +26,12 @@
     <string name="submit">Submit</string>
     <string name="update">Update</string>
 
+    //menu navigation
+    <string name="app_name1">Navigation Drawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
 
     //profile names
     <string name="adsubmission">Ad Submission</string>
