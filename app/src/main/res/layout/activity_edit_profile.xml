@@ -124,7 +124,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/ebrimabd"
-        android:text="@string/addphoto"
+        android:text="@string/photo"
         android:textColor="@color/black"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
