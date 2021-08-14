@@ -82,7 +82,7 @@
 
 
     //Newspaper History
-    <string name="history">Newpaper History</string>
+    <string name="history">Newspaper History</string>
     <string name="sunday_observe1">Sunday Observe</string>
     <string name="date1">15/08/2021</string>
     <string name="time1">9.00 AM</string>
@@ -97,5 +97,15 @@
     <string name="delete_">delete</string>
     <string name="delete_1">delete</string>
     <string name="count2">Monthly Ad Count : 100</string>
+
+
+
+    //Dashboard Admin
+    <string name="dashboard">Dashboard</string>
+    <string name="admin_">Admin</string>
+    <string name="registrations">Registrations</string>
+    <string name="customer">Customer</string>
+    <string name="payment">Payment</string>
+
 
 </resources>

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
-        <activity android:name=".NewspaperHistoryActivity"></activity>
+        <activity android:name=".AdminDashboardActivity"></activity>
+        <activity android:name=".NewspaperHistoryActivity" />
         <activity android:name=".ConfirmationActivity" />
         <activity android:name=".EditNewsListActivity" />
         <activity android:name=".NewsListActivity" />
