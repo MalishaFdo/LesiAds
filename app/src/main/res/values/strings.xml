@@ -55,8 +55,8 @@
     <string name="cardex">Card Expiery</string>
     <string name="text">Cost of the first 15 words for Rs 1500.00 and cost of remaining words per Rs 10.00</string>
     <string name="buttn">ADD</string>
-    
-    
+
+
     //Edit Payment Page
     <string name="edit">Edit Payment</string>
     <string name="name2">Aruna Gamage</string>
@@ -65,4 +65,16 @@
     <string name="cardex1">03/2021</string>
     <string name="cvv1">395</string>
     <string name="buttn1">SUBMIT</string>
+
+    //Checkout Page
+    <string name="check">Checkout</string>
+    <string name="text1">Check your payment details ?</string>
+    <string name="name3">Aruna Gamage</string>
+    <string name="email3">aruna@gmail.com</string>
+    <string name="amout">Pay Amount : Rs 2300.00</string>
+    <string name="cardno2">Card Number : 5432123456789012</string>
+    <string name="cardex3">Card Expiery : 03/2021</string>
+    <string name="cvv2">CVV : 395</string>
+    <string name="buttn2">PAY AMOUNT</string>
+    <string name="buttn3">EDIT PAYMENT DETAILS</string>
 </resources>
