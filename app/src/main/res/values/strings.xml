@@ -35,6 +35,7 @@
     <string name="seungwan">Seungwan</string>
     <string name="add_photo">Add Photo</string>
 
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>
         <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
@@ -43,4 +44,14 @@
         <item name="windowActionBar">false</item>
 
     </style>
+
+    //Add Newspaper List
+    <string name="add_newspaper">Add Newspaper</string>
+    <string name="name">Name</string>
+    <string name="publication_date">Publication Date</string>
+    <string name="add_articles_name">Add Articles Name</string>
+    <string name="newspaper_logo">Newspaper Logo</string>
+    <string name="upload">Upload</string>
+    <string name="submit1">Submit</string>
+
 </resources>
