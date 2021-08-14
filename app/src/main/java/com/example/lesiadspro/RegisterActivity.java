@@ -16,8 +16,6 @@ public class RegisterActivity extends AppCompatActivity {
 
     TextView addphoto;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -34,6 +34,9 @@
     <string name="son">Son</string>
     <string name="seungwan">Seungwan</string>
     <string name="add_photo">Add Photo</string>
+    <string name="seungwan">Seungwan</string>
+    <string name="wendy99_gmail_com">wendy99@gmail.com</string>
+    <string name="this_app_is_trash">This app is trash</string>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>
