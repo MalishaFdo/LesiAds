@@ -59,7 +59,7 @@
     //Edit Newspaper List
     <string name="edit_newspaper">Edit Newspaper</string>
     <string name="sunday_observer">Sunday Observer</string>
-    <string name="_15_8_2021">15 / 8 / 2021</string>
+    <string name="date">15 / 8 / 2021</string>
     <string name="marriage_proposals">Marriage Proposals</string>
     <string name="observer_jobs">Observer Jobs</string>
     <string name="youth_observer">Youth Observer</string>
@@ -70,14 +70,32 @@
 
     //Confirmation Newspaper List
     <string name="confirmation">Confirmation</string>
-    <string name="name_sunday_observer">Name : Sunday Observer</string>
-    <string name="date_15th_august_2021_sunday">Date : 15th August 2021 - Sunday</string>
-    <string name="article_name_marriage_proposals">Article Name : Marriage Proposals</string>
+    <string name="name1">Name : Sunday Observer</string>
+    <string name="date0">Date : 15th August 2021 - Sunday</string>
+    <string name="article">Article Name : Marriage Proposals</string>
     <string name="observe_job">Observe Job</string>
     <string name="youth_observer1">Youth Observer</string>
     <string name="junior_observer2">Junior Observer</string>
     <string name="logo">Logo</string>
     <string name="edit">Edit</string>
     <string name="add">Add</string>
+
+
+    //Newspaper History
+    <string name="history">Newpaper History</string>
+    <string name="sunday_observe1">Sunday Observe</string>
+    <string name="date1">15/08/2021</string>
+    <string name="time1">9.00 AM</string>
+    <string name="junior_observer1">Junior Observer</string>
+    <string name="observer_job">Observer Job</string>
+    <string name="count1">Monthly Ad Count : 300</string>
+    <string name="sunday_observe">Sunday Observe</string>
+    <string name="date2">08/08/2021</string>
+    <string name="time2">13.30 PM</string>
+    <string name="marriage_proposal">Marriage Proposal</string>
+    <string name="youth_observer2">Youth Observer</string>
+    <string name="delete_">delete</string>
+    <string name="delete_1">delete</string>
+    <string name="count2">Monthly Ad Count : 100</string>
 
 </resources>
