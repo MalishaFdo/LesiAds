@@ -82,4 +82,23 @@
     <string name="rate">Rate Our App</string>
     <string name="text2">How would you rate Our App Experience ???</string>
     <string name="buttn4">SUBMIT</string>
+
+
+    //Customer side payment history page
+    <string name="history1">Payment History</string>
+    <string name="text4">Payment Completed !</string>
+    <string name="name4">Aruna Gamage</string>
+    <string name="email4">aruna@gmail.com</string>
+    <string name="date">08/08/2021</string>
+    <string name="time">9:00AM</string>
+    <string name="amount3">Card Rs 2300.00</string>
+    <string name="buttn6">DELETE</string>
+
+    <string name="text5">Payment Completed !</string>
+    <string name="name5">Kamal Perera</string>
+    <string name="email5">kamal12@gmai.com</string>
+    <string name="date1">19/12/2021</string>
+    <string name="time1">18:36PM</string>
+    <string name="amount4">Card Rs 2000.00</string>
+    <string name="buttn5">DELETE</string>
 </resources>
