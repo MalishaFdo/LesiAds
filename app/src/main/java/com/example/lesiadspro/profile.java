@@ -17,13 +17,12 @@ public class profile extends AppCompatActivity {
 
     Button editprofile;
     Button feedback;
+    Button viewnews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
-
 
 
         editprofile = findViewById(R.id.button7);
@@ -41,6 +40,15 @@ public class profile extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent7 = new Intent(profile.this,Givefeedback.class);
                 startActivity(intent7);
+            }
+        });
+
+        viewnews = findViewById(R.id.button4);
+        viewnews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent14 = new Intent(profile.this,sidebar.class);
+                startActivity(intent14);
             }
         });
     }
