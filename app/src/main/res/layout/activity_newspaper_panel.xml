@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewspaperPanelActivity">
+
+    <ImageView
+        android:id="@+id/background11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/inputNotification7"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_notifications_24" />
+
+    <ImageView
+        android:id="@+id/inputMenu7"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+    <ImageView
+        android:id="@+id/background12"
+        android:layout_width="339dp"
+        android:layout_height="648dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/popupMenuBackground" />
+
+    <Button
+        android:id="@+id/butSubmit6"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="77dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="Select a Newspaper"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/but6"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="532dp"
+        android:layout_marginEnd="69dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="@string/but6"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but5"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="532dp"
+        android:layout_marginEnd="236dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="@string/but5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but3"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="69dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="@string/but4"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but4"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="236dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="@string/but3"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="69dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="@string/but2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addNewspaper6"
+        android:layout_width="193dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="155dp"
+        android:text="@string/panel"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/paper1"
+        android:layout_width="127dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="226dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/silumina_newspaper" />
+
+    <ImageView
+        android:id="@+id/paper2"
+        android:layout_width="133dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="61dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dailynews" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="236dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="@string/but1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/paper4"
+        android:layout_width="126dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="319dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dinamina" />
+
+    <ImageView
+        android:id="@+id/paper3"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="221dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lankadeepa" />
+
+    <ImageView
+        android:id="@+id/paper5"
+        android:layout_width="125dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/thinakaran" />
+
+    <ImageView
+        android:id="@+id/paper6"
+        android:layout_width="133dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="226dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="203dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/daily_mirror" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

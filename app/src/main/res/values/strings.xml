@@ -105,6 +105,9 @@
     <string name="registrations">Registrations</string>
     <string name="customer">Customer</string>
     <string name="payment">Payment</string>
+
+
+    //View Newspaper Details
     <string name="observer">Sunday Observer</string>
     <string name="date3">15th Sunday, 2021</string>
     <string name="text">Article Zones</string>
@@ -115,8 +118,14 @@
     <string name="sub">OK</string>
 
 
-    //View Newspaper Details
 
-
+    //Newspaper Panel
+    <string name="panel">Newspaper Panel</string>
+    <string name="but1">Silumina</string>
+    <string name="but2">Daily News</string>
+    <string name="but3">Lankadeepa</string>
+    <string name="but4">Dinamina</string>
+    <string name="but5">Thinakaran</string>
+    <string name="but6">Daily Mirror</string>
 
 </resources>
