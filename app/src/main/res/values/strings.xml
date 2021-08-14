@@ -77,4 +77,9 @@
     <string name="cvv2">CVV : 395</string>
     <string name="buttn2">PAY AMOUNT</string>
     <string name="buttn3">EDIT PAYMENT DETAILS</string>
+
+    //Rating Page
+    <string name="rate">Rate Our App</string>
+    <string name="text2">How would you rate Our App Experience ???</string>
+    <string name="buttn4">SUBMIT</string>
 </resources>
