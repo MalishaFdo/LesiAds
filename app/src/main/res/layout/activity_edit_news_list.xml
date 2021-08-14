@@ -113,7 +113,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="10dp"
-        android:text="@string/_15_8_2021"
+        android:text="15/08/2021"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.177"
         app:layout_constraintStart_toStartOf="parent"

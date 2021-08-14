@@ -99,13 +99,24 @@
     <string name="count2">Monthly Ad Count : 100</string>
 
 
-
     //Dashboard Admin
     <string name="dashboard">Dashboard</string>
     <string name="admin_">Admin</string>
     <string name="registrations">Registrations</string>
     <string name="customer">Customer</string>
     <string name="payment">Payment</string>
+    <string name="observer">Sunday Observer</string>
+    <string name="date3">15th Sunday, 2021</string>
+    <string name="text">Article Zones</string>
+    <string name="marriage_proposals1">Marriage Proposals</string>
+    <string name="observer_jobs1">Observer Jobs</string>
+    <string name="youth_observer3">Youth Observer</string>
+    <string name="junior_observer3">Junior Observer</string>
+    <string name="sub">OK</string>
+
+
+    //View Newspaper Details
+
 
 
 </resources>

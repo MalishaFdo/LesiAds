@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewNewspaperDetailsActivity">
+
+    <ImageView
+        android:id="@+id/background9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/inputNotification6"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_notifications_24" />
+
+    <ImageView
+        android:id="@+id/inputMenu6"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+    <ImageView
+        android:id="@+id/background10"
+        android:layout_width="339dp"
+        android:layout_height="648dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="?attr/popupMenuBackground" />
+
+    <Button
+        android:id="@+id/butSubmit5"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="77dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="@string/sub"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV6"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="173dp"
+        android:padding="10dp"
+        android:text="@string/junior_observer2"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV5"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="208dp"
+        android:padding="10dp"
+        android:text="@string/youth_observer3"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV4"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="242dp"
+        android:padding="10dp"
+        android:text="@string/observer_jobs"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/addNewspaper5"
+        android:layout_width="193dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="155dp"
+        android:text="@string/observer"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV1"
+        android:layout_width="224dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="89dp"
+        android:text="@string/date3"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="280dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="203dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ob_logo" />
+
+    <TextView
+        android:id="@+id/txtV2"
+        android:layout_width="246dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="83dp"
+        android:text="@string/text"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV3"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="277dp"
+        android:padding="10dp"
+        android:text="@string/marriage_proposals1"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
