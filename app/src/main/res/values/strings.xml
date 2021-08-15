@@ -44,6 +44,15 @@
     <string name="category">Category</string>
     <string name="advertisement">Advertisement</string>
     <string name="word_count_00">Word Count : 00</string>
+    <string name="edit_ad">Edit Ad</string>
+    <string name="word_count_12">Word Count : 12</string>
+    <string name="lankadeepa">Lankadeepa</string>
+    <string name="sinhala">Sinhala</string>
+    <string name="_2021_08_21">2021/08/21</string>
+    <string name="land_for_sale">Land for Sale</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="land_for_sale_in_kottawa_tel_07134562769">Land for sale in Kottawa Tel:07134562769</string>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>
