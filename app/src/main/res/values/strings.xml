@@ -66,6 +66,7 @@
     <string name="category_land_for_sale">Category : Land for sale</string>
     <string name="todo">TODO</string>
     <string name="todo">TODO</string>
+    <string name="review_ad">Review Ad</string>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>
