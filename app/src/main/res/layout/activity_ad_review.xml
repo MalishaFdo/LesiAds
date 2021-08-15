@@ -185,7 +185,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:text="@string/land_for_sale_in_kottawa_tel_07134562769"
+        android:text="land for sale in kottawa \n tel 07134562769"
         android:textColor="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/include"

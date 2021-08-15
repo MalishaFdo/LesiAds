@@ -38,12 +38,10 @@
     //JINADASA U.G.O.C
     <string name="newspaper">Newspaper</string>
     <string name="ad_submission">Ad Submission</string>
-    <string name="todo">TODO</string>
     <string name="language">Language</string>
     <string name="date_to_be_published">Date to be published</string>
     <string name="category">Category</string>
     <string name="advertisement">Advertisement</string>
-    <string name="word_count_00">Word Count : 00</string>
     <string name="edit_ad">Edit Ad</string>
     <string name="word_count_12">Word Count : 12</string>
     <string name="lankadeepa">Lankadeepa</string>
@@ -52,14 +50,12 @@
     <string name="land_for_sale">Land for Sale</string>
     <string name="delete">Delete</string>
     <string name="update">Update</string>
-    <string name="land_for_sale_in_kottawa_tel_07134562769">Land for sale in Kottawa Tel:07134562769</string>
     <string name="date_to_be">Date to be</string>
     <string name="published">Published</string>
     <string name="ad_review">Ad Review</string>
     <string name="confirm">Confirm</string>
     <string name="reject">Reject</string>
     <string name="view_ad">View Ad</string>
-    <string name="total_advertisements_1">Total Advertisements : 1</string>
     <string name="words_12">Words : 12</string>
     <string name="status_submitted">Status : Submitted</string>
     <string name="date_2021_08_21">Date : 2021/08/21</string>
