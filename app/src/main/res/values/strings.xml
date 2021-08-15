@@ -53,6 +53,19 @@
     <string name="delete">Delete</string>
     <string name="update">Update</string>
     <string name="land_for_sale_in_kottawa_tel_07134562769">Land for sale in Kottawa Tel:07134562769</string>
+    <string name="date_to_be">Date to be</string>
+    <string name="published">Published</string>
+    <string name="ad_review">Ad Review</string>
+    <string name="confirm">Confirm</string>
+    <string name="reject">Reject</string>
+    <string name="view_ad">View Ad</string>
+    <string name="total_advertisements_1">Total Advertisements : 1</string>
+    <string name="words_12">Words : 12</string>
+    <string name="status_submitted">Status : Submitted</string>
+    <string name="date_2021_08_21">Date : 2021/08/21</string>
+    <string name="category_land_for_sale">Category : Land for sale</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>

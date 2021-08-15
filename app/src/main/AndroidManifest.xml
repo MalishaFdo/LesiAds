@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
         <activity
+            android:name=".AdsCustomer"
+            android:exported="true" />
+        <activity
             android:name=".AdReview"
             android:exported="true" />
         <activity
