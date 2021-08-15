@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/todo" />
 
     <include
         android:id="@+id/include"
@@ -24,15 +24,219 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/whitebox"
         android:layout_width="339dp"
         android:layout_height="608dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include"
-        app:layout_constraintVertical_bias="0.492"
-        app:srcCompat="?attr/popupMenuBackground" />
+        app:layout_constraintVertical_bias="0.447"
+        app:srcCompat="?attr/popupMenuBackground"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="297dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/newspaper"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="149dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/ebrima"
+        android:text="Ad Review"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="300dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/language"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="249dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="336dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/category"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="128dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="252dp"
+        android:fontFamily="@font/ebrima"
+        android:text="Date to be"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="128dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="280dp"
+        android:fontFamily="@font/ebrima"
+        android:text="Published"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="258dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="388dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/advertisement"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="240dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="524dp"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/word_count_12"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="123dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="52dp"
+        android:text="Confirm"
+        app:backgroundTint="#33ccff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="123dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="52dp"
+        android:text="Reject"
+        app:backgroundTint="#33ccff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="309dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="468dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="@string/land_for_sale_in_kottawa_tel_07134562769"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="166dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="172dp"
+        android:text="@string/lankadeepa"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:text="@string/sinhala"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:text="@string/_2021_08_21"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="392dp"
+        android:text="@string/land_for_sale"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
