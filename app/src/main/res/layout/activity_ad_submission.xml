@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <MultiAutoCompleteTextView
         android:id="@+id/multiAutoCompleteTextView8"
@@ -41,12 +41,14 @@
         android:id="@+id/backgrond"
         android:layout_width="415dp"
         android:layout_height="736dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/background" />
 
     <include
         android:id="@+id/include"
@@ -55,27 +57,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/whitebox"
-        android:layout_width="339dp"
-        android:layout_height="608dp"
+        android:layout_width="345dp"
+        android:layout_height="573dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/multiAutoCompleteTextView9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include"
-        app:layout_constraintVertical_bias="0.477"
         app:srcCompat="?attr/popupMenuBackground"
         tools:ignore="ImageContrastCheck" />
-
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="297dp"
         android:layout_height="22dp"
         android:layout_marginTop="116dp"
-        android:text="@string/newspaper"
         android:fontFamily="@font/ebrima"
+        android:text="@string/newspaper"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
@@ -88,8 +89,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="56dp"
         android:fontFamily="@font/ebrima"
-        android:textColor="@color/black"
         android:text="@string/ad_submission"
+        android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.604"
@@ -114,8 +115,8 @@
         android:layout_width="244dp"
         android:layout_height="24dp"
         android:layout_marginTop="312dp"
-        android:text="@string/category"
         android:fontFamily="@font/ebrima"
+        android:text="@string/category"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.304"
@@ -154,8 +155,8 @@
         android:layout_width="240dp"
         android:layout_height="23dp"
         android:layout_marginTop="524dp"
-        android:text="word count 00"
         android:fontFamily="@font/ebrima"
+        android:text="word count 00"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.306"

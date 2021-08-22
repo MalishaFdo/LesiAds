@@ -48,8 +48,6 @@
     <string name="sinhala">Sinhala</string>
     <string name="_2021_08_21">2021/08/21</string>
     <string name="land_for_sale">Land for Sale</string>
-    <string name="delete">Delete</string>
-    <string name="update">Update</string>
     <string name="date_to_be">Date to be</string>
     <string name="published">Published</string>
     <string name="ad_review">Ad Review</string>
@@ -60,7 +58,6 @@
     <string name="status_submitted">Status : Submitted</string>
     <string name="date_2021_08_21">Date : 2021/08/21</string>
     <string name="category_land_for_sale">Category : Land for sale</string>
-    <string name="todo">TODO</string>
     <string name="todo">TODO</string>
     <string name="review_ad">Review Ad</string>
 
