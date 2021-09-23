@@ -25,7 +25,7 @@ public class profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
 
-        editprofile = findViewById(R.id.button7);
+        editprofile = findViewById(R.id.mEditProfileBtn);
         editprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,7 +34,7 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        feedback = findViewById(R.id.button9);
+        feedback = findViewById(R.id.mGiveFeedbackBtn);
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,7 +43,7 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        viewnews = findViewById(R.id.button4);
+        viewnews = findViewById(R.id.mViewNewsBtn);
         viewnews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

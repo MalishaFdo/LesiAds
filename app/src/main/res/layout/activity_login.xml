@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -15,8 +15,8 @@
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textPersonName"
-        android:textColorHint="@color/grey"
         android:textColor="@color/black"
+        android:textColorHint="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -32,8 +32,8 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColorHint="@color/grey"
         android:textColor="@color/black"
+        android:textColorHint="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -45,21 +45,20 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
         android:fontFamily="@font/ebrimabd"
         android:text="@string/sign_in"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178"
+        app:layout_constraintVertical_bias="0.194"
         tools:ignore="UnknownIdInLayout" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/mLoginBtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
         android:background="@drawable/button"
@@ -93,7 +92,7 @@
         app:layout_constraintVertical_bias="0.964" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/mRegisterTxt"
         android:layout_width="92dp"
         android:layout_height="31dp"
         android:layout_marginTop="60dp"

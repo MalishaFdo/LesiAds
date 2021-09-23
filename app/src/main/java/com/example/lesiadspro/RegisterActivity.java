@@ -21,7 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        signin = (TextView)findViewById(R.id.textView9);
+        signin = (TextView)findViewById(R.id.mSignInTxt);
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        signup = findViewById(R.id.button3);
+        signup = findViewById(R.id.mSignUpBtn);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        addphoto = (TextView)findViewById(R.id.textView10);
+        addphoto = (TextView)findViewById(R.id.mAddPhotoTxt);
         addphoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

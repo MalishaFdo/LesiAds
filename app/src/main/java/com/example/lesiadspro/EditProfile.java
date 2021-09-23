@@ -9,15 +9,15 @@ import android.widget.TextView;
 
 public class EditProfile extends AppCompatActivity {
 
-    TextView photo;
+    TextView editphoto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
 
-        photo = (TextView)findViewById(R.id.textView10);
-        photo.setOnClickListener(new View.OnClickListener() {
+        editphoto = (TextView)findViewById(R.id.mEditPhotoTxt);
+        editphoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent12 = new Intent(EditProfile.this,AddPhoto.class);

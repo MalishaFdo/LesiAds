@@ -125,7 +125,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/mEditPhotoTxt"
         android:layout_width="92dp"
         android:layout_height="31dp"
         android:layout_marginTop="60dp"
@@ -142,10 +142,9 @@
         app:layout_constraintVertical_bias="0.876" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/mSaveBtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="108dp"
         android:background="@drawable/button"
         android:backgroundTint="@color/darkblue"
         android:fontFamily="@font/ebrimabd"
@@ -156,13 +155,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/mDeleteBtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="40dp"
         android:background="@drawable/button"
         android:backgroundTint="@color/darkblue"
         android:fontFamily="@font/ebrimabd"
@@ -173,6 +173,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

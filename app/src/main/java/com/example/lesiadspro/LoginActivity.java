@@ -10,16 +10,16 @@ import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
-    TextView signup;
-    Button signin;
+    TextView registertxt;
+    Button loginbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        signup = (TextView)findViewById(R.id.textView8);
-        signup.setOnClickListener(new View.OnClickListener() {
+        registertxt = (TextView)findViewById(R.id.mRegisterTxt);
+        registertxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(LoginActivity.this, RegisterActivity.class);
@@ -27,8 +27,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        signin = findViewById(R.id.button2);
-        signin.setOnClickListener(new View.OnClickListener() {
+        loginbtn = findViewById(R.id.mLoginBtn);
+        loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent13 = new Intent(LoginActivity.this,profile.class);

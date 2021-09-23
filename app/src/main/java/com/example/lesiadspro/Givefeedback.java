@@ -23,7 +23,7 @@ public class Givefeedback extends AppCompatActivity {
         setContentView(R.layout.activity_givefeedback);
 
 
-        submit = findViewById(R.id.button11);
+        submit = findViewById(R.id.mSubmitBtn);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,7 +32,7 @@ public class Givefeedback extends AppCompatActivity {
             }
         });
 
-        update = findViewById(R.id.button13);
+        update = findViewById(R.id.mUpdateBtn);
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
