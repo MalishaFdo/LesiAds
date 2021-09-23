@@ -11,7 +11,7 @@ public class profile extends AppCompatActivity {
 
     Button editprofile;
     Button feedback;
-    Button viewnews;
+    Button viewnewsDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +36,8 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        viewnews = findViewById(R.id.button4);
-        viewnews.setOnClickListener(new View.OnClickListener() {
+        viewnewsDetails = findViewById(R.id.button4);
+        viewnewsDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent4 = new Intent(profile.this,ViewNewspaperDetailsActivity.class);
