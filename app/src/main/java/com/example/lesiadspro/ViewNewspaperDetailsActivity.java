@@ -5,17 +5,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class ViewNewspaperDetailsActivity extends AppCompatActivity {
+
+
+    public Button btnViewNews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_newspaper_details);
-    }
-    public void next(View view){
-        Intent intent = new Intent(this,NewspaperHistoryActivity.class);
-        startActivity(intent);
-    }
 
+        btnViewNews = findViewById(R.id.butSubmit5);
+        btnViewNews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewNewspaperDetailsActivity.this, NewspaperHistoryActivity.class);
+                startActivity(intent);
+            }
+
+
+        });
+
+    }
 }
+
+

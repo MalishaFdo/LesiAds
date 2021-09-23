@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
         <activity android:name=".NewspaperPanelActivity"></activity>
-        <activity android:name=".testing1" />
         <activity android:name=".ViewNewspaperDetailsActivity" />
         <activity android:name=".AdminDashboardActivity" />
         <activity android:name=".NewspaperHistoryActivity" />
