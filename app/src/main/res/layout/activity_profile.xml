@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/wendy" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/firstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ebrimabd"
@@ -35,10 +35,9 @@
         app:layout_constraintVertical_bias="0.08" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/lastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="500dp"
         android:fontFamily="@font/ebrimabd"
         android:text="@string/son"
         android:textColor="@color/white"
@@ -47,11 +46,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.644"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ebrimabd"
@@ -66,7 +65,7 @@
         app:layout_constraintVertical_bias="0.305" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ebrimabd"
