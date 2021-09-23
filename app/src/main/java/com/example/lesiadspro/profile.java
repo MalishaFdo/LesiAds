@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class profile extends AppCompatActivity {
 
 
@@ -23,6 +25,8 @@ public class profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+
 
 
         editprofile = findViewById(R.id.mEditProfileBtn);
@@ -54,4 +58,9 @@ public class profile extends AppCompatActivity {
     }
 
 
+    public void logout(View view) {
+        FirebaseAuth.getInstance().signOut(); //logout
+        startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+        finish();
+    }
 }
