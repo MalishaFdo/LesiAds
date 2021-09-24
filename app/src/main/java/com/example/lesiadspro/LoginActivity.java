@@ -94,8 +94,8 @@ public class LoginActivity extends AppCompatActivity {
         forgotpasswordtxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText resetMail = new EditText(view.getContext());
-                AlertDialog.Builder passwordresetdialog = new AlertDialog.Builder(view.getContext());
+                final EditText resetMail = new EditText(view.getContext());
+                final AlertDialog.Builder passwordresetdialog = new AlertDialog.Builder(view.getContext());
                 passwordresetdialog.setTitle("Reset Password ?");
                 passwordresetdialog.setMessage("Enter your email to receive reset link");
                 passwordresetdialog.setView(resetMail);
