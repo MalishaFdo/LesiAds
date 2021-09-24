@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_review.xml" value="0.264" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_submission.xml" value="0.264" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_update_delete.xml" value="0.264" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_update_delete2.xml" value="0.25416666666666665" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_add_photo.xml" value="0.25416666666666665" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ads_admin.xml" value="0.4" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ads_customer.xml" value="0.4" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_notifications_admin.xml" value="0.264" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_notifications_customer.xml" value="0.264" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/toolbar.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -12,3 +12,4 @@ public class AdsAdmin extends AppCompatActivity {
         setContentView(R.layout.activity_ads_admin);
     }
 }
+//hello
