@@ -81,7 +81,7 @@
         app:layout_constraintVertical_bias="0.364" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/mViewNewsBtn"
         android:layout_width="350dp"
         android:layout_height="53dp"
         android:background="@drawable/button"
@@ -96,11 +96,15 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.46"
+=======
+        app:layout_constraintVertical_bias="0.476"
+>>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/mPostAdBtn"
         android:layout_width="350dp"
         android:layout_height="53dp"
         android:layout_marginTop="8dp"
@@ -115,12 +119,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/mViewNewsBtn"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/mMyAdsBtn"
         android:layout_width="350dp"
         android:layout_height="53dp"
         android:layout_marginBottom="208dp"
@@ -135,12 +139,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/button5"
         app:layout_constraintVertical_bias="0.238"
+=======
+        app:layout_constraintTop_toBottomOf="@+id/mPostAdBtn"
+>>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/mEditProfileBtn"
         android:layout_width="350dp"
         android:layout_height="53dp"
         android:layout_marginBottom="132dp"
@@ -151,16 +159,21 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button9"
+        app:layout_constraintBottom_toBottomOf="@+id/mGiveFeedbackBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/button6"
         app:layout_constraintVertical_bias="1.0"
+=======
+        app:layout_constraintTop_toBottomOf="@+id/mMyAdsBtn"
+        app:layout_constraintVertical_bias="0.29"
+>>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/mPaymentHistoryBtn"
         android:layout_width="350dp"
         android:layout_height="53dp"
         android:background="@drawable/button"
@@ -170,16 +183,21 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/mGiveFeedbackBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/button7"
         app:layout_constraintVertical_bias="0.538"
+=======
+        app:layout_constraintTop_toBottomOf="@+id/mEditProfileBtn"
+        app:layout_constraintVertical_bias="0.306"
+>>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/mGiveFeedbackBtn"
         android:layout_width="350dp"
         android:layout_height="53dp"
         android:background="@drawable/button"
@@ -194,6 +212,34 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.929"
+=======
+        app:layout_constraintVertical_bias="0.955"
+>>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/mlogoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="@font/ebrimabd"
+        android:text="LogOut"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297"
+        android:onClick="logout"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

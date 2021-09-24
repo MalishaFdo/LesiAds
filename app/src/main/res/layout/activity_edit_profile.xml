@@ -35,6 +35,7 @@
         android:text="Seungwan"
         android:inputType="textPersonName"
         android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.318"
@@ -52,6 +53,7 @@
         android:text="Son"
         android:inputType="textPersonName"
         android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.316"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +68,7 @@
         android:text="wendyshon94"
         android:inputType="textPersonName"
         android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.318"
@@ -81,6 +84,8 @@
         android:background="@drawable/input_field"
         android:ems="10"
         android:text="wendy99@gmail.com"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,6 +102,7 @@
         android:text="********"
         android:inputType="textPassword"
         android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.316"
@@ -112,19 +118,20 @@
         android:text="********"
         android:inputType="textPassword"
         android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.316"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/mEditPhotoTxt"
         android:layout_width="92dp"
         android:layout_height="31dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/ebrimabd"
-        android:text="@string/addphoto"
+        android:text="@string/photo"
         android:textColor="@color/black"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -135,10 +142,9 @@
         app:layout_constraintVertical_bias="0.876" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/mSaveBtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="108dp"
         android:background="@drawable/button"
         android:backgroundTint="@color/darkblue"
         android:fontFamily="@font/ebrimabd"
@@ -149,13 +155,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/mDeleteBtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="40dp"
         android:background="@drawable/button"
         android:backgroundTint="@color/darkblue"
         android:fontFamily="@font/ebrimabd"
@@ -166,6 +173,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

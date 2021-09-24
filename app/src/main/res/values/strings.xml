@@ -26,22 +26,34 @@
     <string name="submit">Submit</string>
     <string name="update">Update</string>
 
+    //menu navigation
+    <string name="app_name1">Navigation Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     //profile names
     <string name="adsubmission">Ad Submission</string>
-    <string name="wendy99_gmail_com">wendy99@gmail.com</string>
     <string name="wendyshon94">wendyshon94</string>
     <string name="son">Son</string>
-    <string name="seungwan">Seungwan</string>
     <string name="add_photo">Add Photo</string>
+    <string name="seungwan">Seungwan</string>
+    <string name="wendy99_gmail_com">wendy99@gmail.com</string>
+    <string name="this_app_is_trash">This app is trash</string>
+    <string name="go_back">Go Back</string>
+    <string name="photo">photo</string>
+    <string name="edit_feedback">Edit Feedback</string>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>
         <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
         <item name="colorAccent">@color/design_default_color_surface</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     //Payment Page

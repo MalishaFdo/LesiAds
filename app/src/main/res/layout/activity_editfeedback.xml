@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ebrimabd"
-        android:text="@string/givefeedback"
+        android:text="@string/edit_feedback"
         android:textColor="@color/white"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,9 +28,10 @@
         android:layout_height="50sp"
         android:background="@drawable/input_field"
         android:ems="10"
-        android:hint="Seungwan"
+        android:hint="@string/seungwan"
         android:inputType="textPersonName"
         android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.124"
@@ -45,14 +46,16 @@
         android:layout_marginBottom="312dp"
         android:background="@drawable/input_field"
         android:ems="10"
-        android:hint="wendy99@gmail.com"
+        android:hint="@string/wendy99_gmail_com"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintVertical_bias="0.202" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -61,18 +64,19 @@
         android:background="@drawable/input_field"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="This app is trash"
+        android:hint="@string/this_app_is_trash"
         android:inputType="textMultiLine"
         android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintVertical_bias="0.111" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/mSaveEditBtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
         android:layout_marginBottom="108dp"
@@ -91,7 +95,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/mDeleteEditBtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
         android:layout_marginBottom="108dp"
