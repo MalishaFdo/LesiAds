@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "283803270970",
+    "project_id": "lesiadspro",
+    "storage_bucket": "lesiadspro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283803270970:android:d835c5f646df190d0ada03",
+        "android_client_info": {
+          "package_name": "com.example.lesiadspro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283803270970-1t4ol5jj0jnf380srir42vummfcoe48q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJxh-ZpqnFSo9GwIs1BduRTEWB9rDVk6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283803270970-1t4ol5jj0jnf380srir42vummfcoe48q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

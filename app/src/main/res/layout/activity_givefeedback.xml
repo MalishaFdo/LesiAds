@@ -31,6 +31,7 @@
         android:hint="@string/firstname"
         android:inputType="textPersonName"
         android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.124"
@@ -46,13 +47,15 @@
         android:background="@drawable/input_field"
         android:ems="10"
         android:hint="@string/email"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintVertical_bias="0.212" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -64,15 +67,16 @@
         android:hint="@string/givefeedback"
         android:inputType="textMultiLine"
         android:textColorHint="@color/grey"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintVertical_bias="0.116" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/mSubmitBtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
         android:layout_marginBottom="108dp"
@@ -91,7 +95,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/mUpdateBtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
         android:layout_marginBottom="108dp"
