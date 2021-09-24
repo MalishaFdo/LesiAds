@@ -3,6 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_add_photo.xml" value="0.10235507246376811" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_edit_profile.xml" value="0.16" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_editfeedback.xml" value="0.16" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_givefeedback.xml" value="0.16" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_profile.xml" value="0.16" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_sidebar.xml" value="0.10733695652173914" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/nav_header.xml" value="0.10733695652173914" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1953125" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1953125" />
+      </map>
+    </option>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_review.xml" value="0.264" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_submission.xml" value="0.264" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_update_delete.xml" value="0.264" />

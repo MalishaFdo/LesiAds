@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.IOException;
@@ -18,6 +19,9 @@ public class AddPhoto extends AppCompatActivity {
     private ImageView profileimage;
     private static final int PICK_IMAGE = 1;
     Uri imageUri;
+
+    Button backbutton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +38,17 @@ public class AddPhoto extends AppCompatActivity {
                 startActivityForResult(Intent.createChooser(gallery,"Select Picture"),PICK_IMAGE);
             }
         });
+
+        backbutton = findViewById(R.id.button14);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent11 = new Intent(AddPhoto.this,EditProfile.class);
+                startActivity(intent11);
+            }
+        });
+
+
     }
 
     @Override
