@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class ViewNewspaperDetailsActivity extends AppCompatActivity {
 
-
+//Btttt
     public Button btnViewNews;
 
     @Override
