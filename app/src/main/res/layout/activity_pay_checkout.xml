@@ -45,7 +45,7 @@
         app:srcCompat="?attr/popupMenuBackground" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/Pay_CheckEditButtn"
         android:layout_width="269dp"
         android:layout_height="53dp"
         android:layout_marginStart="149dp"
@@ -53,7 +53,7 @@
         android:layout_marginBottom="76dp"
         android:backgroundTint="@color/larkblue"
         android:onClick="next1"
-        android:text="Edit Payment Details"
+        android:text="@string/Pay_CheckEditButtn"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/Pay_CheckButtn"
         android:layout_width="269dp"
         android:layout_height="53dp"
         android:layout_marginStart="149dp"
@@ -71,7 +71,7 @@
         android:layout_marginBottom="140dp"
         android:backgroundTint="@color/larkblue"
         android:onClick="next"
-        android:text="Pay Amount"
+        android:text="@string/Pay_CheckButtn"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"

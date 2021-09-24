@@ -45,7 +45,7 @@
         app:srcCompat="?attr/popupMenuBackground" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/Pay_RateButtn"
         android:layout_width="269dp"
         android:layout_height="53dp"
         android:layout_marginStart="149dp"
@@ -53,7 +53,7 @@
         android:layout_marginBottom="104dp"
         android:backgroundTint="@color/larkblue"
         android:onClick="next"
-        android:text="Submit"
+        android:text="@string/Pay_RateButtn"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -134,6 +134,9 @@
         android:id="@+id/ratingBar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="466dp" />
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="466dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

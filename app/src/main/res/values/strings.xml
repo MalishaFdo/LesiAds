@@ -121,4 +121,13 @@
     <string name="bank1">NSB Banak</string>
     <string name="branch1">Malabe</string>
     <string name="buttn8">DELETE</string>
+    <string name="Pay_AddButtn">ADD</string>
+    <string name="Pay_RateButtn">SUBMIT</string>
+    <string name="Pay_EditButtn">SUBMIT</string>
+    <string name="Pay_CheckButtn">PAY AMOUNT</string>
+    <string name="Pay_CheckEditButtn">Edit Payment Details</string>
+    <string name="Pay_AdminDelButtn">DELETE</string>
+    <string name="Pay_AdminDelButtn1">delete</string>
+    <string name="Pay_CusDelButtn">delete</string>
+    <string name="Pay_CusDelButtn1">delete</string>
 </resources>

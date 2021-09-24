@@ -73,10 +73,10 @@
     <EditText
         android:id="@+id/name"
         android:layout_width="274dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="140dp"
-        android:layout_marginEnd="133dp"
+        android:layout_marginEnd="69dp"
         android:background="@drawable/rectangle_bg"
         android:ems="10"
         android:hint="Full Name"
@@ -89,8 +89,8 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="273dp"
-        android:layout_height="40dp"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="204dp"
         android:layout_marginEnd="133dp"
@@ -120,7 +120,7 @@
     <EditText
         android:id="@+id/cardname"
         android:layout_width="271dp"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:layout_marginStart="72dp"
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="384dp"
@@ -137,7 +137,7 @@
     <EditText
         android:id="@+id/number"
         android:layout_width="277dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginStart="68dp"
         android:layout_marginEnd="133dp"
         android:layout_marginBottom="324dp"
@@ -153,10 +153,10 @@
 
     <EditText
         android:id="@+id/cvv"
-        android:layout_width="109dp"
-        android:layout_height="44dp"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
         android:layout_marginStart="74dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginEnd="228dp"
         android:layout_marginBottom="256dp"
         android:background="@drawable/rectangle_bg"
         android:ems="10"
@@ -167,24 +167,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/expiery"
-        android:layout_width="151dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="204dp"
-        android:layout_marginTop="427dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="257dp"
-        android:background="@drawable/rectangle_bg"
-        android:ems="10"
-        android:hint="Card Expiery"
-        android:inputType="datetime|textPersonName"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text1"
@@ -203,7 +185,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/Pay_AddButtn"
         android:layout_width="269dp"
         android:layout_height="53dp"
         android:layout_marginStart="149dp"
@@ -211,7 +193,7 @@
         android:layout_marginBottom="100dp"
         android:backgroundTint="@color/larkblue"
         android:onClick="next"
-        android:text="Add"
+        android:text="@string/Pay_AddButtn"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -220,29 +202,13 @@
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/dropdown"
-        android:layout_width="29dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="317dp"
-        android:layout_marginTop="316dp"
-        android:layout_marginEnd="70dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_drop_down" />
-
-    <ImageView
-        android:id="@+id/dropdown2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="317dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="266dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_drop_down" />
+    <CalendarView
+        android:id="@+id/Pay_Calender"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/cvv"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
