@@ -96,11 +96,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.46"
-=======
         app:layout_constraintVertical_bias="0.476"
->>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -139,12 +135,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toBottomOf="@+id/button5"
-        app:layout_constraintVertical_bias="0.238"
-=======
         app:layout_constraintTop_toBottomOf="@+id/mPostAdBtn"
->>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -163,13 +154,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toBottomOf="@+id/button6"
-        app:layout_constraintVertical_bias="1.0"
-=======
         app:layout_constraintTop_toBottomOf="@+id/mMyAdsBtn"
         app:layout_constraintVertical_bias="0.29"
->>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -187,13 +173,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toBottomOf="@+id/button7"
-        app:layout_constraintVertical_bias="0.538"
-=======
         app:layout_constraintTop_toBottomOf="@+id/mEditProfileBtn"
         app:layout_constraintVertical_bias="0.306"
->>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -212,11 +193,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.929"
-=======
         app:layout_constraintVertical_bias="0.955"
->>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
         tools:ignore="MissingConstraints" />
 
     <Button
