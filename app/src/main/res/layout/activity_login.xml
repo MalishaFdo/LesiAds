@@ -120,4 +120,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.91" />
+
+    <TextView
+        android:id="@+id/forgotPasswordTxt"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/ebrimabd"
+        android:text="Forgot Password ?"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
 </androidx.constraintlayout.widget.ConstraintLayout>
