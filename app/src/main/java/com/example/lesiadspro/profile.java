@@ -21,7 +21,7 @@ public class profile extends AppCompatActivity {
     Button feedback;
     Button viewnews;
      // but news view
-
+   //Vibu kaawa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
