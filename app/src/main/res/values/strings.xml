@@ -62,7 +62,7 @@
     //Add Newspaper List
     <string name="add_newspaper">Add Newspaper</string>
     <string name="name">Name</string>
-    <string name="publication_date">Publication Date</string>
+    <string name="inputDate">DD/MM/YY</string>
     <string name="add_articles_name">Add Articles Name</string>
     <string name="newspaper_logo">Newspaper Logo</string>
     <string name="upload">Upload</string>
@@ -142,5 +142,6 @@
     <string name="but4">Dinamina</string>
     <string name="but5">Thinakaran</string>
     <string name="but6">Daily Mirror</string>
+
 
 </resources>

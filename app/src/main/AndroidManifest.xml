@@ -11,37 +11,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
-        <activity android:name=".sidebar"></activity>
+        <activity android:name=".sidebar"/>
         <activity
             android:name=".AddPhoto"
-             />
+            android:exported="true" />
         <activity
             android:name=".Editfeedback"
-             />
+            android:exported="true" />
         <activity
             android:name=".Givefeedback"
-             />
+            android:exported="true" />
         <activity
             android:name=".EditProfile"
-             />
+            android:exported="true" />
         <activity
             android:name=".profile"
-             />
-        <activity android:name=".NewspaperPanelActivity"></activity>
-        <activity android:name=".ViewNewspaperDetailsActivity" />
-        <activity android:name=".AdminDashboardActivity" />
-        <activity android:name=".NewspaperHistoryActivity" />
-        <activity android:name=".ConfirmationActivity" />
-        <activity android:name=".EditNewsListActivity" />
-        <activity android:name=".NewsListActivity" />
-        <activity android:name=".AddPhoto" />
-        <activity android:name=".Editfeedback" />
-        <activity android:name=".Givefeedback" />
-        <activity android:name=".EditProfile" />
-        <activity android:name=".profile" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+            android:exported="true" />
+        <activity android:name=".NewspaperPanelActivity"
+            android:exported="true"/>
+        <activity android:name=".ViewNewspaperDetailsActivity"
+            android:exported="true"/>
+        <activity android:name=".AdminDashboardActivity"
+            android:exported="true"/>
+        <activity android:name=".NewspaperHistoryActivity"
+            android:exported="true"/>
+        <activity android:name=".ConfirmationActivity"
+            android:exported="true"/>
+        <activity android:name=".EditNewsListActivity"
+            android:exported="true"/>
+        <activity android:name=".NewsListActivity"
+            android:exported="true"/>
+        <activity android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity android:name=".LoginActivity"
+            android:exported="true" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

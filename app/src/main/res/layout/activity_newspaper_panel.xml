@@ -19,26 +19,6 @@
         app:srcCompat="@drawable/background" />
 
     <ImageView
-        android:id="@+id/inputNotification7"
-        android:layout_width="28dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_notifications_24" />
-
-    <ImageView
-        android:id="@+id/inputMenu7"
-        android:layout_width="32dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="11dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_menu_24" />
-
-    <ImageView
         android:id="@+id/background12"
         android:layout_width="339dp"
         android:layout_height="648dp"
@@ -89,7 +69,7 @@
     <Button
         android:id="@+id/but5"
         android:layout_width="112dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
         android:layout_marginStart="63dp"
         android:layout_marginTop="532dp"
         android:layout_marginEnd="236dp"
@@ -105,7 +85,7 @@
     <Button
         android:id="@+id/but3"
         android:layout_width="112dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
         android:layout_marginStart="230dp"
         android:layout_marginTop="408dp"
         android:layout_marginEnd="69dp"
@@ -121,7 +101,7 @@
     <Button
         android:id="@+id/but4"
         android:layout_width="112dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
         android:layout_marginStart="63dp"
         android:layout_marginTop="408dp"
         android:layout_marginEnd="236dp"
@@ -137,7 +117,7 @@
     <Button
         android:id="@+id/but2"
         android:layout_width="112dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
         android:layout_marginStart="230dp"
         android:layout_marginTop="260dp"
         android:layout_marginEnd="69dp"
@@ -193,7 +173,7 @@
     <Button
         android:id="@+id/but1"
         android:layout_width="112dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
         android:layout_marginStart="63dp"
         android:layout_marginTop="260dp"
         android:layout_marginEnd="236dp"
@@ -254,5 +234,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/daily_mirror" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
