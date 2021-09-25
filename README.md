@@ -12,11 +12,11 @@
 </tr>
 <tr>
 <td> Android Studio Arctic Fox // 2020.3.1 </td>
-<td> <img src = "https://user-images.githubusercontent.com/87639011/134788376-28187006-0aa8-41d4-8b5f-5e6a8647a10e.jpg" width = "50" height = "50"/></td>
+<td> <img src = "https://user-images.githubusercontent.com/87639011/134788376-28187006-0aa8-41d4-8b5f-5e6a8647a10e.jpg" width = "70" height = "50"/></td>
 </tr>
 <tr>
 <td> Firebase </td>
-<td> <img src = "https://user-images.githubusercontent.com/87639011/134788376-28187006-0aa8-41d4-8b5f-5e6a8647a10e.jpg" width = "50" height = "50"/></td>
+<td> <img src = "https://user-images.githubusercontent.com/87639011/134788327-767240ee-ec86-46ef-8fe6-e84289f56f87.png" width = "50" height = "50"/></td>
 </tr> 
 </table>
  
