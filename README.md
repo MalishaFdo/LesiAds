@@ -8,13 +8,16 @@
        <td> Language : Java </td>
      </tr>
       <tr>
-       <td>  </td>
+       <td> <img src = "https://user-images.githubusercontent.com/87639011/134788324-f7ab182d-6598-44fa-8858-4fd243196b66.png" width = "50" height = "50"</td>
       </tr>
     </th>
     <th>
      <tr>
        <td> Development IDE : Android Studio Arctic Fox // 2020.3.1 </td>
      </tr>
+     <tr>
+       <td> <img src = "https://user-images.githubusercontent.com/87639011/134788324-f7ab182d-6598-44fa-8858-4fd243196b66.png" width = "50" height = "50"</td>
+       </tr>
      <th>
       <tr>
        <td> Database : Firebase </td>
