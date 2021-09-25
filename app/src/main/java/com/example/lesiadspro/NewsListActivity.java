@@ -85,7 +85,7 @@ public class NewsListActivity extends AppCompatActivity {
     }
 
         /*public void selectImage(){
-    //mmmmmmm
+
             // Defining Implicit Intent to mobile gallery
             Intent intent = new Intent();
             intent.setType("image/*");
