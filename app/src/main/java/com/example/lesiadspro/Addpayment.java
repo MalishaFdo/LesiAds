@@ -65,9 +65,9 @@ public class Addpayment extends AppCompatActivity {
 
     //save data in database
     public void SaveData() {
-        String uid = FirebaseAuth.getInstance().getUid();
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Payment").child(uid);
-
+        //String uid = FirebaseAuth.getInstance().getUid();
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
+//hii
         try {
             if (TextUtils.isEmpty(p_name.getText().toString()))
                 Toast.makeText(getApplicationContext(), "Please Enter a Name ", Toast.LENGTH_SHORT).show();
