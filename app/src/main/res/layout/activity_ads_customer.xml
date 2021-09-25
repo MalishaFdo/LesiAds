@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdSubmission">
+    tools:context=".AdsCustomer">
 
     <ImageView
         android:id="@+id/backgrond"
@@ -23,137 +23,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-    <ImageView
-        android:id="@+id/whitebox"
-        android:layout_width="364dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include"
-        app:srcCompat="?attr/popupMenuBackground"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/whitebox2"
-        android:layout_width="365dp"
-        android:layout_height="159dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whitebox"
-        app:srcCompat="?attr/popupMenuBackground"
-        tools:ignore="ImageContrastCheck" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="123dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/view_ad"
-        app:backgroundTint="#33ccff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.826"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/whitebox2"
-        tools:ignore="TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/ebrima"
-        android:text="Total Advertisements : 1"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/whitebox"
-        app:layout_constraintTop_toTopOf="@+id/whitebox" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="185dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
-        app:layout_constraintTop_toTopOf="@+id/whitebox2"
-        app:srcCompat="@drawable/lanka"
-        android:contentDescription="@string/todo" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="@string/status_submitted"
-        android:textSize="17sp"
-        android:textColor="@color/grey"
-        android:fontFamily="@font/ebrima"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox2"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/whitebox2"
-        app:layout_constraintTop_toTopOf="@+id/whitebox2" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:fontFamily="@font/ebrima"
-        android:text="@string/date_2021_08_21"
-        android:textColor="@color/grey"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox2"
-        app:layout_constraintHorizontal_bias="0.781"
-        app:layout_constraintStart_toStartOf="@+id/whitebox2"
-        app:layout_constraintTop_toTopOf="@+id/whitebox2" />
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/ebrima"
-        android:text="@string/category_land_for_sale"
-        android:textColor="@color/grey"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="@+id/whitebox2"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox2"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toStartOf="@+id/whitebox2" />
-
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="17sp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/words_12"
-        android:textColor="@color/grey"
-        android:fontFamily="@font/ebrima"
-        app:layout_constraintBottom_toBottomOf="@+id/whitebox2"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox2"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="@+id/whitebox2" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="414dp"
-        android:layout_height="66dp"
-        app:layout_constraintBottom_toBottomOf="@+id/backgrond"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bn1"
-        android:contentDescription="@string/todo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

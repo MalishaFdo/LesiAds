@@ -3,19 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AS/LesiAds/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.21487179487179486" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.21487179487179486" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_review.xml" value="0.264" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_submission.xml" value="0.264" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_update_delete.xml" value="0.264" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ad_update_delete2.xml" value="0.25416666666666665" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_add_photo.xml" value="0.25416666666666665" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ads_admin.xml" value="0.4" />
-        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ads_customer.xml" value="0.4" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_ads_customer.xml" value="0.264" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_editfeedback.xml" value="0.25416666666666665" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_notifications_admin.xml" value="0.264" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_notifications_customer.xml" value="0.264" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/AS/LesiAds/app/src/main/res/layout/nav_header.xml" value="0.20208333333333334" />
         <entry key="..\:/AS/LesiAds/app/src/main/res/layout/toolbar.xml" value="0.25416666666666665" />
       </map>
     </option>

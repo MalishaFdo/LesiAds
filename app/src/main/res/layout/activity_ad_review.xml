@@ -27,8 +27,8 @@
 
     <ImageView
         android:id="@+id/whitebox"
-        android:layout_width="339dp"
-        android:layout_height="608dp"
+        android:layout_width="341dp"
+        android:layout_height="572dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,13 +56,12 @@
         android:id="@+id/textView22"
         android:layout_width="149dp"
         android:layout_height="35dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/ebrima"
         android:text="@string/ad_review"
         android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
@@ -142,12 +141,12 @@
         android:id="@+id/textView21"
         android:layout_width="240dp"
         android:layout_height="23dp"
-        android:layout_marginTop="524dp"
+        android:layout_marginTop="496dp"
         android:fontFamily="@font/ebrima"
         android:text="@string/word_count_12"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintHorizontal_bias="0.309"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
@@ -155,7 +154,7 @@
         android:id="@+id/button14"
         android:layout_width="123dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="36dp"
         android:text="@string/confirm"
         app:backgroundTint="#33ccff"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -168,12 +167,12 @@
         android:id="@+id/button15"
         android:layout_width="123dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="36dp"
         android:text="@string/reject"
         app:backgroundTint="#33ccff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
 
