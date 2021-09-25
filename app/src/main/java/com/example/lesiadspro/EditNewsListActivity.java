@@ -17,4 +17,4 @@ public class EditNewsListActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ConfirmationActivity.class);
         startActivity(intent);
     }
-}
+}//hello

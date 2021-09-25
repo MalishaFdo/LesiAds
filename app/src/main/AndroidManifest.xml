@@ -63,9 +63,39 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            android:exported="true" />
+        <activity
+            android:name=".NotificationsAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationsCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".AdsAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".AdsCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".AdReview"
+            android:exported="true" />
+        <activity
+            android:name=".AdUpdateDelete"
+            android:exported="true" />
+        <activity
+            android:name=".AdSubmission"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
