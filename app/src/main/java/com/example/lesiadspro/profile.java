@@ -40,7 +40,7 @@ import com.squareup.picasso.Picasso;
 public class profile extends AppCompatActivity {
 
     private static final int GALLERY_INTENT_CODE = 1023;
-    TextView firstname,lastname,email,username;
+    TextView firstname,lastname,email,username,phone;
     FirebaseAuth fAuth;
     FirebaseFirestore fstore;
     String userID;
@@ -64,6 +64,7 @@ public class profile extends AppCompatActivity {
         email = findViewById(R.id.Email);
         username = findViewById(R.id.userName);
         changepassword = findViewById(R.id.changepasswordBtn);
+        phone = findViewById(R.id.phonenumber);
 
         profileImage = findViewById(R.id.imageView);
         changeProfileImage = findViewById(R.id.changeprofileimage);
@@ -93,11 +94,10 @@ public class profile extends AppCompatActivity {
                     lastname.setText(value.getString("lname"));
                     email.setText(value.getString("email"));
                     username.setText(value.getString("username"));
+                    phone.setText(value.getString("phone"));
                 }else{
                     Log.d("tag","onEvent: Document does not exist");
                 }
-
-
 
             }
         });
@@ -163,8 +163,13 @@ public class profile extends AppCompatActivity {
         editprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent6 = new Intent(profile.this,EditProfile.class);
-                startActivity(intent6);
+                Intent i = new Intent(profile.this,EditProfile.class);
+                i.putExtra("firstname",firstname.getText().toString());
+                i.putExtra("lastname",lastname.getText().toString());
+                i.putExtra("username",username.getText().toString());
+                i.putExtra("email",email.getText().toString());
+                i.putExtra("phone",phone.getText().toString());
+                startActivity(i);
             }
         });
 
