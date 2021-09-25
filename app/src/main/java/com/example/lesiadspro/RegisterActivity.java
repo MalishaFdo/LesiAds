@@ -22,6 +22,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -33,6 +35,8 @@ public class RegisterActivity extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth fAuth;
     FirebaseFirestore fstore;
+    FirebaseDatabase rootnode;
+    DatabaseReference reference;
     String userID;
 
     TextView signin;
@@ -75,12 +79,22 @@ public class RegisterActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //realtime database
+                rootnode = FirebaseDatabase.getInstance();
+                reference = rootnode.getReference("users");
+
+                //get values
+
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
                 String firstname = mFirstName.getText().toString();
                 String lastname = mLastName.getText().toString();
                 String phone = mPhone.getText().toString();
                 String username = mUserName.getText().toString();
+
+                UserHelperClass helperClass = new UserHelperClass(firstname,lastname,email,phone,username,password);
+                reference.child(username).setValue(helperClass);
+
 
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is required . ");
@@ -95,10 +109,14 @@ public class RegisterActivity extends AppCompatActivity {
                     mPassword.setError("Password must be >= 6 characters");
                     return;
                 }
+                if (phone.length()>10 || phone.length()<10){
+                    mPhone.setError("Enter a valid phone number");
+                    return;
+                }
 
                 progressBar.setVisibility(View.VISIBLE);
 
-                //register user in firebase
+                //register user in firebase firestore
 
                 fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
