@@ -10,18 +10,18 @@
         android:padding="10dp">
 
         <ImageView
-            android:id="@+id/menu"
             android:layout_width="43dp"
             android:layout_height="34dp"
+            android:id="@+id/menu"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_baseline_menu_24" />
 
         <ImageView
-            android:id="@+id/noti"
             android:layout_width="43dp"
             android:layout_height="34dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:id="@+id/noti"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_baseline_notifications_24" />
     </RelativeLayout>

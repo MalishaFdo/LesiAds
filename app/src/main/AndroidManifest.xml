@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lesiadspro">
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,89 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
+        <activity
+            android:name=".viewNewsMain"
+            android:exported="true" />
+        <activity
+            android:name=".person"
+            android:exported="true" />
+        <activity android:name=".sidebar" />
+        <activity
+            android:name=".AddPhoto"
+            android:exported="true" />
+        <activity
+            android:name=".Editfeedback"
+            android:exported="true" />
+        <activity
+            android:name=".Givefeedback"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".profile"
+            android:exported="true" />
+        <activity
+            android:name=".NewspaperPanelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ViewNewspaperDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewspaperHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditNewsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            android:exported="true" />
+        <activity
+            android:name=".NotificationsAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationsCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".AdsAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".AdsCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".AdReview"
+            android:exported="true" />
+        <activity
+            android:name=".AdUpdateDelete"
+            android:exported="true" />
+        <activity
+            android:name=".AdSubmission"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
 
         <activity android:name=".AdminpayHistory"
             android:exported="true"/>
@@ -44,7 +127,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
