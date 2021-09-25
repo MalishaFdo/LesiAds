@@ -16,8 +16,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
@@ -124,7 +126,47 @@ public class EditProfile extends AppCompatActivity {
 
 
 
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DocumentReference docref = fStore.collection("users").document(user.getUid());
+                AlertDialog.Builder builder = new AlertDialog.Builder(EditProfile.this);
+                builder.setTitle("Are you sure ?");
+                builder.setMessage("Deletion is permanent");
 
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        deleteuser();
+                    }
+
+                    private void deleteuser() {
+                        fStore.collection("users").document(user.getUid()).delete()
+                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if (task.isSuccessful()){
+                                            Toast.makeText(EditProfile.this,"User deleted",Toast.LENGTH_SHORT).show();
+                                            finish();
+                                            startActivity(new Intent(EditProfile.this,LoginActivity.class));
+                                        }
+                                    }
+                                });
+                    }
+                });
+
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+
+                AlertDialog ad = builder.create();
+                ad.show();
+
+            }
+        });
 
 
     }
