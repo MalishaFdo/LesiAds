@@ -11,4 +11,4 @@ public class AdSubmission extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ad_submission);
     }
-}
+}//merge
