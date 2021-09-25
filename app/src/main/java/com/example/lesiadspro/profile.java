@@ -54,6 +54,7 @@ public class profile extends AppCompatActivity {
     Button viewnews;
     Button changepassword;
 
+   //Vibu kaawa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
