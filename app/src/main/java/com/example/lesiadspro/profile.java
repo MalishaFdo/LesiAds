@@ -20,7 +20,7 @@ public class profile extends AppCompatActivity {
     Button editprofile;
     Button feedback;
     Button viewnews;
-     // but news view
+
    //Vibu kaawa
     @Override
     protected void onCreate(Bundle savedInstanceState) {

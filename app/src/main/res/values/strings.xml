@@ -50,13 +50,12 @@
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-
-
 
 
     //Add Newspaper List
@@ -69,7 +68,6 @@
     <string name="submit1">Submit</string>
 
 
-
     //Edit Newspaper List
     <string name="edit_newspaper">Edit Newspaper</string>
     <string name="sunday_observer">Sunday Observer</string>
@@ -80,7 +78,6 @@
     <string name="junior_observer">Junior Observer</string>
     <string name="upload1">Upload</string>
     <string name="subm">Submit</string>
-
 
 
     //Confirmation Newspaper List
@@ -133,7 +130,6 @@
     <string name="sub">OK</string>
 
 
-
     //Newspaper Panel
     <string name="panel">Newspaper Panel</string>
     <string name="but1">Silumina</string>
@@ -142,6 +138,8 @@
     <string name="but4">Dinamina</string>
     <string name="but5">Thinakaran</string>
     <string name="but6">Daily Mirror</string>
+    <string name="idbtnEdit">Edit</string>
+    <string name="idbtnDelete">Delete</string>
 
 
 </resources>

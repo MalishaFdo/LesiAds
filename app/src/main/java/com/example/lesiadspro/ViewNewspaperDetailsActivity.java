@@ -21,7 +21,7 @@ public class ViewNewspaperDetailsActivity extends AppCompatActivity {
         btnViewNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ViewNewspaperDetailsActivity.this, NewspaperHistoryActivity.class);
+                Intent intent = new Intent(ViewNewspaperDetailsActivity.this, ConfirmationActivity.class);
                 startActivity(intent);
             }
 

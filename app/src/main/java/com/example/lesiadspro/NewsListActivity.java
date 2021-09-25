@@ -77,6 +77,7 @@ public class NewsListActivity extends AppCompatActivity {
             public void onClick(View view) {
                 InsertData();
 
+
             }
 
         });
@@ -109,18 +110,21 @@ public class NewsListActivity extends AppCompatActivity {
                 else if (TextUtils.isEmpty(inputArticles.getText().toString()))
                     Toast.makeText(getApplicationContext(),"Please Enter the Article Name", Toast.LENGTH_SHORT).show();
                 else {
-                    adNews.setNewsName(inputName.getText().toString().trim());
-                    adNews.setDate(Integer.parseInt(inputDate.getText().toString().trim()));
-                    adNews.setArticleName(inputArticles.getText().toString().trim());
+                    adNews.setNewsName(inputName.getText().toString());
+                    adNews.setDate(Integer.parseInt(inputDate.getText().toString()));
+                    adNews.setArticleName(inputArticles.getText().toString());
 
-                    dbRef.push();
-                    dbRef.setValue(adNews);
+
+                    DatabaseReference newref = dbRef.push();
+                    newref.setValue(adNews);
 
                     Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                     ClearControls();
 
-                    Intent intent1 = new Intent(NewsListActivity.this,ConfirmationActivity.class);
+                    Intent intent1 = new Intent(NewsListActivity.this,person.class);
                     startActivity(intent1);
+
+
                 }
             }
             catch (NumberFormatException e) {
