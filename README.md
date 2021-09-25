@@ -8,7 +8,9 @@
        <td> Language : Java </td>
      </tr>
       <tr>
-       <td> <img src = "https://user-images.githubusercontent.com/87639011/134788324-f7ab182d-6598-44fa-8858-4fd243196b66.png" width = "50" height = "50"</td>
+       <td> <p align="center"> <img src = "https://user-images.githubusercontent.com/87639011/134788324-f7ab182d-6598-44fa-8858-4fd243196b66.png" width = "50" height = "50"/>
+       </p>
+       </td>
       </tr>
     </th>
     <th>
@@ -16,7 +18,8 @@
        <td> Development IDE : Android Studio Arctic Fox // 2020.3.1 </td>
      </tr>
      <tr>
-       <td> <img src = "https://user-images.githubusercontent.com/87639011/134788324-f7ab182d-6598-44fa-8858-4fd243196b66.png" width = "50" height = "50"</td>
+       <td> <p align="center"> <img src = "https://user-images.githubusercontent.com/87639011/134788324-f7ab182d-6598-44fa-8858-4fd243196b66.png" width = "50" height = "50"/>       </p> 
+      </td>
        </tr>
      <th>
       <tr>
