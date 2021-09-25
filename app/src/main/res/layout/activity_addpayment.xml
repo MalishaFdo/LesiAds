@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addpayment">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="442dp"
+        android:layout_height="855dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="323dp"
+        android:layout_height="622dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="?attr/popupMenuBackground" />
+
+    <EditText
+        android:id="@+id/pay_ExpDate"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/rectangle_bg"
+        android:ems="10"
+        android:hint="@string/pay_ExpDate"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pay_cvv2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="155dp"
+        android:text="Payment"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pay_email"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="133dp"
+        android:background="@drawable/rectangle_bg"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pay_cardNumber"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="133dp"
+        android:background="@drawable/rectangle_bg"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pay_name"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="133dp"
+        android:background="@drawable/rectangle_bg"
+        android:ems="10"
+        android:hint="@string/pay_name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="447dp"
+        android:text="Pay Amount Rs 2300.00"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pay_cardname"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="384dp"
+        android:background="@drawable/rectangle_bg"
+        android:ems="10"
+        android:hint="Card Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/pay_cvv2"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="252dp"
+        android:background="@drawable/rectangle_bg"
+        android:ems="10"
+        android:hint="CVV"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="267dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="502dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="168dp"
+        android:text="Cost of the first 15 words for Rs 1500.00 and cost of remaining words per Rs 10.00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pay_AddButtn"
+        android:layout_width="269dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="@color/larkblue"
+        android:onClick="SaveData"
+        android:text="@string/Pay_AddButtn"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

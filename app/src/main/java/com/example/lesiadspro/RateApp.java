@@ -6,15 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class EditNewsListActivity extends AppCompatActivity {
+public class RateApp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_news_list);
+        setContentView(R.layout.activity_rate_app);
     }
-    public void next(View view){
-        Intent intent = new Intent(this,ConfirmationActivity.class);
+    public void next3(View view){
+        Intent intent = new Intent(this,cusPayHistory.class);
         startActivity(intent);
     }
-}//hello
+}

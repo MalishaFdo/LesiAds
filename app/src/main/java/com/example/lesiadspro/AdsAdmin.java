@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Editfeedback extends AppCompatActivity {
+public class AdsAdmin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_editfeedback);
+        setContentView(R.layout.activity_ads_admin);
     }
 }
+//hello
