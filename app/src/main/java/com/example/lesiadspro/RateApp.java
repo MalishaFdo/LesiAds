@@ -13,8 +13,8 @@ public class RateApp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rate_app);
     }
-    public void next(View view){
-        Intent intent = new Intent(this,payCheckout.class);
+    public void next3(View view){
+        Intent intent = new Intent(this,cusPayHistory.class);
         startActivity(intent);
     }
 }

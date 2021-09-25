@@ -11,39 +11,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
-<<<<<<< HEAD
-        <activity android:name=".AdminpayHistory"></activity>
-        <activity android:name=".cusPayHistory" />
-        <activity android:name=".RateApp" />
-        <activity android:name=".payCheckout" />
-        <activity android:name=".Editpayment" />
-        <activity android:name=".Addpayment" />
-        <activity android:name=".AddPhoto" />
-        <activity android:name=".Editfeedback" />
-        <activity android:name=".Givefeedback" />
-        <activity android:name=".EditProfile" />
-        <activity android:name=".profile" />
-=======
-        <activity android:name=".sidebar"></activity>
-        <activity
-            android:name=".AddPhoto"
-             />
-        <activity
-            android:name=".Editfeedback"
-             />
-        <activity
-            android:name=".Givefeedback"
-             />
-        <activity
-            android:name=".EditProfile"
-             />
-        <activity
-            android:name=".profile"
-             />
->>>>>>> 528d796f796593fc2e600a8ef99398ccb90da51b
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".AdminpayHistory"
+            android:exported="true"/>
+        <activity android:name=".cusPayHistory"
+            android:exported="true" />
+        <activity android:name=".RateApp"
+            android:exported="true"/>
+        <activity android:name=".payCheckout"
+            android:exported="true"/>
+        <activity android:name=".Editpayment"
+            android:exported="true"/>
+        <activity android:name=".Addpayment"
+            android:exported="true"/>
+        <activity android:name=".AddPhoto"
+            android:exported="true"/>
+        <activity android:name=".Editfeedback"
+            android:exported="true"/>
+        <activity android:name=".Givefeedback"
+            android:exported="true"/>
+        <activity android:name=".EditProfile"
+            android:exported="true"/>
+        <activity android:name=".profile"
+            android:exported="true"/>
+        <activity android:name=".sidebar"
+            android:exported="true"/>
+        <activity android:name=".RegisterActivity"
+            android:exported="true"/>
+        <activity android:name=".LoginActivity"
+            android:exported="true"/>
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

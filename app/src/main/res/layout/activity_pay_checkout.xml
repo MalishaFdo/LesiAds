@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/background4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="410dp"
+        android:layout_height="766dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -17,16 +17,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/background" />
-
-    <ImageView
-        android:id="@+id/inputMenu3"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="11dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_menu_24" />
 
     <ImageView
         android:id="@+id/background5"
@@ -52,7 +42,7 @@
         android:layout_marginEnd="175dp"
         android:layout_marginBottom="76dp"
         android:backgroundTint="@color/larkblue"
-        android:onClick="next1"
+        android:onClick="next2"
         android:text="@string/Pay_CheckEditButtn"
         android:textColor="@color/black"
         android:textSize="18dp"
@@ -70,7 +60,7 @@
         android:layout_marginEnd="175dp"
         android:layout_marginBottom="140dp"
         android:backgroundTint="@color/larkblue"
-        android:onClick="next"
+        android:onClick="next1"
         android:text="@string/Pay_CheckButtn"
         android:textColor="@color/black"
         android:textSize="18dp"
@@ -95,16 +85,6 @@
         app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/notification3"
-        android:layout_width="36dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_notifications_24" />
 
     <TextView
         android:id="@+id/text5"
@@ -218,5 +198,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_560px_mastercard_logo_svg" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

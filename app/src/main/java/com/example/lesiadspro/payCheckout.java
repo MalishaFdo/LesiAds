@@ -13,11 +13,11 @@ public class payCheckout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_checkout);
     }
-    public void next(View view){
-        Intent intent = new Intent(this,Addpayment.class);
+    public void next1(View view){
+        Intent intent = new Intent(this,RateApp.class);
         startActivity(intent);
     }
-    public void next1(View view){
+    public void next2(View view){
         Intent intent = new Intent(this,Editpayment.class);
         startActivity(intent);
     }

@@ -8,25 +8,13 @@
 
     <ImageView
         android:id="@+id/background8"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="412dp"
+        android:layout_height="729dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/background" />
-
-    <ImageView
-        android:id="@+id/inputMenu5"
-        android:layout_width="32dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="11dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_menu_24" />
 
     <ImageView
         android:id="@+id/background9"
@@ -65,7 +53,7 @@
         android:layout_marginEnd="175dp"
         android:layout_marginBottom="80dp"
         android:backgroundTint="@color/larkblue"
-        android:onClick="next"
+        android:onClick="next4"
         android:text="@string/Pay_CusDelButtn1"
         android:textColor="@color/black"
         android:textSize="18dp"
@@ -96,7 +84,7 @@
         android:layout_marginEnd="175dp"
         android:layout_marginBottom="352dp"
         android:backgroundTint="@color/larkblue"
-        android:onClick="next"
+        android:onClick="next4"
         android:text="@string/Pay_CusDelButtn"
         android:textColor="@color/black"
         android:textSize="18dp"
@@ -121,16 +109,6 @@
         app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/notification5"
-        android:layout_width="36dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_notifications_24" />
 
     <TextView
         android:id="@+id/textView16"
@@ -282,6 +260,13 @@
         android:text="Rs 2000.00"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
