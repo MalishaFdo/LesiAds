@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lesiadspro">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
+        <activity
+            android:name=".viewNewsMain"
+            android:exported="true" />
+        <activity
+            android:name=".person"
+            android:exported="true" />
+        <activity android:name=".sidebar" />
         <activity
             android:name=".AddPhoto"
             android:exported="true" />
@@ -25,6 +32,37 @@
             android:exported="true" />
         <activity
             android:name=".profile"
+            android:exported="true" />
+        <activity
+            android:name=".NewspaperPanelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ViewNewspaperDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewspaperHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditNewsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             android:exported="true" />
         <activity
             android:name=".NotificationsAdmin"
