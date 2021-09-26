@@ -3,6 +3,7 @@
 
 <p> The prevailing situation of Covid-19 restrictions we cannot go to the advertising agencies as we want Because of that we are going to introduce a new mobile application for the consumers It called as “ LesiAds “ - Mini Project of Mobile Application </p>
 
+<p> App Promotion Video </p>
 https://user-images.githubusercontent.com/87462220/134796351-6319ec46-1b13-4427-a9a5-92a40e911c78.mp4
 
 <h3> Acknowlegement</h3>
