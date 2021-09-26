@@ -33,10 +33,10 @@ https://user-images.githubusercontent.com/87462220/134796351-6319ec46-1b13-4427-
   
 
 <h3> Contributors </h3>
-  <p> IT20074654 – https://github.com/MalishaFdo  [ Admin Management ] </p>
-  <p> IT20115548 - https://github.com/ChalaJi  [Advertisement Management] </p>
-  <p> IT20120016 – https://github.com/BihiniA  [ Payment Management ] </p>
-  <p> IT20174330 – https://github.com/vibhujay99 [Customer Management] </p>
+  <p> IT20074654 – Malisha Fernando - https://github.com/MalishaFdo [ Admin Management ] </p>
+  <p> IT20115548 - Chalanka Jinadasa - https://github.com/ChalaJi  [Advertisement Management] </p>
+  <p> IT20120016 – Bihini Amarasinghe - https://github.com/BihiniA  [ Payment Management ] </p>
+  <p> IT20174330 – Vibhu Jayawardane - https://github.com/vibhujay99 [Customer Management] </p>
   
  
 
