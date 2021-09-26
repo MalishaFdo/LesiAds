@@ -147,13 +147,13 @@
 
 
     //View Newspaper Details
-    <string name="observer">Sunday Observer</string>
+    <string name="observer"> Daily News </string>
     <string name="date3">15th Sunday, 2021</string>
     <string name="text">Article Zones</string>
     <string name="marriage_proposals1">Marriage Proposals</string>
-    <string name="observer_jobs1">Observer Jobs</string>
-    <string name="youth_observer3">Youth Observer</string>
-    <string name="junior_observer3">Junior Observer</string>
+    <string name="observer_jobs1">Jobs Vacancy</string>
+    <string name="youth_observer3">Youth Plus</string>
+    <string name="junior_observer3">Entertainment</string>
     <string name="sub">OK</string>
 
 
@@ -171,20 +171,17 @@
 
 
     //Payment Page
-    <string name="payment">Payment</string>
-    <string name="name1">Full Name</string>
+
     <string name="email1">Email</string>
     <string name="payamount">Pay Amount Rs.2300.00</string>
     <string name="cardname">Card Name</string>
     <string name="cardno">Card Number</string>
     <string name="cvv">CVV</string>
     <string name="cardex">Card Expiery</string>
-    <string name="text">Cost of the first 15 words for Rs 1500.00 and cost of remaining words per Rs 10.00</string>
     <string name="buttn">ADD</string>
 
 
     //Edit Payment Page
-    <string name="edit">Edit Payment</string>
     <string name="name2">Aruna Gamage</string>
     <string name="email2">aruna@gmail.com</string>
     <string name="cardno1">5432123456789012</string>
@@ -215,7 +212,6 @@
     <string name="text4">Payment Completed !</string>
     <string name="name4">Aruna Gamage</string>
     <string name="email4">aruna@gmail.com</string>
-    <string name="date">08/08/2021</string>
     <string name="time">9:00AM</string>
     <string name="amount3">Card Rs 2300.00</string>
     <string name="buttn6">DELETE</string>
@@ -223,8 +219,6 @@
     <string name="text5">Payment Completed !</string>
     <string name="name5">Kamal Perera</string>
     <string name="email5">kamal12@gmai.com</string>
-    <string name="date1">19/12/2021</string>
-    <string name="time1">18:36PM</string>
     <string name="amount4">Card Rs 2000.00</string>
     <string name="buttn5">DELETE</string>
 
@@ -233,8 +227,6 @@
     <string name="name6">Aruna Gamage</string>
     <string name="email6">aruna@gmail.com</string>
     <string name="amount5">Card Rs 2300.00</string>
-    <string name="date2">08/08/2021</string>
-    <string name="time2">9:00AM</string>
     <string name="bank">BOC Bank</string>
     <string name="branch">Galle</string>
     <string name="buttn7">DELETE</string>
@@ -242,7 +234,6 @@
     <string name="name7">Kamal Perera</string>
     <string name="email7">kamal@gmail.com</string>
     <string name="amount6">Card Rs 2000.00</string>
-    <string name="date3">19/12/2021</string>
     <string name="time3">18:36AM</string>
     <string name="bank1">NSB Banak</string>
     <string name="branch1">Malabe</string>

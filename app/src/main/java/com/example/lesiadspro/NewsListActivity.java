@@ -99,6 +99,8 @@ public class NewsListActivity extends AppCompatActivity {
             inputArticles.setText("");
         }
 
+
+        //Inserting Details
         public void InsertData(){
             String uid = FirebaseAuth.getInstance().getUid();
             dbRef = FirebaseDatabase.getInstance().getReference().child("News").child(uid);

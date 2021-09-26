@@ -44,8 +44,6 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
         if (user != null) {
             Log.d("qwer","User found null");
             String uid = FirebaseAuth.getInstance().getUid();
-//            for (UserInfo profile : user.getProviderData()) {
-//                String providerId = profile.getProviderId();
             for (UserInfo profile : user.getProviderData()) {
                 String providerId = profile.getProviderId();
 

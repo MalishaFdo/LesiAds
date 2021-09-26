@@ -51,30 +51,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/butUpload2"
-        android:layout_width="125dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="217dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="160dp"
-        android:backgroundTint="?attr/colorButtonNormal"
-        android:text="@string/upload"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <EditText
         android:id="@+id/inputArticles2"
         android:layout_width="301dp"
         android:layout_height="178dp"
         android:layout_marginStart="54dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="212dp"
         android:background="@drawable/rectangle_bg"
         android:ems="10"
         android:inputType="textPersonName"
@@ -91,7 +74,7 @@
         android:layout_width="300dp"
         android:layout_height="46dp"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="212dp"
         android:layout_marginEnd="133dp"
         android:background="@drawable/rectangle_bg"
         android:ems="10"
@@ -99,22 +82,10 @@
         android:padding="10dp"
         android:text="15/08/2021"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
-
-    <ImageView
-        android:id="@+id/drop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="319dp"
-        android:layout_marginTop="231dp"
-        android:layout_marginEnd="68dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_drop_down" />
 
     <EditText
         android:id="@+id/inputName2"
@@ -156,11 +127,12 @@
         android:layout_height="35dp"
         android:layout_marginStart="61dp"
         android:layout_marginEnd="155dp"
-        android:layout_marginBottom="392dp"
+        android:layout_marginBottom="348dp"
         android:text="@string/marriage_proposals"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckedTextView
@@ -169,11 +141,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="61dp"
         android:layout_marginEnd="230dp"
-        android:layout_marginBottom="368dp"
+        android:layout_marginBottom="316dp"
         android:text="@string/observer_jobs"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckedTextView
@@ -182,11 +155,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="61dp"
         android:layout_marginEnd="224dp"
-        android:layout_marginBottom="334dp"
+        android:layout_marginBottom="280dp"
         android:text="@string/youth_observer"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckedTextView
@@ -195,25 +169,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="61dp"
         android:layout_marginEnd="219dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="240dp"
         android:text="@string/junior_observer"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/inputObLogo"
-        android:layout_width="163dp"
-        android:layout_height="132dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="194dp"
-        android:layout_marginBottom="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ob_logo" />
 
     <include
         android:id="@+id/include"

@@ -1,14 +1,5 @@
 package com.example.lesiadspro;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -22,6 +13,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -51,10 +47,11 @@ public class profile extends AppCompatActivity {
 
     Button editprofile, changeProfileImage;
     Button feedback;
-    Button viewnews;
+    //Button viewnews;
     Button changepassword;
+    Button newsdetails;
 
-   //Vibu kaawa
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -156,7 +153,14 @@ public class profile extends AppCompatActivity {
         });
 
 
-
+        newsdetails = findViewById(R.id.mViewNewsBtn);
+        newsdetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Intent intent = new Intent(profile.this, NewspaperPanelActivity.class);
+                    startActivity(intent);
+            }
+        });
 
 
 
@@ -183,14 +187,16 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        viewnews = findViewById(R.id.mViewNewsBtn);
-        viewnews.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent14 = new Intent(profile.this,sidebar.class);
-                startActivity(intent14);
-            }
-        });
+       // viewnews = findViewById(R.id.mViewNewsBtn);
+        //viewnews.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+            //public void onClick(View view) {
+                //Intent intent14 = new Intent(profile.this,sidebar.class);
+               // startActivity(intent14);
+           // }
+      //  });
+
+
     }
 
     @Override
@@ -206,6 +212,7 @@ public class profile extends AppCompatActivity {
 
             }
         }
+
     }
 
     private void uploadImageToFirebase(Uri imageUri) {
@@ -216,9 +223,7 @@ public class profile extends AppCompatActivity {
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
-                    public void onSuccess(Uri uri) {
-                        Picasso.get().load(uri).into(profileImage);
-                    }
+                    public void onSuccess(Uri uri) {Picasso.get().load(uri).into(profileImage); }
                 });
 
             }

@@ -14,7 +14,7 @@ public class EditNewsListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit_news_list);
     }
     public void next(View view){
-        Intent intent = new Intent(this,ConfirmationActivity.class);
+        Intent intent = new Intent(this,person.class);
         startActivity(intent);
     }
 }//hello
