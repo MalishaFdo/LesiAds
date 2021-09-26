@@ -1,6 +1,7 @@
 package com.example.lesiadspro;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +55,23 @@ public class CustomerAdapter extends RecyclerView.Adapter<ViewHolder> {
                 builder.setItems(options, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        if (i==0){
+                            String id = modelList.get(position).getId();
+                            String name = modelList.get(position).getName();
+                            String email = modelList.get(position).getEmail();
+                            String feedback = modelList.get(position).getFeedback();
+
+                            Intent intent = new Intent(listActivity,Editfeedback.class);
+                            intent.putExtra("pId",id);
+                            intent.putExtra("pName", name);
+                            intent.putExtra("pEmail", email);
+                            intent.putExtra("pFeedback", feedback);
+
+                            listActivity.startActivity(intent);
+                        }
+                        if (i==1){
+
+                        }
 
                     }
                 }).create().show();
