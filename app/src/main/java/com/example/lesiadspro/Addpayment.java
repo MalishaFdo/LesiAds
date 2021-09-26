@@ -12,10 +12,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Addpayment extends AppCompatActivity {
 
@@ -26,6 +28,8 @@ public class Addpayment extends AppCompatActivity {
 
     FirebaseStorage storage;
     StorageReference storageReference;
+    private Object DatabaseError;
+    private Object error;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,13 +65,13 @@ public class Addpayment extends AppCompatActivity {
         cvv.setText("");
         expireDate.setText("");
     }
-//oo
+
 
     //save data in database
     public void SaveData() {
         //String uid = FirebaseAuth.getInstance().getUid();
         dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
-//hii
+
         try {
             if (TextUtils.isEmpty(p_name.getText().toString()))
                 Toast.makeText(getApplicationContext(), "Please Enter a Name ", Toast.LENGTH_SHORT).show();
@@ -102,7 +106,7 @@ public class Addpayment extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Data saved successfully !!!", Toast.LENGTH_SHORT).show();
                 ClearControls();
 
-                Intent intent = new Intent(Addpayment.this,payCheckout.class);
+                Intent intent = new Intent(Addpayment.this,person_payment.class);
                 startActivity(intent);
 
             }
@@ -111,4 +115,5 @@ public class Addpayment extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Invalid Card Number !!!", Toast.LENGTH_SHORT).show();
         }
     }
+
 }
