@@ -1,6 +1,8 @@
 <h1 align = "center"> <b> Lesi Ads Mobile Appliction </b> </h1> 
 <p align="center"> <img src = "https://user-images.githubusercontent.com/87639011/134787680-7ea21c6b-9718-447f-9547-a3d181694fa1.jpeg" width = "120" height = "120" /> </p>
 
+<p> The prevailing situation of Covid-19 restrictions we cannot go to the advertising agencies as we want Because of that we are going to introduce a new mobile application for the consumers It called as “ LesiAds “ - Mini Project of Mobile Application </p>
+
 <video width="320" height="240" controls>
 <source src="https://user-images.githubusercontent.com/87639011/134788678-925d6b68-abb3-402e-b5fa-7d94b53943fb.mp4" type="video/mp4">
 <source src="movie.ogg" type="video/ogg">
@@ -27,15 +29,18 @@ Your browser does not support the video tag8.
 </tr> 
 </table>
 
+
 <h3> Installation </h3>
-  1. Clone the repository - 
+  1. Clone the repository - "https://github.com/MalishaFdo/LesiAds.git"
   2. Open application in Android studio
+  
+  
 
 <h3> Contributors </h3>
-  <p> T20074654 – Malisha Fernando </p>
-  <p> IT20115548 - Chalanka Jinadasa </p>
-  <p> IT20120016 – Bihini Amarasinghe </p>
-  <p> IT20174330 – Vibhu Jayawardane </p>
+  <p> T20074654 – Malisha Fernando  [ Admin Management ] </p>
+  <p> IT20115548 - Chalanka Jinadasa  [Advertisement Management] </p>
+  <p> IT20120016 – Bihini Amarasinghe  [ Payment Management ] </p>
+  <p> IT20174330 – Vibhu Jayawardane [Customer Management] </p>
   
  
 
