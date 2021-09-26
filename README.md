@@ -33,7 +33,7 @@ https://user-images.githubusercontent.com/87462220/134796351-6319ec46-1b13-4427-
   
 
 <h3> Contributors </h3>
-  <p> IT20074654 – Malisha Fernando  [ Admin Management ] </p>
+  <p> IT20074654 – @Malisha Fernando  [ Admin Management ] </p>
   <p> IT20115548 - Chalanka Jinadasa  [Advertisement Management] </p>
   <p> IT20120016 – Bihini Amarasinghe  [ Payment Management ] </p>
   <p> IT20174330 – Vibhu Jayawardane [Customer Management] </p>
