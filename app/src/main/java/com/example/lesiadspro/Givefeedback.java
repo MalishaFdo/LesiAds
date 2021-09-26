@@ -57,7 +57,6 @@ public class Givefeedback extends AppCompatActivity {
 
         goback = findViewById(R.id.mBackButton);
 
-
         submit = findViewById(R.id.mSubmitBtn);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,10 +64,8 @@ public class Givefeedback extends AppCompatActivity {
                 String name = mName.getText().toString().trim();
                 String email = mEmail.getText().toString().trim();
                 String feedback = mFeedback.getText().toString().trim();
-
                 uploadData(name,email,feedback);
             }
-
             private void uploadData(String name, String email, String feedback) {
                 pd.setTitle("Adding data to firestore");
                 pd.show();

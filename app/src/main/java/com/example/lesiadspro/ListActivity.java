@@ -76,13 +76,10 @@ public class ListActivity extends AppCompatActivity {
 
         pd.setTitle("Loading Data..");
         pd.show();
-
         db.collection("Feedback").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
-
                 pd.dismiss();
-
                 for (DocumentSnapshot doc : task.getResult()){
                     Model model = new Model(doc.getString("id"));
                     doc.getString("name");
@@ -90,11 +87,8 @@ public class ListActivity extends AppCompatActivity {
                     doc.getString("feedback");
                     modelList.add(model);
                 }
-
                 adapter = new CustomerAdapter(ListActivity.this,modelList);
-
                 mRecyclerview.setAdapter(adapter);
-
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

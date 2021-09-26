@@ -44,9 +44,7 @@ public class CustomerAdapter extends RecyclerView.Adapter<ViewHolder> {
                 String email = modelList.get(position).getEmail();
                 String feedback = modelList.get(position).getFeedback();
                 Toast.makeText(listActivity, name+"\n"+email+"\n"+feedback, Toast.LENGTH_SHORT).show();
-
             }
-
             @Override
             public void onItemLongClick(View view, int position) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(listActivity);
