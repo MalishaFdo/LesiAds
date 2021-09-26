@@ -37,6 +37,8 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
+        db = FirebaseFirestore.getInstance();
+
 
 
         mRecyclerview = findViewById(R.id.recycler_view);
