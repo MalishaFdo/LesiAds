@@ -37,6 +37,8 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
+
+
         mRecyclerview = findViewById(R.id.recycler_view);
 
         mRecyclerview.setHasFixedSize(true);
@@ -67,6 +69,10 @@ public class ListActivity extends AppCompatActivity {
                     doc.getString("feedback");
                     modelList.add(model);
                 }
+
+                adapter = new CustomerAdapter(ListActivity.this,modelList);
+
+                mRecyclerview.setAdapter(adapter);
 
             }
         }).addOnFailureListener(new OnFailureListener() {

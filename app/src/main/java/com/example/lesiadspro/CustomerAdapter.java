@@ -18,10 +18,10 @@ public class CustomerAdapter extends RecyclerView.Adapter<ViewHolder> {
     List<Model> modelList;
     Context context;
 
-    public CustomerAdapter(ListActivity listActivity, List<Model> modelList, Context context) {
+    public CustomerAdapter(ListActivity listActivity, List<Model> modelList) {
         this.listActivity = listActivity;
         this.modelList = modelList;
-        this.context = context;
+
     }
 
     @NonNull
