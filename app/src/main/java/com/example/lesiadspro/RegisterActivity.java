@@ -112,7 +112,6 @@ public class RegisterActivity extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
 
                 //register user in firebase firestore
-
                 fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -139,11 +138,9 @@ public class RegisterActivity extends AppCompatActivity {
                                 }
                             });
                             startActivity(new Intent(getApplicationContext(),profile.class));
-
                         }else {
                             Toast.makeText(RegisterActivity.this,"Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
-
                         }
                     }
                 });
@@ -157,8 +154,7 @@ public class RegisterActivity extends AppCompatActivity {
         addphoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent10 = new Intent(RegisterActivity.this,AddPhoto.class);
-                startActivity(intent10);
+
             }
         });
 
