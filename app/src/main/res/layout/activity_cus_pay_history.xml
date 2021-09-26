@@ -46,7 +46,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Pay_CusDelButtn1"
+        android:id="@+id/Pay_CusDelButtn100"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="@color/larkblue"
+        android:onClick="next4"
+        android:text="EDIT"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pay_CusDelButtn2"
         android:layout_width="114dp"
         android:layout_height="48dp"
         android:layout_marginStart="190dp"
@@ -86,6 +104,24 @@
         android:backgroundTint="@color/larkblue"
         android:onClick="next4"
         android:text="@string/Pay_CusDelButtn"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pay_CusDelButtn22"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="408dp"
+        android:backgroundTint="@color/larkblue"
+        android:onClick="next4"
+        android:text="EDIT"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -157,7 +193,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text201"
+        android:id="@+id/text400"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="97dp"
@@ -269,4 +305,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

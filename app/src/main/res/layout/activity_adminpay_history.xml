@@ -6,21 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".AdminpayHistory">
 
-    <Button
-        android:id="@+id/pay_AdminDelButtn2"
-        android:layout_width="91dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="300dp"
-        android:backgroundTint="@color/larkblue"
-        android:onClick="next"
-        android:text="EDIT"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text14" />
-
     <ImageView
         android:id="@+id/background10"
         android:layout_width="0dp"
@@ -148,28 +133,13 @@
         android:layout_width="245dp"
         android:layout_height="244dp"
         android:layout_marginStart="77dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="214dp"
         android:background="@color/lightgrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Pay_AdminDelButtn"
-        android:layout_width="91dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/larkblue"
-        android:onClick="next"
-        android:text="EDIT"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text14" />
 
     <TextView
         android:id="@+id/text14"
@@ -301,38 +271,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/pay_AdminDelButtn"
-        android:layout_width="117dp"
+        android:id="@+id/pay_AdminDelButtn2"
+        android:layout_width="157dp"
         android:layout_height="51dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="368dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="132dp"
         android:backgroundTint="@color/larkblue"
         android:onClick="next"
         android:text="DELETE"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.827"
-        app:layout_constraintStart_toEndOf="@+id/Pay_AdminDelButtn" />
+        app:layout_constraintTop_toBottomOf="@+id/text21" />
 
     <Button
-        android:id="@+id/pay_AdminDelButtn3"
-        android:layout_width="116dp"
+        android:id="@+id/pay_AdminDelButtn111"
+        android:layout_width="157dp"
         android:layout_height="51dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/larkblue"
         android:onClick="next"
         android:text="DELETE"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/pay_AdminDelButtn2"
-        app:layout_constraintTop_toBottomOf="@+id/text21" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text14" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
