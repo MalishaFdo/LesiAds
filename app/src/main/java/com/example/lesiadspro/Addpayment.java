@@ -55,15 +55,15 @@ public class Addpayment extends AppCompatActivity {
                 SaveData();
             }
         });
-   }
+    }
 
-   //Calculate the total amount
+    //Calculate the total amount
     public int paymentAmount(int count) {
         int amount = 0;
-        if(count <= 15)
+        if (count <= 15)
             amount = 1500;
         else {
-            amount = 1500 + (count-15) * 10;
+            amount = 1500 + (count - 15) * 10;
         }
         return amount;
     }
@@ -105,9 +105,9 @@ public class Addpayment extends AppCompatActivity {
                 payObj.setCvv(Integer.parseInt(cvv.getText().toString().trim()));
                 payObj.setExpireDate(expireDate.getText().toString().trim());
 
-                Log.d("xyz",payObj.getCrdNumber().toString());
-                Log.d("xyza",payObj.getCvv().toString());
-                Log.d("xyzab",payObj.getExpireDate().toString());
+                Log.d("xyz", payObj.getCrdNumber().toString());
+                Log.d("xyza", payObj.getCvv().toString());
+                Log.d("xyzab", payObj.getExpireDate().toString());
 
                 //Insert in to the database
                 dbRef.push();
@@ -117,12 +117,11 @@ public class Addpayment extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Data saved successfully !!!", Toast.LENGTH_SHORT).show();
                 ClearControls();
 
-                Intent intent = new Intent(Addpayment.this,person_payment.class);
+                Intent intent = new Intent(Addpayment.this, person_payment.class);
                 startActivity(intent);
 
             }
-        }
-        catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             Toast.makeText(getApplicationContext(), "Invalid Card Number !!!", Toast.LENGTH_SHORT).show();
         }
     }
@@ -151,4 +150,22 @@ public class Addpayment extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Invalid Card Number !!!", Toast.LENGTH_SHORT).show();
         }
     }
-}
+
+    //DatabaseReference dataSnapshot;
+
+    //Delete data in database
+    //public void deleteData() {
+        //String uid = FirebaseAuth.getInstance().getUid();
+        //dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
+
+        //if (dataSnapshot.hasChild("Payment")) {
+            //dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
+            //dbRef.removeValue();
+            //clearControls();
+
+            //Toast.makeText(getApplicationContext(), "Data deleted successfully !!!", Toast.LENGTH_SHORT).show();
+        //} else
+            //Toast.makeText(getApplicationContext(), "No source deleted !!!", Toast.LENGTH_SHORT).show();
+    }
+    //};
+//}
