@@ -1,6 +1,7 @@
 package com.example.lesiadspro;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,6 +41,9 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("The Feedback list");
 
         db = FirebaseFirestore.getInstance();
 

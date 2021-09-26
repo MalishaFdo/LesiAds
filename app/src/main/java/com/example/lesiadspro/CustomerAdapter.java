@@ -1,11 +1,13 @@
 package com.example.lesiadspro;
 
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -46,6 +48,15 @@ public class CustomerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
             @Override
             public void onItemLongClick(View view, int position) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(listActivity);
+
+                String[] options = {"Update", "Delete"};
+                builder.setItems(options, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                }).create().show();
 
             }
         });
