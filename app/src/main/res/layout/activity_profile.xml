@@ -106,6 +106,7 @@
         android:background="@drawable/button"
         android:backgroundTint="@color/darkblue"
         android:fontFamily="@font/ebrimabd"
+        android:onClick="addNews"
         android:text="@string/postad"
         android:textAllCaps="false"
         android:textColor="@color/white"

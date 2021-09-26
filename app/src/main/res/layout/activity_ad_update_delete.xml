@@ -66,28 +66,15 @@
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <TextView
-        android:id="@+id/textView17"
-        android:layout_width="297dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="156dp"
-        android:fontFamily="@font/ebrima"
-        android:text="@string/language"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include" />
-
-    <TextView
         android:id="@+id/textView18"
         android:layout_width="244dp"
         android:layout_height="24dp"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="240dp"
         android:fontFamily="@font/ebrima"
         android:text="@string/category"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
@@ -95,39 +82,39 @@
         android:id="@+id/textView20"
         android:layout_width="271dp"
         android:layout_height="24dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="156dp"
         android:fontFamily="@font/ebrima"
         android:text="@string/date_to_be_published"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintHorizontal_bias="0.371"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="253dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="348dp"
+        android:layout_width="230dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="316dp"
         android:fontFamily="@font/ebrima"
         android:text="@string/advertisement"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintHorizontal_bias="0.292"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="240dp"
-        android:layout_height="23dp"
+        android:layout_width="87dp"
+        android:layout_height="19dp"
         android:layout_marginTop="488dp"
         android:fontFamily="@font/ebrima"
-        android:text="@string/word_count_12"
+        android:text="Word Count :"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
@@ -157,13 +144,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/c_e_newspaper"
         android:layout_width="305dp"
         android:layout_height="41dp"
         android:layout_marginTop="164dp"
         android:ems="10"
+        android:hint="Lankadeepa"
         android:inputType="textPersonName"
-        android:text="@string/lankadeepa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
@@ -171,27 +158,13 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/c_e_date"
         android:layout_width="305dp"
         android:layout_height="45dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="244dp"
         android:ems="10"
+        android:hint="2021/09/22"
         android:inputType="textPersonName"
-        android:text="@string/sinhala"
-        app:layout_constraintEnd_toEndOf="@+id/include"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName9"
-        android:layout_width="305dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="300dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/_2021_08_21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="@+id/include"
@@ -199,32 +172,42 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/c_e_category"
         android:layout_width="305dp"
         android:layout_height="45dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="320dp"
         android:ems="10"
+        android:hint="Land for sale"
         android:inputType="textPersonName"
-        android:text="@string/land_for_sale"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="488dp"
+        android:hint="43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
     <EditText
-        android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="306dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="428dp"
+        android:id="@+id/c_e_body"
+        android:layout_width="305dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="340dp"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="Land for sale in moratuwa \nTel:-0726423548"
         android:inputType="textMultiLine"
-        android:text="land for sale in kottawa tel 07134562769"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/include"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
