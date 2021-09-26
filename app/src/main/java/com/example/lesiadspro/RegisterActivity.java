@@ -104,7 +104,7 @@ public class RegisterActivity extends AppCompatActivity {
                     mPassword.setError("Password must be >= 6 characters");
                     return;
                 }
-                if (phone.length()>10 || phone.length()<10){
+                if (phone.length() != 10){
                     mPhone.setError("Enter a valid phone number");
                     return;
                 }
