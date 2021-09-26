@@ -93,7 +93,6 @@ public class EditProfile extends AppCompatActivity {
                     Toast.makeText(EditProfile.this, "One or many fields are empty", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
                 String email = profileemail.getText().toString();
                 user.updateEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -139,7 +138,6 @@ public class EditProfile extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         deleteuser();
                     }
-
                     private void deleteuser() {
                         fStore.collection("users").document(user.getUid()).delete()
                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
