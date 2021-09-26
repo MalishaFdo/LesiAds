@@ -249,4 +249,6 @@
     <string name="Pay_CusDelButtn1">delete</string>
     <string name="pay_ExpDate">DD/MM/YY</string>
     <string name="pay_name">Name</string>
+    <string name="btnedit_1">Edit</string>
+    <string name="btnedit_2">Edit</string>
 </resources>

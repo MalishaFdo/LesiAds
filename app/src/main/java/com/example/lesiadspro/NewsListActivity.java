@@ -34,7 +34,7 @@ import java.util.UUID;
 
 public class NewsListActivity extends AppCompatActivity {
     EditText inputName, inputDate, inputArticles;
-    Button btnSubmit, btnUpload;
+    Button btnSubmit;
     AddNews adNews;
     DatabaseReference dbRef;
 

@@ -6,9 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
+import com.google.firebase.database.DatabaseReference;
 
 public class person extends AppCompatActivity {
-
+    DatabaseReference dbRef;
     Button idbtnEdit, idbtnDelete;
 
 
@@ -16,6 +19,8 @@ public class person extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_person);
+
+
 
         idbtnEdit = findViewById(R.id.idbtnEdit);
         idbtnDelete = findViewById(R.id.idbtnDelete);
@@ -31,4 +36,10 @@ public class person extends AppCompatActivity {
         Intent intent = new Intent(person.this, AdminDashboardActivity.class);
         startActivity(intent);
     }
+
+    /*public void DeleteData() {
+        DatabseReference delRef
+    }
+   */
 }
+
