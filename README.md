@@ -67,15 +67,15 @@ https://user-images.githubusercontent.com/87462220/134796351-6319ec46-1b13-4427-
 This section shows the list of major technologies that we have used to  built our project . 
 * Language : [Java 8](https://www.java.com/en/)
 
-<p align="center"><a href="https://www.java.com/en/" target="_blank"><img src="readmeImages/java.png" width="150"></a></p>
+<p align="center"><a href="https://www.java.com/en/" target="_blank"></a></p>
 
 * Development Environment : [Android Studio 4.1.3](https://developer.android.com/studio?gclsrc=ds&gclsrc=ds&gclid=CMfRvbCWqPACFZSzjgodgn8HSg)
 
-<p align="center"><a href="https://developer.android.com/studio?gclsrc=ds&gclsrc=ds&gclid=CMfRvbCWqPACFZSzjgodgn8HSg" target="_blank"><img src="readmeImages/androidStudio.png" width="100"></a></p>
+<p align="center"><a href="https://developer.android.com/studio?gclsrc=ds&gclsrc=ds&gclid=CMfRvbCWqPACFZSzjgodgn8HSg" target="_blank"></a></p>
 
 * Database : [Firebase](https://firebase.google.com/?gclsrc=ds&gclsrc=ds&gclid=COjAs9qXqPACFZKtjgodGfUPrg)
 
-<p align="center"><a href="https://firebase.google.com/?gclsrc=ds&gclsrc=ds&gclid=COjAs9qXqPACFZKtjgodGfUPrg" target="_blank"><img src="readmeImages/firebase.png" width="200"></a></p>
+<p align="center"><a href="https://firebase.google.com/?gclsrc=ds&gclsrc=ds&gclid=COjAs9qXqPACFZKtjgodGfUPrg" target="_blank"></a></p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
