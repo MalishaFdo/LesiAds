@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/87462220/134796351-6319ec46-1b13-4427-
 </tr>
 <tr>
 <td> Android Studio Arctic Fox // 2020.3.1 </td>
-<td> <img src = "https://user-images.githubusercontent.com/87639011/134788376-28187006-0aa8-41d4-8b5f-5e6a8647a10e.jpg" width = "80" height = "60"/></td>
+<td> <img src = "https://user-images.githubusercontent.com/87639011/134788376-28187006-0aa8-41d4-8b5f-5e6a8647a10e.jpg" width = "80" height = "50"/></td>
 </tr>
 <tr>
 <td> Firebase </td>
