@@ -6,6 +6,8 @@
 <source src="movie.ogg" type="video/ogg">
 Your browser does not support the video tag8.
 </video>
+
+<h3> Acknowlegement</h3>
 <table>
 <tr>
 <th>Reference</th>
@@ -24,5 +26,17 @@ Your browser does not support the video tag8.
 <td> <img src = "https://user-images.githubusercontent.com/87639011/134788327-767240ee-ec86-46ef-8fe6-e84289f56f87.png" width = "50" height = "50"/></td>
 </tr> 
 </table>
+
+<h3> Installation </h3>
+  1. Clone the repository - 
+  2. Open application in Android studio
+
+<h3> Contributors </h3>
+  <p> T20074654 – Malisha Fernando </p>
+  <p> IT20115548 - Chalanka Jinadasa </p>
+  <p> IT20120016 – Bihini Amarasinghe </p>
+  <p> IT20174330 – Vibhu Jayawardane </p>
+  
+ 
 
 
