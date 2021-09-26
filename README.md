@@ -31,7 +31,7 @@ Your browser does not support the video tag8.
 
 
 <h3> Installation </h3>
-  1. Clone the repository - "https://github.com/MalishaFdo/LesiAds.git"
+  1. Clone the repository - "https://github.com/MalishaFdo/LesiAds.git" <br>
   2. Open application in Android studio
   
   
