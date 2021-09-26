@@ -38,11 +38,8 @@ public class RegisterActivity extends AppCompatActivity {
     FirebaseDatabase rootnode;
     DatabaseReference reference;
     String userID;
-
     TextView signin;
-
     Button signup;
-
     TextView addphoto;
 
     @Override
@@ -57,7 +54,6 @@ public class RegisterActivity extends AppCompatActivity {
         mPassword = findViewById(R.id.password);
         mPhone = findViewById(R.id.phone);
         fstore = FirebaseFirestore.getInstance();
-
         fAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
@@ -84,7 +80,6 @@ public class RegisterActivity extends AppCompatActivity {
                 reference = rootnode.getReference("users");
 
                 //get values
-
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
                 String firstname = mFirstName.getText().toString();
