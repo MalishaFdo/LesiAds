@@ -102,8 +102,9 @@ public class Givefeedback extends AppCompatActivity {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent9 = new Intent(Givefeedback.this,Editfeedback.class);
-                startActivity(intent9);
+                startActivity(new Intent(Givefeedback.this,ListActivity.class));
+                finish();
+
             }
         });
 
