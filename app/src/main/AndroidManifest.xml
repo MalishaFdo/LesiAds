@@ -16,6 +16,9 @@ package="com.example.lesiadspro">
     <activity
         android:name=".person"
         android:exported="true" />
+    <activity
+        android:name=".person_payment"
+        android:exported="true" />
     <activity android:name=".sidebar" />
     <activity
         android:name=".AddPhoto"

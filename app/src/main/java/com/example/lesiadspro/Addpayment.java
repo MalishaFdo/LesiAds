@@ -57,6 +57,17 @@ public class Addpayment extends AppCompatActivity {
         });
    }
 
+   //Calculate the total amount
+    public int paymentAmount(int count) {
+        int amount = 0;
+        if(count <= 15)
+            amount = 1500;
+        else {
+            amount = 1500 + (count-15) * 10;
+        }
+        return amount;
+    }
+
     public void ClearControls() {
         p_name.setText("");
         p_email.setText("");
