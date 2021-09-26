@@ -21,7 +21,6 @@ public class viewPaymentMain extends AppCompatActivity {
     PaymentAdapter adapter1; // Create Object of the Adapter class
     DatabaseReference databaseReference1; // Create object of the
 
-
     // Firebase Realtime Database
 
     @Override
@@ -29,12 +28,10 @@ public class viewPaymentMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_main);
 
-
-        //Log.d("abc",user.toString());
-        // Create a instance of the database and get
-        // its reference
         String uid = FirebaseAuth.getInstance().getUid();
         databaseReference1 = FirebaseDatabase.getInstance().getReference().child("Payment");
+
+        //Log.d("abc",user.toString());
         Log.d("abc",databaseReference1.toString());
 
         recyclerView = findViewById(R.id.recycler1);

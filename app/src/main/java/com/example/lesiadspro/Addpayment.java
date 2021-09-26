@@ -127,4 +127,28 @@ public class Addpayment extends AppCompatActivity {
         }
     }
 
+    //Update data in database
+    public void UpdateData() {
+        //String uid = FirebaseAuth.getInstance().getUid();
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
+
+        try {
+            payObj.setP_name(p_name.getText().toString().trim());
+            payObj.setP_email(p_email.getText().toString().trim());
+            payObj.setCrdName(crdName.getText().toString().trim());
+            payObj.setCrdNumber(Integer.parseInt(crdNumber.getText().toString().trim()));
+            payObj.setCvv(Integer.parseInt(cvv.getText().toString().trim()));
+            payObj.setExpireDate(expireDate.getText().toString().trim());
+
+            dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
+            //dbRef = dbRef.setValue();
+            ClearControls();
+
+            //Feedback to the user via toast
+            Toast.makeText(getApplicationContext(), "Data updated successfully !!!", Toast.LENGTH_SHORT).show();
+
+        } catch (NumberFormatException e) {
+            Toast.makeText(getApplicationContext(), "Invalid Card Number !!!", Toast.LENGTH_SHORT).show();
+        }
+    }
 }
