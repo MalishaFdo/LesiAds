@@ -60,10 +60,8 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            android:exported="true" />
+
+
         <activity
             android:name=".NotificationsAdmin"
             android:exported="true" />
@@ -85,15 +83,7 @@
         <activity
             android:name=".AdSubmission"
             android:exported="true" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+
 
         <activity android:name=".AdminpayHistory"
             android:exported="true"/>
@@ -107,22 +97,9 @@
             android:exported="true"/>
         <activity android:name=".Addpayment"
             android:exported="true"/>
-        <activity android:name=".AddPhoto"
-            android:exported="true"/>
-        <activity android:name=".Editfeedback"
-            android:exported="true"/>
-        <activity android:name=".Givefeedback"
-            android:exported="true"/>
-        <activity android:name=".EditProfile"
-            android:exported="true"/>
-        <activity android:name=".profile"
-            android:exported="true"/>
-        <activity android:name=".sidebar"
-            android:exported="true"/>
-        <activity android:name=".RegisterActivity"
-            android:exported="true"/>
-        <activity android:name=".LoginActivity"
-            android:exported="true"/>
+
+
+
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

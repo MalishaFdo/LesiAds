@@ -89,7 +89,6 @@ public class profile extends AppCompatActivity {
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-
                 if (value.exists()){
                     firstname.setText(value.getString("fname"));
                     lastname.setText(value.getString("lname"));
@@ -99,7 +98,6 @@ public class profile extends AppCompatActivity {
                 }else{
                     Log.d("tag","onEvent: Document does not exist");
                 }
-
             }
         });
 
