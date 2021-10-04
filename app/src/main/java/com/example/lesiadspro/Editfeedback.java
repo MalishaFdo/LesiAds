@@ -24,6 +24,7 @@ public class Editfeedback extends AppCompatActivity {
     private Button mSaveBtn, mShowBtn;
 
     private FirebaseFirestore db;
+    private String uName, uEmail, uFeed, uId;
 
 
     @Override
@@ -40,6 +41,21 @@ public class Editfeedback extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null){
+            mSaveBtn.setText("Update");
+            uName = bundle.getString("uName");
+            uId = bundle.getString("uId");
+            uEmail = bundle.getString("uEmail");
+            uFeed = bundle.getString("uFeed");
+
+            mName.setText(uName);
+            mEmail.setText(uEmail);
+            mFeed.setText(uFeed);
+        }else{
+            mSaveBtn.setText("Save");
+        }
+
         mShowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,12 +69,41 @@ public class Editfeedback extends AppCompatActivity {
                 String name = mName.getText().toString();
                 String email = mEmail.getText().toString();
                 String feed = mFeed.getText().toString();
-                String id = UUID.randomUUID().toString();
 
-                savetoFireStore(id,name,email,feed);
+
+                Bundle bundle1 = getIntent().getExtras();
+                if (bundle1!= null){
+                        String id = uId;
+                        updateToFireStore(id, name, email, feed);
+                }else {
+                    String id = UUID.randomUUID().toString();
+                    savetoFireStore(id,name,email,feed);
+                }
+
+
             }
         });
 
+    }
+
+    private void updateToFireStore(String id, String name, String email, String feed) {
+        db.collection("Comments").document(id).update("name",name,"email",email,"feed",feed)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()){
+                            Toast.makeText(Editfeedback.this, "Data Updated", Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText(Editfeedback.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(Editfeedback.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void savetoFireStore(String id, String name, String email, String feed) {

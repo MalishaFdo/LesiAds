@@ -2,6 +2,7 @@ package com.example.lesiadspro;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -39,6 +40,8 @@ public class ShowFeedback extends AppCompatActivity {
         adapter = new MyAdapter(this, list);
         recyclerView.setAdapter(adapter);
 
+        ItemTouchHelper touchHelper = new ItemTouchHelper(new TouchHelper(adapter));
+        touchHelper.attachToRecyclerView(recyclerView);
         showData();
 
     }

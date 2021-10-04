@@ -1,5 +1,7 @@
 package com.example.lesiadspro;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +22,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         this.mlist = mlist;
     }
 
+    public void updateData(int position){
+        NewModel item = mlist.get(position);
+        Bundle bundle = new Bundle();
+        bundle.putString("uId", item.getId());
+        bundle.putString("uName", item.getName());
+        bundle.putString("uEmail", item.getEmail());
+        bundle.putString("uFeed", item.getFeed());
 
+        Intent intent = new Intent(activity,Editfeedback.class);
+        intent.putExtras(bundle);
+        activity.startActivity(intent);
+    }
 
     @NonNull
     @Override
