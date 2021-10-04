@@ -1,6 +1,8 @@
 package com.example.lesiadspro;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -137,6 +139,40 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
 
             }
         });
+
+        //-----------------------DELETE---------------------------------------
+
+        holder.idbtnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(holder.newsName.getContext());
+                builder.setTitle("Are You Sure ?");
+                builder.setMessage("Deleted data can't be Undo.");
+
+                builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        String uid = FirebaseAuth.getInstance().getUid();
+                        FirebaseDatabase.getInstance().getReference().child("News")
+                                .child(uid).child(getRef(position).getKey()).removeValue();
+
+
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(holder.newsName.getContext(), "Cancelled", Toast.LENGTH_SHORT).show();
+
+
+                    }
+                });
+                builder.show();
+
+
+
+            }
+        });
     }
 
 
@@ -156,7 +192,7 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
     // view (here "person.xml")
     class newsViewholder extends RecyclerView.ViewHolder {
         TextView newsName, date, articleName;
-        Button idbtnEdit;
+        Button idbtnEdit, idbtnDelete;
 
         public newsViewholder(@NonNull View itemView) {
             super(itemView);
@@ -166,6 +202,7 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
             articleName = itemView.findViewById(R.id.inputArticles_1);
 
             idbtnEdit = (Button) itemView.findViewById(R.id.idbtnEdit);
+            idbtnDelete = (Button) itemView.findViewById(R.id.idbtnDelete);
         }
     }
 }
