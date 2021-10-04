@@ -22,6 +22,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ListActivity extends AppCompatActivity {
 
@@ -42,8 +43,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("The Feedback list");
+
 
         db = FirebaseFirestore.getInstance();
 
@@ -81,10 +81,8 @@ public class ListActivity extends AppCompatActivity {
 
                 pd.dismiss();
                 for (DocumentSnapshot doc : task.getResult()){
-                    Model model = new Model(doc.getString("id"));
-                    doc.getString("name");
-                    doc.getString("email");
-                    doc.getString("feedback");
+                    Model model = new Model(doc.getString("id"),doc.getString("name"),
+                            doc.getString("email"),doc.getString("feedback"));
                     modelList.add(model);
                 }
                 adapter = new CustomerAdapter(ListActivity.this,modelList);

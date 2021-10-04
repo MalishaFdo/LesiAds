@@ -13,13 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import io.grpc.Context;
 
 public class CustomerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     ListActivity listActivity;
     List<Model> modelList;
-    Context context;
+
 
     public CustomerAdapter(ListActivity listActivity, List<Model> modelList) {
         this.listActivity = listActivity;

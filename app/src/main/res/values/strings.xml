@@ -143,7 +143,6 @@
     <string name="customer">Customer</string>
 
 
-
     //View Newspaper Details
     <string name="observer">Sunday Observer</string>
 
@@ -164,7 +163,6 @@
     <string name="but6">Daily Mirror</string>
     <string name="idbtnEdit">Edit</string>
     <string name="idbtnDelete">Delete</string>
-
 
 
     //Payment Page

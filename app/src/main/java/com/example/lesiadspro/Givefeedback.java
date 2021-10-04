@@ -44,9 +44,7 @@ public class Givefeedback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_givefeedback);
 
-        ActionBar actionBar = getSupportActionBar();
 
-        actionBar.setTitle("Add Feedback");
 
         mName = findViewById(R.id.editTextTextPersonName5);
         mEmail = findViewById(R.id.editTextTextEmailAddress2);
@@ -62,7 +60,7 @@ public class Givefeedback extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
-            actionBar.setTitle("Update");
+
             submit.setText("Update");
             pId = bundle.getString("pId");
             pName = bundle.getString("pName");
@@ -75,7 +73,7 @@ public class Givefeedback extends AppCompatActivity {
 
 
         }else {
-            actionBar.setTitle("Add Data");
+
             submit.setText("Save");
         }
 
