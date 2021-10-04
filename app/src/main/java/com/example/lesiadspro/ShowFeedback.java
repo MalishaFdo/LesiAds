@@ -46,7 +46,7 @@ public class ShowFeedback extends AppCompatActivity {
 
     }
 
-    private void showData() {
+    public void showData() {
 
         db.collection("Comments").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

@@ -6,9 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.List;
 
@@ -16,6 +22,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private ShowFeedback activity;
     private List<NewModel> mlist;
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     public MyAdapter(ShowFeedback activity, List<NewModel> mlist){
         this.activity = activity;
@@ -33,6 +40,28 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         Intent intent = new Intent(activity,Editfeedback.class);
         intent.putExtras(bundle);
         activity.startActivity(intent);
+    }
+
+    public void deleteData(int position){
+        NewModel item = mlist.get(position);
+        db.collection("Comments").document(item.getId()).delete()
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()){
+                            notifyRemoved(position);
+                            Toast.makeText(activity, "Data deleted", Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(activity, "Error"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
+
+    private void notifyRemoved(int position){
+        mlist.remove(position);
+        notifyRemoved(position);
+        activity.showData();
     }
 
     @NonNull
