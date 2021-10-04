@@ -119,8 +119,7 @@ public class Addpayment extends AppCompatActivity {
                 Intent intent = new Intent(Addpayment.this, viewPaymentMain.class);
                 startActivity(intent);
 //o
-                //pp
-                //bb
+
             }
         } catch (NumberFormatException e) {
             Toast.makeText(getApplicationContext(), "Invalid Card Number !!!", Toast.LENGTH_SHORT).show();
