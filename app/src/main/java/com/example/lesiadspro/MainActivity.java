@@ -1,5 +1,4 @@
 package com.example.lesiadspro;
-//hi
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -19,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         loginButton = findViewById(R.id.mSignInBtn);
+        signup1 = (TextView)findViewById(R.id.mSignUptxt);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        signup1 = (TextView)findViewById(R.id.mSignUptxt);
+
         signup1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

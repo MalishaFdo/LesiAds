@@ -98,7 +98,7 @@
     //Edit Newspaper List
     <string name="edit_newspaper">Edit Newspaper</string>
     <string name="sunday_observer">Sunday Observer</string>
-    <string name="date">15 / 8 / 2021</string>
+
     <string name="marriage_proposals">Marriage Proposals</string>
     <string name="observer_jobs">Observer Jobs</string>
     <string name="youth_observer">Youth Observer</string>
@@ -109,28 +109,26 @@
 
     //Confirmation Newspaper List
     <string name="confirmation">Confirmation</string>
-    <string name="name1">Name : Sunday Observer</string>
+
     <string name="date0">Date : 15th August 2021 </string>
     <string name="article">Article Names : Marriage Proposals</string>
     <string name="observe_job">Observe Job</string>
     <string name="youth_observer1">Youth Observer</string>
     <string name="junior_observer2">Junior Observer</string>
     <string name="logo">Logo</string>
-    <string name="edit">Edit</string>
+
     <string name="add">Add</string>
 
 
     //Newspaper History
     <string name="history">Newspaper History</string>
     <string name="sunday_observe1">Sunday Observe</string>
-    <string name="date1">15/08/2021</string>
-    <string name="time1">9.00 AM</string>
+
     <string name="junior_observer1">Junior Observer</string>
     <string name="observer_job">Observer Job</string>
     <string name="count1">Monthly Ad Count : 300</string>
     <string name="sunday_observe">Sunday Observe</string>
-    <string name="date2">08/08/2021</string>
-    <string name="time2">13.30 PM</string>
+
     <string name="marriage_proposal">Marriage Proposal</string>
     <string name="youth_observer2">Youth Observer</string>
     <string name="delete_">delete</string>
@@ -143,13 +141,12 @@
     <string name="admin_">Admin</string>
     <string name="registrations">Registrations</string>
     <string name="customer">Customer</string>
-    <string name="payment">Payment</string>
+
 
 
     //View Newspaper Details
     <string name="observer">Sunday Observer</string>
-    <string name="date3">15th Sunday, 2021</string>
-    <string name="text">Article Zones</string>
+
     <string name="marriage_proposals1">Marriage Proposals</string>
     <string name="observer_jobs1">Observer Jobs</string>
     <string name="youth_observer3">Youth Observer</string>

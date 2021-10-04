@@ -2,12 +2,10 @@ package com.example.lesiadspro;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBarDrawerToggle;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
+
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -51,7 +49,7 @@ public class profile extends AppCompatActivity {
 
     Button editprofile, changeProfileImage;
     Button feedback;
-    Button viewnews;
+
     Button changepassword;
 
    //Vibu kaawa
@@ -154,10 +152,6 @@ public class profile extends AppCompatActivity {
         });
 
 
-
-
-
-
         editprofile = findViewById(R.id.mEditProfileBtn);
         editprofile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -172,7 +166,7 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        feedback = findViewById(R.id.mGiveFeedbackBtn);
+        feedback = (Button)findViewById(R.id.mGiveFeedbackBtn);
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -181,14 +175,6 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        viewnews = findViewById(R.id.mViewNewsBtn);
-        viewnews.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent14 = new Intent(profile.this,sidebar.class);
-                startActivity(intent14);
-            }
-        });
     }
 
     @Override

@@ -18,21 +18,7 @@
             android:name=".person"
             android:exported="true" />
         <activity android:name=".sidebar" />
-        <activity
-            android:name=".AddPhoto"
-            android:exported="true" />
-        <activity
-            android:name=".Editfeedback"
-            android:exported="true" />
-        <activity
-            android:name=".Givefeedback"
-            android:exported="true" />
-        <activity
-            android:name=".EditProfile"
-            android:exported="true" />
-        <activity
-            android:name=".profile"
-            android:exported="true" />
+
         <activity
             android:name=".NewspaperPanelActivity"
             android:exported="true" />
@@ -54,12 +40,7 @@
         <activity
             android:name=".NewsListActivity"
             android:exported="true" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
+
 
 
         <activity
@@ -98,6 +79,30 @@
         <activity android:name=".Addpayment"
             android:exported="true"/>
 
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddPhoto"
+            android:exported="true" />
+        <activity
+            android:name=".Editfeedback"
+            android:exported="true" />
+        <activity
+            android:name=".Givefeedback"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".profile"
+            android:exported="true" />
+        <activity android:name=".ListActivity"
+            android:exported="true"/>
 
 
         <activity android:name=".MainActivity"
