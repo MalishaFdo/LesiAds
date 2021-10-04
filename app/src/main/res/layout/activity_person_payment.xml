@@ -13,8 +13,22 @@
     tools:context=".person_payment">
 
   <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/back"
       android:layout_width="match_parent"
-      android:layout_height="match_parent">
+      android:layout_height="347dp"
+      android:background="@color/browser_actions_title_color">
+
+    <Button
+        android:id="@+id/personPayDel2"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="@string/personPayDel2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/larkblue" />
 
     <TextView
         android:id="@+id/payText1"
@@ -109,7 +123,7 @@
         android:layout_height="23dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:text="Pay Date :"
+        android:text="Expire Date :"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/payText5" />
@@ -152,26 +166,29 @@
         app:layout_constraintTop_toBottomOf="@+id/inputArticles_2" />
 
     <Button
-        android:id="@+id/personPayDelete"
-        android:layout_width="123dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="92dp"
-        android:onClick="next1"
-        android:text="@string/personPayDelete"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputArticles_3" />
-
-    <Button
         android:id="@+id/personPayEdit"
-        android:layout_width="109dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/larkblue"
         android:onClick="next"
         android:text="@string/personPayEdit"
-        app:layout_constraintEnd_toStartOf="@+id/personPayDelete"
-        app:layout_constraintTop_toBottomOf="@+id/inputArticles_3" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputArticles_3"
+        app:rippleColor="@color/larkblue" />
+
+    <ImageButton
+        android:id="@+id/rate"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="next4"
+        app:layout_constraintStart_toEndOf="@+id/personPayDel2"
+        app:layout_constraintTop_toBottomOf="@+id/inputArticles_3"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="SpeakableTextPresentCheck" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

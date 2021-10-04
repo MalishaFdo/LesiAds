@@ -14,7 +14,7 @@ public class Editpayment extends AppCompatActivity {
         setContentView(R.layout.activity_editpayment);
     }
     public void next(View view){
-        Intent intent = new Intent(this,payCheckout.class);
+        Intent intent = new Intent(this,person_payment.class);
         startActivity(intent);
     }
     

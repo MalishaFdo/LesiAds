@@ -17,25 +17,18 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserInfo;
 import com.google.firebase.database.FirebaseDatabase;
 
-// FirebaseRecyclerAdapter is a class provided by
-// FirebaseUI. it provides functions to bind, adapt and show
-// database contents in a Recycler View
-class PaymentAdapter extends FirebaseRecyclerAdapter<Addpayment, PaymentAdapter.payViewholder> {
+class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.payViewholder> {
 
     public PaymentAdapter(
-            @NonNull FirebaseRecyclerOptions<Addpayment> options) {
+            @NonNull FirebaseRecyclerOptions<Payment> options) {
         super(options);
     }
-
-    // Function to bind the view in Card view(here
-    // "person.xml") wth data in
-    // model class(here "person.class")
 
 
     @Override
     protected void
     onBindViewHolder(@NonNull payViewholder holder,
-                     int position, @NonNull Addpayment model) {
+                     int position, @NonNull Payment model) {
 
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -46,28 +39,16 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Addpayment, PaymentAdapter.
             Log.d("qwer","User found null");
 
             String uid = FirebaseAuth.getInstance().getUid();
-//            for (UserInfo profile : user.getProviderData()) {
-//                String providerId = profile.getProviderId();
             for (UserInfo profile : user.getProviderData()) {
                 String providerId = profile.getProviderId();
 
-                // Add firstname from model class (here
-                // "person_payment.class")to appropriate view in Card
-                // view (here "person_payment.xml")
-                holder.payText1.setText(model.payObj.getP_name());
 
-                // Add lastname from model class (here
-                // "person_payment.class")to appropriate view in Card
-                // view (here "person_payment.xml")
-                holder.payText2.setText(model.payObj.getP_email());
-
-                // Add age from model class (here
-                // "person_payment.class")to appropriate view in Card
-                // view (here "person_payment.xml")
-                holder.payText3.setText((model.payObj.getCrdName()));
-                holder.payText4.setText((model.payObj.getCrdNumber()));
-                holder.payText5.setText((model.payObj.getCvv()));
-                holder.payText6.setText((model.payObj.getExpireDate()));
+                holder.p_name.setText(model.getP_name());
+                holder.p_email.setText(model.getP_email());
+                holder.crdName.setText((model.getCrdName()));
+                holder.crdNumber.setText((model.getCrdNumber()));
+                holder.cvv.setText((model.getCvv()));
+                holder.expireDate.setText((model.getExpireDate()));
 
             }
         }else{
@@ -75,33 +56,28 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Addpayment, PaymentAdapter.
         }
     }
 
-    // Function to tell the class about the Card view (here
-    // "person.xml")in
-    // which the data will be shown
     @NonNull
     @Override
     public payViewholder
-    onCreateViewHolder(@NonNull ViewGroup Addpayment,
+    onCreateViewHolder(@NonNull ViewGroup Payment,
                        int viewType) {
-        View view = LayoutInflater.from(Addpayment.getContext()).inflate(R.layout.activity_person, Addpayment, false);
-        return new payViewholder(view);
+        View view = LayoutInflater.from(Payment.getContext()).inflate(R.layout.activity_person_payment, Payment, false);
+        return new PaymentAdapter.payViewholder(view);
     }
 
-    // Sub Class to create references of the views in Card
-    // view (here "person.xml")
-    static class payViewholder
+    class payViewholder
             extends RecyclerView.ViewHolder {
-        TextView payText1, payText2, payText3, payText4, payText5, payText6;
+        TextView p_name, p_email, crdName, crdNumber, cvv, expireDate;
 
         public payViewholder(@NonNull View payView) {
             super(payView);
 
-            payText1 = payView.findViewById(R.id.payText1);
-            payText2 = payView.findViewById(R.id.payText2);
-            payText3 = payView.findViewById(R.id.payText3);
-            payText4 = payView.findViewById(R.id.payText4);
-            payText5 = payView.findViewById(R.id.payText5);
-            payText6 = payView.findViewById(R.id.payText6);
+            p_name = payView.findViewById(R.id.inputName_1);
+            p_email = payView.findViewById(R.id.inputDate_1);
+            crdName = payView.findViewById(R.id.inputArticles_1);
+            crdNumber = payView.findViewById(R.id.inputArticles_);
+            cvv = payView.findViewById(R.id.inputArticles_2);
+            expireDate = payView.findViewById(R.id.inputArticles_3);
         }
     }
 }

@@ -14,7 +14,7 @@ public class RateApp extends AppCompatActivity {
         setContentView(R.layout.activity_rate_app);
     }
     public void next3(View view){
-        Intent intent = new Intent(this,cusPayHistory.class);
+        Intent intent = new Intent(this,profile.class);
         startActivity(intent);
     }
 }

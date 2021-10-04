@@ -3,21 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_ad_review.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_ad_submission.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_ad_update_delete.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_add_photo.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_addpayment.xml" value="0.25" />
-        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_adminpay_history.xml" value="0.20416666666666666" />
-        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_cus_pay_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_adminpay_history.xml" value="0.33" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_ads_admin.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_ads_customer.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_confirmation.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_cus_pay_history.xml" value="0.25" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_edit_news_list.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_edit_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_editfeedback.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_editpayment.xml" value="0.25" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_givefeedback.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_login.xml" value="0.14166666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_main_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_news_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_newspaper_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_newspaper_panel.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_notifications_admin.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_notifications_customer.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_pay_checkout.xml" value="0.25" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_person.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_person_payment.xml" value="0.33" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_rate_app.xml" value="0.25" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/activity_sidebar.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_view_payment_main.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/nav_header.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/profile.xml" value="0.20416666666666666" />
         <entry key="..\:/LesiAds/app/src/main/res/layout/toolbar.xml" value="0.20416666666666666" />

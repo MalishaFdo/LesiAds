@@ -4,8 +4,8 @@ public class Payment {
     private String p_name;
     private String p_email;
     private String crdName;
-    private Integer crdNumber;
-    private Integer cvv;
+    private String crdNumber;
+    private String cvv;
     private String expireDate;
 
     //Default constructor
@@ -36,19 +36,19 @@ public class Payment {
         this.crdName = crdName;
     }
 
-    public Integer getCrdNumber() {
+    public String getCrdNumber() {
         return crdNumber;
     }
 
-    public void setCrdNumber(Integer crdNumber) {
+    public void setCrdNumber(String crdNumber) {
         this.crdNumber = crdNumber;
     }
 
-    public Integer getCvv() {
+    public String getCvv() {
         return cvv;
     }
 
-    public void setCvv(Integer cvv) {
+    public void setCvv(String cvv) {
         this.cvv = cvv;
     }
 

@@ -80,8 +80,8 @@ public class Addpayment extends AppCompatActivity {
 
     //save data in database
     public void SaveData() {
-        //String uid = FirebaseAuth.getInstance().getUid();
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
+        String uid = FirebaseAuth.getInstance().getUid();
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Payment").child(uid);
 
         try {
             if (TextUtils.isEmpty(p_name.getText().toString()))
@@ -101,8 +101,8 @@ public class Addpayment extends AppCompatActivity {
                 payObj.setP_name(p_name.getText().toString().trim());
                 payObj.setP_email(p_email.getText().toString().trim());
                 payObj.setCrdName(crdName.getText().toString().trim());
-                payObj.setCrdNumber(Integer.parseInt(crdNumber.getText().toString().trim()));
-                payObj.setCvv(Integer.parseInt(cvv.getText().toString().trim()));
+                payObj.setCrdNumber(crdNumber.getText().toString().trim());
+                payObj.setCvv(cvv.getText().toString().trim());
                 payObj.setExpireDate(expireDate.getText().toString().trim());
 
                 Log.d("xyz", payObj.getCrdNumber().toString());
@@ -110,14 +110,13 @@ public class Addpayment extends AppCompatActivity {
                 Log.d("xyzab", payObj.getExpireDate().toString());
 
                 //Insert in to the database
-                dbRef.push();
-                dbRef.setValue(payObj);
+                dbRef.push().setValue(payObj);
 
                 //Feedback to the user via toast
                 Toast.makeText(getApplicationContext(), "Data saved successfully !!!", Toast.LENGTH_SHORT).show();
                 ClearControls();
 
-                Intent intent = new Intent(Addpayment.this, person_payment.class);
+                Intent intent = new Intent(Addpayment.this, viewPaymentMain.class);
                 startActivity(intent);
 
             }
@@ -126,46 +125,6 @@ public class Addpayment extends AppCompatActivity {
         }
     }
 
-    //Update data in database
-    public void UpdateData() {
-        //String uid = FirebaseAuth.getInstance().getUid();
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
 
-        try {
-            payObj.setP_name(p_name.getText().toString().trim());
-            payObj.setP_email(p_email.getText().toString().trim());
-            payObj.setCrdName(crdName.getText().toString().trim());
-            payObj.setCrdNumber(Integer.parseInt(crdNumber.getText().toString().trim()));
-            payObj.setCvv(Integer.parseInt(cvv.getText().toString().trim()));
-            payObj.setExpireDate(expireDate.getText().toString().trim());
+}
 
-            dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
-            //dbRef = dbRef.setValue();
-            ClearControls();
-
-            //Feedback to the user via toast
-            Toast.makeText(getApplicationContext(), "Data updated successfully !!!", Toast.LENGTH_SHORT).show();
-
-        } catch (NumberFormatException e) {
-            Toast.makeText(getApplicationContext(), "Invalid Card Number !!!", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    //DatabaseReference dataSnapshot;
-
-    //Delete data in database
-    //public void deleteData() {
-        //String uid = FirebaseAuth.getInstance().getUid();
-        //dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
-
-        //if (dataSnapshot.hasChild("Payment")) {
-            //dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
-            //dbRef.removeValue();
-            //clearControls();
-
-            //Toast.makeText(getApplicationContext(), "Data deleted successfully !!!", Toast.LENGTH_SHORT).show();
-        //} else
-            //Toast.makeText(getApplicationContext(), "No source deleted !!!", Toast.LENGTH_SHORT).show();
-    }
-    //};
-//}
