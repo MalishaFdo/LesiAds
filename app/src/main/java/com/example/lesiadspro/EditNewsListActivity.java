@@ -19,7 +19,7 @@ import com.google.firebase.storage.FirebaseStorage;
 
 public class EditNewsListActivity extends AppCompatActivity {
 
-    EditText inputName2, inputDate2, inputArticles2;
+   /* EditText inputName2, inputDate2, inputArticles2;
     Button butSubmit2;
     AddNews adNews;
     DatabaseReference dbRef;
@@ -90,6 +90,11 @@ public class EditNewsListActivity extends AppCompatActivity {
    public  void  next(View view){
         Intent int1 = new Intent(EditNewsListActivity.this, person.class);
         startActivity(int1);
-   }
+   }*/
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_edit_news_list);
+    }
 }

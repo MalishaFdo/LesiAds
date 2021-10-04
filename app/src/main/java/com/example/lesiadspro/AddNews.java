@@ -7,8 +7,14 @@ public class AddNews {
     //public Integer date;
     public String date;
     public String articleName;
+    public String position ;
 
     public AddNews() {}
+
+    public AddNews(String newsName, String position) {
+        this.newsName = newsName;
+        this.position = position;
+    }
 
     public String getNewsName() {
         return newsName;

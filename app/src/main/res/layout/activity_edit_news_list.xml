@@ -53,10 +53,10 @@
     <EditText
         android:id="@+id/inputArticles2"
         android:layout_width="301dp"
-        android:layout_height="178dp"
+        android:layout_height="119dp"
         android:layout_marginStart="54dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="212dp"
+        android:layout_marginBottom="144dp"
         android:background="@drawable/rectangle_bg"
         android:ems="10"
         android:inputType="textPersonName"
@@ -73,36 +73,34 @@
         android:layout_width="300dp"
         android:layout_height="46dp"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="192dp"
         android:layout_marginEnd="133dp"
         android:background="@drawable/rectangle_bg"
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="10dp"
-        android:text="15/08/2021"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/inputName2"
         android:layout_width="303dp"
         android:layout_height="45dp"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="133dp"
         android:background="@drawable/rectangle_bg"
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="10dp"
-        android:text="@string/sunday_observer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/addNewspaper"
@@ -119,62 +117,6 @@
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckedTextView
-        android:id="@+id/addArticle1"
-        android:layout_width="195dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginEnd="155dp"
-        android:layout_marginBottom="348dp"
-        android:text="@string/marriage_proposals"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckedTextView
-        android:id="@+id/addArticle2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="61dp"
-        android:layout_marginEnd="230dp"
-        android:layout_marginBottom="316dp"
-        android:text="@string/observer_jobs"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckedTextView
-        android:id="@+id/addArticle3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="61dp"
-        android:layout_marginEnd="224dp"
-        android:layout_marginBottom="280dp"
-        android:text="@string/youth_observer"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckedTextView
-        android:id="@+id/addArticle4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="61dp"
-        android:layout_marginEnd="219dp"
-        android:layout_marginBottom="240dp"
-        android:text="@string/junior_observer"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <include
         android:id="@+id/include"
