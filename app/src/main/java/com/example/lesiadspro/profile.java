@@ -53,6 +53,7 @@ public class profile extends AppCompatActivity {
     Button feedback;
     Button viewnews;
     Button changepassword;
+    Button payDetails;
 
    //Vibu kaawa
     @Override
@@ -155,9 +156,14 @@ public class profile extends AppCompatActivity {
             }
         });
 
-
-
-
+        payDetails = findViewById(R.id.mPaymentHistoryBtn);
+        payDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(profile.this, Addpayment.class);
+                startActivity(intent);
+            }
+        });
 
 
         editprofile = findViewById(R.id.mEditProfileBtn);
