@@ -113,7 +113,8 @@ public class NewsListActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Please Enter the Article Name", Toast.LENGTH_SHORT).show();
                 else {
                     adNews.setNewsName(inputName.getText().toString());
-                    adNews.setDate(Integer.parseInt(inputDate.getText().toString()));
+                   // adNews.setDate(Integer.parseInt(inputDate.getText().toString()));
+                    adNews.setDate(inputDate.getText().toString());
                     adNews.setArticleName(inputArticles.getText().toString());
 
 
@@ -123,7 +124,7 @@ public class NewsListActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                     ClearControls();
 
-                    Intent intent1 = new Intent(NewsListActivity.this,person.class);
+                    Intent intent1 = new Intent(NewsListActivity.this,viewNewsMain.class);
                     startActivity(intent1);
 
 

@@ -157,7 +157,7 @@ public class profile extends AppCompatActivity {
         newsdetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    Intent intent = new Intent(profile.this, NewspaperPanelActivity.class);
+                    Intent intent = new Intent(profile.this, NewsListActivity.class);
                     startActivity(intent);
             }
         });

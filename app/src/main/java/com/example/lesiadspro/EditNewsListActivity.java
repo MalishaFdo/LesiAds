@@ -61,7 +61,8 @@ public class EditNewsListActivity extends AppCompatActivity {
                 if (snapshot.hasChild("uid")){
                     try {
                         adNews.setNewsName(inputName2.getText().toString().trim());
-                        adNews.setDate(Integer.parseInt(inputDate2.getText().toString().trim()));
+                       // adNews.setDate(Integer.parseInt(inputDate2.getText().toString().trim()));
+                        adNews.setDate(inputDate2.getText().toString().trim());
                         adNews.setArticleName(inputArticles2.getText().toString().trim());
 
                         dbRef = FirebaseDatabase.getInstance().getReference().child("News").child("uid");

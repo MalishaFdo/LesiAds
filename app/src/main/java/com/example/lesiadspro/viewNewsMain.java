@@ -34,7 +34,7 @@ public class viewNewsMain extends AppCompatActivity {
         // Create a instance of the database and get
         // its reference
        String uid = FirebaseAuth.getInstance().getUid();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("News");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("News").child(uid);
         Log.d("abc",databaseReference.toString());
 
         recyclerView = findViewById(R.id.recycler1);

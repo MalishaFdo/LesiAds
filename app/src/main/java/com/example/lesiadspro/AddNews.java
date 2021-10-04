@@ -4,7 +4,8 @@ package com.example.lesiadspro;
 
 public class AddNews {
     public String newsName;
-    public Integer date;
+    //public Integer date;
+    public String date;
     public String articleName;
 
     public AddNews() {}
@@ -17,11 +18,19 @@ public class AddNews {
         this.newsName = newsName;
     }
 
-    public Integer getDate() {
+  /*  public Integer getDate() {
         return date;
     }
 
     public void setDate(Integer date) {
+        this.date = date;
+    }*/
+
+      public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
         this.date = date;
     }
 

@@ -47,20 +47,11 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
             for (UserInfo profile : user.getProviderData()) {
                 String providerId = profile.getProviderId();
 
-                // Add firstname from model class (here
-                // "person.class")to appropriate view in Card
-                // view (here "person.xml")
-                holder.inputName_1.setText(model.getNewsName());
 
-                // Add lastname from model class (here
-                // "person.class")to appropriate view in Card
-                // view (here "person.xml")
-                holder.inputDate_1.setText(model.getDate());
-
-                // Add age from model class (here
-                // "person.class")to appropriate view in Card
-                // view (here "person.xml")
-                holder.inputArticles_1.setText((model.getArticleName()));
+                holder.newsName.setText(model.getNewsName());
+                holder.date.setText(model.getDate());
+                holder.articleName.setText((model.getArticleName()));
+                Log.d("holder",providerId.toString());
 
             }
         }else{
@@ -84,14 +75,14 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
     // view (here "person.xml")
     class newsViewholder
             extends RecyclerView.ViewHolder {
-        TextView inputName_1, inputDate_1, inputArticles_1;
+        TextView newsName, date, articleName;
 
         public newsViewholder(@NonNull View itemView) {
             super(itemView);
 
-            inputName_1 = itemView.findViewById(R.id.inputName_1);
-            inputDate_1 = itemView.findViewById(R.id.inputDate_1);
-            inputArticles_1 = itemView.findViewById(R.id.inputArticles_1);
+            newsName = itemView.findViewById(R.id.inputName_1);
+            date = itemView.findViewById(R.id.inputDate_1);
+            articleName = itemView.findViewById(R.id.inputArticles_1);
         }
     }
 }
