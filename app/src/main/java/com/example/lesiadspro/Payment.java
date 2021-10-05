@@ -7,9 +7,15 @@ public class Payment {
     private String crdNumber;
     private String cvv;
     private String expireDate;
+    private String position;
 
     //Default constructor
     public Payment() {}
+
+    public Payment(String p_name, String position) {
+        this.p_name = p_name;
+        this.position = position;
+    }
 
     //Create Getters and Setters
     public String getP_name() {
