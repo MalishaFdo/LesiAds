@@ -29,6 +29,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText mFirstName,mLastName,mUserName, mEmail,mPassword,mPhone;
@@ -40,6 +41,13 @@ public class RegisterActivity extends AppCompatActivity {
     String userID;
     TextView signin;
     Button signup;
+
+    private static final Pattern PASSWORD_PATTERN =
+            Pattern.compile("^" +
+                    "(?=.*[@#$%^&+=])" +     // at least 1 special character
+                    "(?=\\S+$)" +            // no white spaces
+                    ".{6,}" +                // at least 6 characters
+                    "$");
 
 
     @Override
@@ -63,7 +71,6 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         //Sign in button
-
         signin = (TextView)findViewById(R.id.mSignInTxt);
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,7 +116,10 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
-
+                if (!PASSWORD_PATTERN.matcher(password).matches()){
+                    mPassword.setError("Password is too weak");
+                    return;
+                }
 
                 if (phone.length() != 10){
                     mPhone.setError("Enter a valid phone number");
