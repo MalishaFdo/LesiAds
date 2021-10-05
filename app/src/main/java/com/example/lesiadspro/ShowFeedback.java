@@ -26,7 +26,7 @@ public class ShowFeedback extends AppCompatActivity {
     private MyAdapter adapter;
     private List<NewModel> list;
 
-    //Initialization
+    //Initialization of show feeds
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
