@@ -159,7 +159,7 @@
 
     //Newspaper Panel
     <string name="panel">Newspaper Panel</string>
-    <string name="but1">Silumina</string>
+    <string name="but1">Daily Mirror</string>
     <string name="but2">Daily News</string>
     <string name="but3">Lankadeepa</string>
     <string name="but4">Dinamina</string>
@@ -167,7 +167,6 @@
     <string name="but6">Daily Mirror</string>
     <string name="idbtnEdit">Edit</string>
     <string name="idbtnDelete">Delete</string>
-
 
 
     //Payment Page

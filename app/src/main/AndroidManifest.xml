@@ -13,6 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
         <activity
+            android:name=".ViewNewspaperDetailsActivity_3"
+            android:exported="true" />
+        <activity
+            android:name=".ViewNewspaperDetailsActivity_1"
+            android:exported="true" />
+        <activity
+            android:name=".ViewNewspaperDetailsActivity_2"
+            android:exported="true" />
+        <activity
             android:name=".viewNewsMain"
             android:exported="true" />
         <activity
@@ -82,23 +91,30 @@
         <activity
             android:name=".AdSubmission"
             android:exported="true" />
-        <activity android:name=".AdminpayHistory"
-            android:exported="true"/>
-        <activity android:name=".cusPayHistory"
+        <activity
+            android:name=".AdminpayHistory"
             android:exported="true" />
-        <activity android:name=".RateApp"
-            android:exported="true"/>
-        <activity android:name=".payCheckout"
-            android:exported="true"/>
-        <activity android:name=".Editpayment"
-            android:exported="true"/>
-        <activity android:name=".Addpayment"
-            android:exported="true"/>
-
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".cusPayHistory"
+            android:exported="true" />
+        <activity
+            android:name=".RateApp"
+            android:exported="true" />
+        <activity
+            android:name=".payCheckout"
+            android:exported="true" />
+        <activity
+            android:name=".Editpayment"
+            android:exported="true" />
+        <activity
+            android:name=".Addpayment"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

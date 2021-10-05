@@ -28,13 +28,13 @@ public class NewspaperPanelActivity extends AppCompatActivity {
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NewspaperPanelActivity.this,ViewNewspaperDetailsActivity.class);
+                Intent intent = new Intent(NewspaperPanelActivity.this,ViewNewspaperDetailsActivity_3.class);
                 startActivity(intent);
             }
         });
     }
     public void next(View view){
-        Intent intent = new Intent(this,ViewNewspaperDetailsActivity.class);
+        Intent intent = new Intent(this,ViewNewspaperDetailsActivity_3.class);
         startActivity(intent);
     }
     public void next1(View view){
@@ -42,19 +42,19 @@ public class NewspaperPanelActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void next2(View view){
-        Intent intent = new Intent(this,ViewNewspaperDetailsActivity.class);
+        Intent intent = new Intent(this,ViewNewspaperDetailsActivity_1.class);
         startActivity(intent);
     }
     public void next3(View view){
-        Intent intent = new Intent(this,ViewNewspaperDetailsActivity.class);
+        Intent intent = new Intent(this,ViewNewspaperDetailsActivity_2.class);
         startActivity(intent);
     }
-    public void next4(View view){
-        Intent intent = new Intent(this,ViewNewspaperDetailsActivity.class);
+   /* public void next4(View view){
+        Intent intent = new Intent(this,ViewNewspaperDetailsActivity_3.class);
         startActivity(intent);
     }
     public void next5(View view){
         Intent intent = new Intent(this,ViewNewspaperDetailsActivity.class);
         startActivity(intent);
-    }
+    }*/
 }
