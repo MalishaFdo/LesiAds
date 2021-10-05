@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewNewspaperDetailsActivity_2">
+
+    <ImageView
+        android:id="@+id/background9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/background10"
+        android:layout_width="339dp"
+        android:layout_height="648dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/popupMenuBackground" />
+
+    <Button
+        android:id="@+id/but_ok3"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/larkblue"
+        android:text="@string/sub"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV6"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="180dp"
+        android:padding="10dp"
+        android:text="Entertainments"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV5"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="232dp"
+        android:padding="10dp"
+        android:text="Educational Articles"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV4"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="288dp"
+        android:padding="10dp"
+        android:text="Political News"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/addNewspaper5"
+        android:layout_width="193dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="155dp"
+        android:text="Dinamina"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV1"
+        android:layout_width="224dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="89dp"
+        android:text="20th September 2021"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV2"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/text"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV1" />
+
+    <TextView
+        android:id="@+id/txtV3"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="344dp"
+        android:padding="10dp"
+        android:text="Businness Articles"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

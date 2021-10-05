@@ -1,119 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="com.example.lesiadspro">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lesiadspro">
 
-<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-<application
-    android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:roundIcon="@mipmap/ic_launcher_round"
-    android:supportsRtl="true"
-    android:theme="@style/Theme.LesiAdsPro">
-    <activity
-        android:name=".viewNewsMain"
-        android:exported="true" />
-    <activity
-        android:name=".person"
-        android:exported="true" />
-    <activity
-        android:name=".person_payment"
-        android:exported="true" />
-    <activity android:name=".sidebar" />
-    <activity
-        android:name=".AddPhoto"
-        android:exported="true" />
-    <activity
-        android:name=".Editfeedback"
-        android:exported="true" />
-    <activity
-        android:name=".Givefeedback"
-        android:exported="true" />
-    <activity
-        android:name=".EditProfile"
-        android:exported="true" />
-    <activity
-        android:name=".profile"
-        android:exported="true" />
-    <activity
-        android:name=".NewspaperPanelActivity"
-        android:exported="true" />
-    <activity
-        android:name=".ViewNewspaperDetailsActivity"
-        android:exported="true" />
-    <activity
-        android:name=".viewPaymentMain"
-        android:exported="true" />
-    <activity
-        android:name=".AdminDashboardActivity"
-        android:exported="true" />
-    <activity
-        android:name=".NewspaperHistoryActivity"
-        android:exported="true" />
-    <activity
-        android:name=".ConfirmationActivity"
-        android:exported="true" />
-    <activity
-        android:name=".EditNewsListActivity"
-        android:exported="true" />
-    <activity
-        android:name=".NewsListActivity"
-        android:exported="true" />
-    <activity
-        android:name=".RegisterActivity"
-        android:exported="true" />
-    <activity
-        android:name=".LoginActivity"
-        android:exported="true" />
-    <activity
-        android:name=".NotificationsAdmin"
-        android:exported="true" />
-    <activity
-        android:name=".NotificationsCustomer"
-        android:exported="true" />
-    <activity
-        android:name=".AdsAdmin"
-        android:exported="true" />
-    <activity
-        android:name=".AdsCustomer"
-        android:exported="true" />
-    <activity
-        android:name=".AdReview"
-        android:exported="true" />
-    <activity
-        android:name=".AdUpdateDelete"
-        android:exported="true" />
-    <activity
-        android:name=".AdSubmission"
-        android:exported="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LesiAdsPro">
+        <activity
+            android:name=".ViewNewspaperDetailsActivity_3"
+            android:exported="true" />
+        <activity
+            android:name=".ViewNewspaperDetailsActivity_1"
+            android:exported="true" />
+        <activity
+            android:name=".ViewNewspaperDetailsActivity_2"
+            android:exported="true" />
+        <activity
+            android:name=".ShowFeedback"
+            android:exported="true" />
+        <activity
+            android:name=".viewNewsMain"
+            android:exported="true" />
+        <activity
+            android:name=".person"
+            android:exported="true" />
+        <activity android:name=".sidebar" />
+        <activity
+            android:name=".NewspaperPanelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ViewNewspaperDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewspaperHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditNewsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationsAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationsCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".AdsAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".AdsCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".AdReview"
+            android:exported="true" />
+        <activity
+            android:name=".AdUpdateDelete"
+            android:exported="true" />
+        <activity
+            android:name=".AdSubmission"
+            android:exported="true" />
+        <activity
+            android:name=".AdminpayHistory"
+            android:exported="true" />
+        <activity
+            android:name=".cusPayHistory"
+            android:exported="true" />
+        <activity
+            android:name=".RateApp"
+            android:exported="true" />
+        <activity
+            android:name=".payCheckout"
+            android:exported="true" />
+        <activity
+            android:name=".Editpayment"
+            android:exported="true" />
+        <activity
+            android:name=".Addpayment"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddPhoto"
+            android:exported="true" />
+        <activity
+            android:name=".Editfeedback"
+            android:exported="true" />
 
-    <activity
-        android:name=".AdminpayHistory"
-        android:exported="true" />
-    <activity
-        android:name=".cusPayHistory"
-        android:exported="true" />
-    <activity
-        android:name=".RateApp"
-        android:exported="true" />
-    <activity
-        android:name=".payCheckout"
-        android:exported="true" />
-    <activity
-        android:name=".Editpayment"
-        android:exported="true" />
-    <activity
-        android:name=".Addpayment"
-        android:exported="true" />
-    <activity
-        android:name=".MainActivity"
-        android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-</application>
+
+        <activity
+            android:name=".Givefeedback"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".profile"
+            android:exported="true" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>
 

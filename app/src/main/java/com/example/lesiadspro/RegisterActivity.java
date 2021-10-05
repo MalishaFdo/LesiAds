@@ -38,12 +38,9 @@ public class RegisterActivity extends AppCompatActivity {
     FirebaseDatabase rootnode;
     DatabaseReference reference;
     String userID;
-
     TextView signin;
-
     Button signup;
 
-    TextView addphoto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +54,6 @@ public class RegisterActivity extends AppCompatActivity {
         mPassword = findViewById(R.id.password);
         mPhone = findViewById(R.id.phone);
         fstore = FirebaseFirestore.getInstance();
-
         fAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
@@ -65,6 +61,8 @@ public class RegisterActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
             finish();
         }
+
+        //Sign in button
 
         signin = (TextView)findViewById(R.id.mSignInTxt);
         signin.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+        //Sign up button
         signup = findViewById(R.id.mSignUpBtn);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,7 +83,6 @@ public class RegisterActivity extends AppCompatActivity {
                 reference = rootnode.getReference("users");
 
                 //get values
-
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
                 String firstname = mFirstName.getText().toString();
@@ -95,7 +93,7 @@ public class RegisterActivity extends AppCompatActivity {
                 UserHelperClass helperClass = new UserHelperClass(firstname,lastname,email,phone,username,password);
                 reference.child(username).setValue(helperClass);
 
-
+                //Validation process
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is required . ");
                     return;
@@ -109,7 +107,9 @@ public class RegisterActivity extends AppCompatActivity {
                     mPassword.setError("Password must be >= 6 characters");
                     return;
                 }
-                if (phone.length()>10 || phone.length()<10){
+
+
+                if (phone.length() != 10){
                     mPhone.setError("Enter a valid phone number");
                     return;
                 }
@@ -117,7 +117,6 @@ public class RegisterActivity extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
 
                 //register user in firebase firestore
-
                 fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -132,6 +131,8 @@ public class RegisterActivity extends AppCompatActivity {
                             user.put("phone", phone);
                             user.put("username", username);
 
+                            //CLI comments
+
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
@@ -144,26 +145,12 @@ public class RegisterActivity extends AppCompatActivity {
                                 }
                             });
                             startActivity(new Intent(getApplicationContext(),profile.class));
-
                         }else {
                             Toast.makeText(RegisterActivity.this,"Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
-
                         }
                     }
                 });
-
-
-
-            }
-        });
-
-        addphoto = (TextView)findViewById(R.id.mAddPhotoTxt);
-        addphoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent10 = new Intent(RegisterActivity.this,AddPhoto.class);
-                startActivity(intent10);
             }
         });
 

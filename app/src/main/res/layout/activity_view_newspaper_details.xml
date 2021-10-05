@@ -31,16 +31,16 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="?attr/popupMenuBackground" />
 
     <Button
-        android:id="@+id/butSubmit5"
+        android:id="@+id/but_ok3"
         android:layout_width="305dp"
         android:layout_height="55dp"
         android:layout_marginStart="54dp"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="77dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="@color/larkblue"
         android:text="@string/sub"
         android:textColor="@color/black"
@@ -48,6 +48,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -56,13 +57,14 @@
         android:layout_height="42dp"
         android:layout_marginStart="110dp"
         android:layout_marginEnd="99dp"
-        android:layout_marginBottom="173dp"
+        android:layout_marginBottom="180dp"
         android:padding="10dp"
-        android:text="@string/junior_observer2"
+        android:text="Entertainment Plus"
         android:textAlignment="textStart"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -71,13 +73,14 @@
         android:layout_height="42dp"
         android:layout_marginStart="110dp"
         android:layout_marginEnd="99dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="232dp"
         android:padding="10dp"
-        android:text="@string/youth_observer3"
+        android:text="Rent and Sales Articles"
         android:textAlignment="textStart"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -86,13 +89,14 @@
         android:layout_height="42dp"
         android:layout_marginStart="110dp"
         android:layout_marginEnd="99dp"
-        android:layout_marginBottom="242dp"
+        android:layout_marginBottom="288dp"
         android:padding="10dp"
-        android:text="@string/observer_jobs"
+        android:text="Obituaries Articles"
         android:textAlignment="textStart"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -118,39 +122,28 @@
         android:layout_marginStart="98dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="89dp"
-        android:text="@string/date3"
+        android:text="5th October 2021 "
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="280dp"
-        android:layout_height="122dp"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="203dp"
-        android:layout_marginEnd="53dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ob_logo" />
-
     <TextView
         android:id="@+id/txtV2"
-        android:layout_width="246dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="353dp"
-        android:layout_marginEnd="83dp"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="76dp"
         android:text="@string/text"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtV1" />
 
     <TextView
         android:id="@+id/txtV3"
@@ -158,13 +151,14 @@
         android:layout_height="42dp"
         android:layout_marginStart="109dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="277dp"
+        android:layout_marginBottom="344dp"
         android:padding="10dp"
         android:text="@string/marriage_proposals1"
         android:textAlignment="textStart"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <include

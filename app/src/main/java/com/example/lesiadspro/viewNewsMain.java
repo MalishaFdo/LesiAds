@@ -29,12 +29,12 @@ public class viewNewsMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_main);
 
-
+        //Testing
         //Log.d("abc",user.toString());
         // Create a instance of the database and get
         // its reference
        String uid = FirebaseAuth.getInstance().getUid();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("News");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("News").child(uid);
         Log.d("abc",databaseReference.toString());
 
         recyclerView = findViewById(R.id.recycler1);

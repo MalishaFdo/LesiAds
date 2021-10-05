@@ -141,15 +141,15 @@
     //View Newspaper Details
     <string name="observer">Sunday Observer</string>
     <string name="marriage_proposals1">Marriage Proposals</string>
-    <string name="observer_jobs1">Observer Jobs</string>
-    <string name="youth_observer3">Youth Observer</string>
-    <string name="junior_observer3">Junior Observer</string>
+    <string name="observer_jobs1">Jobs Vacancy</string>
+    <string name="youth_observer3">Youth Plus</string>
+    <string name="junior_observer3">Entertainment</string>
     <string name="sub">OK</string>
 
 
     //Newspaper Panel
     <string name="panel">Newspaper Panel</string>
-    <string name="but1">Silumina</string>
+    <string name="but1">Daily Mirror</string>
     <string name="but2">Daily News</string>
     <string name="but3">Lankadeepa</string>
     <string name="but4">Dinamina</string>
@@ -250,4 +250,6 @@
     <string name="personPayDelete">DELETE</string>
     <string name="personPayEdit">EDIT</string>
     <string name="personPayDel2">DELETE</string>
+    <string name="btnedit_1">Edit</string>
+    <string name="btnedit_2">Edit</string>
 </resources>

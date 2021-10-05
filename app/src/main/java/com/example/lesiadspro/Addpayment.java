@@ -57,7 +57,7 @@ public class Addpayment extends AppCompatActivity {
             }
         });
     }
-
+//hii
     //Calculate the total amount
     public int paymentAmount(int count) {
         int amount = 0;

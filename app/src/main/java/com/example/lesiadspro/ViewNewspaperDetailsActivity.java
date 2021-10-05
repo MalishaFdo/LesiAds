@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class ViewNewspaperDetailsActivity extends AppCompatActivity {
 
-//Btttt
+
     public Button btnViewNews;
 
     @Override
@@ -17,11 +17,11 @@ public class ViewNewspaperDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_newspaper_details);
 
-        btnViewNews = findViewById(R.id.butSubmit5);
+        btnViewNews = findViewById(R.id.but_ok3);
         btnViewNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ViewNewspaperDetailsActivity.this, ConfirmationActivity.class);
+                Intent intent = new Intent(ViewNewspaperDetailsActivity.this, NewspaperPanelActivity.class);
                 startActivity(intent);
             }
 
