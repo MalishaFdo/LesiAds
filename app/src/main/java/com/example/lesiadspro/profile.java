@@ -170,11 +170,10 @@ public class profile extends AppCompatActivity {
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent7 = new Intent(profile.this,Givefeedback.class);
+                Intent intent7 = new Intent(profile.this,Editfeedback.class);
                 startActivity(intent7);
             }
         });
-
     }
 
     @Override

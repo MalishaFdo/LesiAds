@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator;
 
 public class TouchHelper extends ItemTouchHelper.SimpleCallback {
-
+//Swipe for update and delete
     private MyAdapter adapter;
     public TouchHelper(MyAdapter adapter) {
         super(0,ItemTouchHelper.LEFT| ItemTouchHelper.RIGHT);
@@ -44,7 +44,6 @@ public class TouchHelper extends ItemTouchHelper.SimpleCallback {
                 .addSwipeLeftActionIcon(R.drawable.ic_baseline_edit_24)
                 .create()
                 .decorate();
-
         super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
     }
 }

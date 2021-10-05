@@ -43,7 +43,6 @@ public class ShowFeedback extends AppCompatActivity {
         ItemTouchHelper touchHelper = new ItemTouchHelper(new TouchHelper(adapter));
         touchHelper.attachToRecyclerView(recyclerView);
         showData();
-
     }
 
     public void showData() {
@@ -64,7 +63,6 @@ public class ShowFeedback extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(ShowFeedback.this, "Oops..Something went wrong", Toast.LENGTH_SHORT).show();
-
             }
         });
     }

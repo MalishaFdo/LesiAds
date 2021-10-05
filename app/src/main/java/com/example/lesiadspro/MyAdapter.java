@@ -76,7 +76,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.name.setText(mlist.get(position).getName());
         holder.email.setText(mlist.get(position).getEmail());
         holder.feed.setText(mlist.get(position).getFeed());
-
     }
 
     @Override
