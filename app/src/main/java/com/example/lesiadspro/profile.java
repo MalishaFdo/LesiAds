@@ -236,4 +236,8 @@ public class profile extends AppCompatActivity {
         Intent intent = new Intent(this, AdSubmission.class);
         startActivity(intent);
     }
+    public void MyAds(View view){
+        Intent intent = new Intent(this, AdsCustomer.class);
+        startActivity(intent);
+    }
 }

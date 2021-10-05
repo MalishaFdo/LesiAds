@@ -185,7 +185,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/c_e_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="488dp"
