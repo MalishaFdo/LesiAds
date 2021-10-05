@@ -86,11 +86,11 @@
 
     <EditText
         android:id="@+id/inputArticles"
-        android:layout_width="306dp"
-        android:layout_height="103dp"
+        android:layout_width="295dp"
+        android:layout_height="209dp"
         android:layout_marginStart="53dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="288dp"
+        android:layout_marginBottom="164dp"
         android:background="@drawable/rectangle_bg"
         android:ems="10"
         android:hint="@string/add_articles_name"
@@ -99,38 +99,7 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/addLogo"
-        android:layout_width="220dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="137dp"
-        android:layout_marginBottom="204dp"
-        android:text="@string/newspaper_logo"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/butUpload"
-        android:layout_width="139dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="217dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="204dp"
-        android:backgroundTint="?attr/colorButtonNormal"
-        android:text="@string/upload"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -139,7 +108,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="54dp"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="56dp"
         android:backgroundTint="@color/larkblue"
         android:onClick="InsertData"
         android:text="@string/submit"
@@ -148,7 +117,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="OnClick" />
 

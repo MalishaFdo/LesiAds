@@ -4,10 +4,17 @@ package com.example.lesiadspro;
 
 public class AddNews {
     public String newsName;
-    public Integer date;
+    //public Integer date;
+    public String date;
     public String articleName;
+    public String position ;
 
     public AddNews() {}
+
+    public AddNews(String newsName, String position) {
+        this.newsName = newsName;
+        this.position = position;
+    }
 
     public String getNewsName() {
         return newsName;
@@ -17,11 +24,19 @@ public class AddNews {
         this.newsName = newsName;
     }
 
-    public Integer getDate() {
+  /*  public Integer getDate() {
         return date;
     }
 
     public void setDate(Integer date) {
+        this.date = date;
+    }*/
+
+      public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
         this.date = date;
     }
 

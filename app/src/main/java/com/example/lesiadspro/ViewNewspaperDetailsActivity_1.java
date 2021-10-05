@@ -7,21 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ViewNewspaperDetailsActivity extends AppCompatActivity {
-
+public class ViewNewspaperDetailsActivity_1 extends AppCompatActivity {
 
     public Button btnViewNews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_newspaper_details);
+        setContentView(R.layout.activity_view_newspaper_details1);
 
         btnViewNews = findViewById(R.id.but_ok3);
         btnViewNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ViewNewspaperDetailsActivity.this, NewspaperPanelActivity.class);
+                Intent intent = new Intent(ViewNewspaperDetailsActivity_1.this, NewspaperPanelActivity.class);
                 startActivity(intent);
             }
 
@@ -30,5 +29,3 @@ public class ViewNewspaperDetailsActivity extends AppCompatActivity {
 
     }
 }
-
-
