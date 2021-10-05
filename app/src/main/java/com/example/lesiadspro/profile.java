@@ -46,13 +46,11 @@ public class profile extends AppCompatActivity {
     ImageView profileImage;
     StorageReference storageReference;
 
-
     Button editprofile, changeProfileImage;
     Button feedback;
-
     Button changepassword;
 
-   //Vibu kaawa
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
