@@ -20,9 +20,9 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    private ShowFeedback activity;
-    private List<NewModel> mlist;
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private final ShowFeedback activity;
+    private final List<NewModel> mlist;
+    private final FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     public MyAdapter(ShowFeedback activity, List<NewModel> mlist){
         this.activity = activity;
