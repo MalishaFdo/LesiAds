@@ -89,7 +89,7 @@ public class Editfeedback extends AppCompatActivity {
 
     }
 
-    //update data to firestore
+    //update data to firestore-firebase
     private void updateToFireStore(String id, String name, String email, String feed) {
         db.collection("Comments").document(id).update("name",name,"email",email,"feed",feed)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
