@@ -1,20 +1,20 @@
 package com.example.lesiadspro;
 
-public class Model {
-    String id, name, email, feedback;
+public class NewModel {
 
+    String id, name,  email, feed;
+    public NewModel(){}
 
-    public Model(String id, String name, String email, String feedback){
+    //Add constructor
 
-    }
-
-    public Model(String id) {
+    public NewModel(String id, String name, String email, String feed) {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.feedback = feedback;
+        this.feed = feed;
     }
 
+    //Getters and setters
     public String getId() {
         return id;
     }
@@ -39,11 +39,11 @@ public class Model {
         this.email = email;
     }
 
-    public String getFeedback() {
-        return feedback;
+    public String getFeed() {
+        return feed;
     }
 
-    public void setFeedback(String feedback) {
-        this.feedback = feedback;
+    public void setFeed(String feed) {
+        this.feed = feed;
     }
 }

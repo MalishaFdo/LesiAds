@@ -19,7 +19,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mClickListner.onItemClick(view, getAdapterPosition());
+                mClickListener.onItemClick(view, getBindingAdapterPosition());
 
             }
         });
@@ -27,7 +27,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                mClickListner.onItemLongClick(view, getAdapterPosition());
+                mClickListener.onItemLongClick(view, getBindingAdapterPosition());
                 return true;
             }
         });
@@ -39,15 +39,15 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
     }
 
-    private ViewHolder.ClickListner mClickListner;
+    private ViewHolder.ClickListener mClickListener;
 
-    public interface ClickListner{
+    public interface ClickListener {
         void onItemClick(View view, int position);
         void onItemLongClick(View view, int position);
 
     }
-    public void setOnClickListner (ViewHolder.ClickListner clickListner){
-        mClickListner = clickListner;
+    public void setOnClickListener(ViewHolder.ClickListener clickListener){
+        mClickListener = clickListener;
 
     }
 }

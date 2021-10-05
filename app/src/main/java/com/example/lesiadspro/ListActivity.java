@@ -22,6 +22,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ListActivity extends AppCompatActivity {
 
@@ -42,8 +43,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("The Feedback list");
+
 
         db = FirebaseFirestore.getInstance();
 
@@ -68,8 +68,6 @@ public class ListActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     private void showData() {
@@ -79,12 +77,12 @@ public class ListActivity extends AppCompatActivity {
         db.collection("Feedback").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                modelList.clear();
+
                 pd.dismiss();
                 for (DocumentSnapshot doc : task.getResult()){
-                    Model model = new Model(doc.getString("id"));
-                    doc.getString("name");
-                    doc.getString("email");
-                    doc.getString("feedback");
+                    Model model = new Model(doc.getString("id"),doc.getString("name"),
+                            doc.getString("email"),doc.getString("feedback"));
                     modelList.add(model);
                 }
                 adapter = new CustomerAdapter(ListActivity.this,modelList);
@@ -95,6 +93,27 @@ public class ListActivity extends AppCompatActivity {
             public void onFailure(@NonNull Exception e) {
                 pd.dismiss();
                 Toast.makeText(ListActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    public void deleteData(int index){
+        pd.setTitle("Deleting..");
+        pd.show();
+
+        db.collection("Feedback").document(modelList.get(index).getId())
+                .delete()
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        Toast.makeText(ListActivity.this, "Deleted", Toast.LENGTH_SHORT).show();
+                        showData();
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                pd.dismiss();
+
             }
         });
     }

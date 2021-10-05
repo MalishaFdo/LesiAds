@@ -12,27 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LesiAdsPro">
         <activity
+            android:name=".ShowFeedback"
+            android:exported="true" />
+        <activity
             android:name=".viewNewsMain"
             android:exported="true" />
         <activity
             android:name=".person"
             android:exported="true" />
         <activity android:name=".sidebar" />
-        <activity
-            android:name=".AddPhoto"
-            android:exported="true" />
-        <activity
-            android:name=".Editfeedback"
-            android:exported="true" />
-        <activity
-            android:name=".Givefeedback"
-            android:exported="true" />
-        <activity
-            android:name=".EditProfile"
-            android:exported="true" />
-        <activity
-            android:name=".profile"
-            android:exported="true" />
         <activity
             android:name=".NewspaperPanelActivity"
             android:exported="true" />
@@ -55,14 +43,6 @@
             android:name=".NewsListActivity"
             android:exported="true" />
         <activity
-            android:name=".RegisterActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
-
-
-        <activity
             android:name=".NotificationsAdmin"
             android:exported="true" />
         <activity
@@ -83,27 +63,56 @@
         <activity
             android:name=".AdSubmission"
             android:exported="true" />
-
-
-        <activity android:name=".AdminpayHistory"
-            android:exported="true"/>
-        <activity android:name=".cusPayHistory"
+        <activity
+            android:name=".AdminpayHistory"
             android:exported="true" />
-        <activity android:name=".RateApp"
-            android:exported="true"/>
-        <activity android:name=".payCheckout"
-            android:exported="true"/>
-        <activity android:name=".Editpayment"
-            android:exported="true"/>
-        <activity android:name=".Addpayment"
-            android:exported="true"/>
+        <activity
+            android:name=".cusPayHistory"
+            android:exported="true" />
+        <activity
+            android:name=".RateApp"
+            android:exported="true" />
+        <activity
+            android:name=".payCheckout"
+            android:exported="true" />
+        <activity
+            android:name=".Editpayment"
+            android:exported="true" />
+        <activity
+            android:name=".Addpayment"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddPhoto"
+            android:exported="true" />
+        <activity
+            android:name=".Editfeedback"
+            android:exported="true" />
 
 
-
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".Givefeedback"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".profile"
+            android:exported="true" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -43,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         forgotpasswordtxt = findViewById(R.id.forgotPasswordTxt);
 
+        //Sign up button
         registertxt = (TextView)findViewById(R.id.mRegisterTxt);
         registertxt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +54,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        //Sign in button
+
         loginbtn = findViewById(R.id.mLoginBtn);
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
 
+                //Validation process
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is required . ");
                     return;
@@ -81,18 +85,32 @@ public class LoginActivity extends AppCompatActivity {
                 fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
+
+                        if (mEmail.getText().toString().equals("admin99@gmail.com") && mPassword.getText().toString().equals("12345678")){
+                            Toast.makeText(LoginActivity.this, "Admin logged in..", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(),AdminDashboardActivity.class));
+                        }else{
+                            if(task.isSuccessful()){
+                                Toast.makeText(LoginActivity.this,"Logged in successfully", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(getApplicationContext(),profile.class));
+                            }else {
+                                Toast.makeText(LoginActivity.this,"Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                progressBar.setVisibility(View.GONE);
+                            }
+                        }
+                        /*if(task.isSuccessful()){
                             Toast.makeText(LoginActivity.this,"Logged in successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),profile.class));
                         }else {
                             Toast.makeText(LoginActivity.this,"Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
-                        }
+                        }*/
                     }
                 });
             }
         });
 
+        //Forgot password text--reset password
         forgotpasswordtxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -111,13 +129,11 @@ public class LoginActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(Void unused) {
                                 Toast.makeText(LoginActivity.this,"Reset link sent to your email", Toast.LENGTH_SHORT).show();
-
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Toast.makeText(LoginActivity.this,"Error! Reset link not sent" + e.getMessage(), Toast.LENGTH_SHORT).show();
-
                             }
                         });
                     }
@@ -127,12 +143,9 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                        //close the dialog
-
                     }
                 });
-
                 passwordresetdialog.create().show();
-
             }
         });
 

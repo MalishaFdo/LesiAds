@@ -13,13 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import io.grpc.Context;
 
 public class CustomerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     ListActivity listActivity;
     List<Model> modelList;
-    Context context;
+
 
     public CustomerAdapter(ListActivity listActivity, List<Model> modelList) {
         this.listActivity = listActivity;
@@ -35,7 +34,7 @@ public class CustomerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
         ViewHolder viewHolder = new ViewHolder(itemView);
 
-        viewHolder.setOnClickListner(new ViewHolder.ClickListner() {
+        viewHolder.setOnClickListener(new ViewHolder.ClickListener() {
             @Override
             public void onItemClick(View view, int position) {
 
@@ -68,7 +67,7 @@ public class CustomerAdapter extends RecyclerView.Adapter<ViewHolder> {
                             listActivity.startActivity(intent);
                         }
                         if (i==1){
-
+                            listActivity.deleteData(position);
                         }
 
                     }

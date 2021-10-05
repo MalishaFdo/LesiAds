@@ -2,12 +2,10 @@ package com.example.lesiadspro;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBarDrawerToggle;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
+
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -48,13 +46,11 @@ public class profile extends AppCompatActivity {
     ImageView profileImage;
     StorageReference storageReference;
 
-
     Button editprofile, changeProfileImage;
     Button feedback;
-    Button viewnews;
     Button changepassword;
 
-   //Vibu kaawa
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,10 +66,12 @@ public class profile extends AppCompatActivity {
         profileImage = findViewById(R.id.imageView);
         changeProfileImage = findViewById(R.id.changeprofileimage);
 
+        //firebase connection
         fAuth = FirebaseAuth.getInstance();
         fstore = FirebaseFirestore.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
 
+        //Calling firebase
         StorageReference profileref = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
         profileref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
@@ -85,6 +83,7 @@ public class profile extends AppCompatActivity {
         userID = fAuth.getCurrentUser().getUid();
         user = fAuth.getCurrentUser();
 
+        //Concatenation
         DocumentReference documentReference = fstore.collection("users").document(userID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
@@ -101,6 +100,7 @@ public class profile extends AppCompatActivity {
             }
         });
 
+        //Password change
         changepassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -144,6 +144,7 @@ public class profile extends AppCompatActivity {
             }
         });
 
+        //Change Profile image
         changeProfileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -153,11 +154,7 @@ public class profile extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
+        //Edit profile details
         editprofile = findViewById(R.id.mEditProfileBtn);
         editprofile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -172,21 +169,13 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        feedback = findViewById(R.id.mGiveFeedbackBtn);
+        //Give feedback
+        feedback = (Button)findViewById(R.id.mGiveFeedbackBtn);
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent7 = new Intent(profile.this,Givefeedback.class);
+                Intent intent7 = new Intent(profile.this,Editfeedback.class);
                 startActivity(intent7);
-            }
-        });
-
-        viewnews = findViewById(R.id.mViewNewsBtn);
-        viewnews.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent14 = new Intent(profile.this,sidebar.class);
-                startActivity(intent14);
             }
         });
     }
@@ -206,8 +195,9 @@ public class profile extends AppCompatActivity {
         }
     }
 
+    //Upload images to Firebase storage
     private void uploadImageToFirebase(Uri imageUri) {
-        //upload image to firebase storage
+
         final StorageReference fileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
@@ -228,6 +218,7 @@ public class profile extends AppCompatActivity {
         });
     }
 
+    //Logout from account
     public void logout(View view) {
         FirebaseAuth.getInstance().signOut(); //logout
         startActivity(new Intent(getApplicationContext(),LoginActivity.class));
