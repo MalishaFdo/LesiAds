@@ -25,7 +25,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText mEmail,mPassword;
+    EditText mEmail, mPassword;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
 
@@ -44,11 +44,11 @@ public class LoginActivity extends AppCompatActivity {
         forgotpasswordtxt = findViewById(R.id.forgotPasswordTxt);
 
         //Sign up button
-        registertxt = (TextView)findViewById(R.id.mRegisterTxt);
+        registertxt = (TextView) findViewById(R.id.mRegisterTxt);
         registertxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("abc","clicked");
+                Log.d("abc", "clicked");
                 Intent intent1 = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent1);
             }
@@ -64,16 +64,16 @@ public class LoginActivity extends AppCompatActivity {
                 String password = mPassword.getText().toString().trim();
 
                 //Validation process
-                if(TextUtils.isEmpty(email)){
+                if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email is required . ");
                     return;
                 }
-                if (TextUtils.isEmpty(password)){
+                if (TextUtils.isEmpty(password)) {
                     mPassword.setError("Password is needed . ");
                     return;
                 }
 
-                if(password.length()<6){
+                if (password.length() < 6) {
                     mPassword.setError("Password must be >= 6 characters");
                     return;
                 }
@@ -82,19 +82,21 @@ public class LoginActivity extends AppCompatActivity {
 
                 // authenticate the user
 
-                fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
-                        if (mEmail.getText().toString().equals("admin99@gmail.com") && mPassword.getText().toString().equals("12345678")){
+                        if (fAuth.getUid().toString().equals("g3e8yNRYSGPYpDl8PWdecWfC2dx1")) {
                             Toast.makeText(LoginActivity.this, "Admin logged in..", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),AdminDashboardActivity.class));
-                        }else{
-                            if(task.isSuccessful()){
-                                Toast.makeText(LoginActivity.this,"Logged in successfully", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(),profile.class));
-                            }else {
-                                Toast.makeText(LoginActivity.this,"Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Log.d("user", fAuth.getUid());
+                            startActivity(new Intent(getApplicationContext(), AdminDashboardActivity.class));
+
+                        } else {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(LoginActivity.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(getApplicationContext(), profile.class));
+                            } else {
+                                Toast.makeText(LoginActivity.this, "Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
                             }
                         }
@@ -128,12 +130,12 @@ public class LoginActivity extends AppCompatActivity {
                         fAuth.sendPasswordResetEmail(mail).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
-                                Toast.makeText(LoginActivity.this,"Reset link sent to your email", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Reset link sent to your email", Toast.LENGTH_SHORT).show();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(LoginActivity.this,"Error! Reset link not sent" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Error! Reset link not sent" + e.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         });
                     }
@@ -142,7 +144,7 @@ public class LoginActivity extends AppCompatActivity {
                 passwordresetdialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                       //close the dialog
+                        //close the dialog
                     }
                 });
                 passwordresetdialog.create().show();

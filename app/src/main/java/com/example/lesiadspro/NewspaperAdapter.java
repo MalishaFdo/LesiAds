@@ -1,8 +1,11 @@
 package com.example.lesiadspro;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -158,7 +161,9 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
 
 
                     }
+
                 });
+
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
