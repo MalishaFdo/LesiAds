@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import com.google.common.util.concurrent.RateLimiter;
 import com.google.firebase.database.DatabaseReference;
@@ -15,6 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 public class person_payment extends AppCompatActivity {
     DatabaseReference dbRef;
     Button idbtnEdit1, personPayDel2;
+    ImageButton rate1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class person_payment extends AppCompatActivity {
 
         idbtnEdit1 = findViewById(R.id.personPayEdit);
         personPayDel2 = findViewById(R.id.personPayDel2);
+        rate1 = findViewById(R.id.rate);
     }
 
     public void next(View view){
