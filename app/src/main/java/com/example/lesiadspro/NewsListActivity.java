@@ -100,7 +100,7 @@ public class NewsListActivity extends AppCompatActivity {
         }
 
 
-        //Inserting Details
+        //Inserting Details of the newspapers
         public void InsertData(){
             String uid = FirebaseAuth.getInstance().getUid();
             dbRef = FirebaseDatabase.getInstance().getReference().child("News").child(uid);
