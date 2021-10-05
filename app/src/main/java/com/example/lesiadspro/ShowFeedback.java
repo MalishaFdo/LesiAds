@@ -26,6 +26,7 @@ public class ShowFeedback extends AppCompatActivity {
     private MyAdapter adapter;
     private List<NewModel> list;
 
+    //Initialization
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +41,13 @@ public class ShowFeedback extends AppCompatActivity {
         adapter = new MyAdapter(this, list);
         recyclerView.setAdapter(adapter);
 
+        //Swipe function
         ItemTouchHelper touchHelper = new ItemTouchHelper(new TouchHelper(adapter));
         touchHelper.attachToRecyclerView(recyclerView);
         showData();
     }
 
+    //Show stored data
     public void showData() {
 
         db.collection("Comments").get()

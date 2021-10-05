@@ -5,6 +5,8 @@ public class NewModel {
     String id, name,  email, feed;
     public NewModel(){}
 
+    //Add constructor
+
     public NewModel(String id, String name, String email, String feed) {
         this.id = id;
         this.name = name;
@@ -12,6 +14,7 @@ public class NewModel {
         this.feed = feed;
     }
 
+    //Getters and setters
     public String getId() {
         return id;
     }

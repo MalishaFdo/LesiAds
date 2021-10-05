@@ -29,6 +29,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         this.mlist = mlist;
     }
 
+    //Concatenation
     public void updateData(int position){
         NewModel item = mlist.get(position);
         Bundle bundle = new Bundle();
@@ -42,6 +43,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         activity.startActivity(intent);
     }
 
+    //Adding collection path
     public void deleteData(int position){
         NewModel item = mlist.get(position);
         db.collection("Comments").document(item.getId()).delete()
@@ -58,12 +60,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 });
     }
 
+    //Notification
     private void notifyRemoved(int position){
         mlist.remove(position);
         notifyRemoved(position);
         activity.showData();
     }
 
+    //Add viewholder
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
