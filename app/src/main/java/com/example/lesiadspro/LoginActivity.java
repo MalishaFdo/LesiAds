@@ -43,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         forgotpasswordtxt = findViewById(R.id.forgotPasswordTxt);
 
+        //Sign up button
         registertxt = (TextView)findViewById(R.id.mRegisterTxt);
         registertxt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +54,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        //Sign in button
+
         loginbtn = findViewById(R.id.mLoginBtn);
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
 
+                //Validation process
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is required . ");
                     return;
@@ -106,6 +110,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        //Forgot password text--reset password
         forgotpasswordtxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -124,13 +129,11 @@ public class LoginActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(Void unused) {
                                 Toast.makeText(LoginActivity.this,"Reset link sent to your email", Toast.LENGTH_SHORT).show();
-
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Toast.makeText(LoginActivity.this,"Error! Reset link not sent" + e.getMessage(), Toast.LENGTH_SHORT).show();
-
                             }
                         });
                     }

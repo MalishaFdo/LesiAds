@@ -40,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
     String userID;
     TextView signin;
     Button signup;
-    TextView addphoto;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +62,8 @@ public class RegisterActivity extends AppCompatActivity {
             finish();
         }
 
+        //Sign in button
+
         signin = (TextView)findViewById(R.id.mSignInTxt);
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+        //Sign up button
         signup = findViewById(R.id.mSignUpBtn);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,7 +93,7 @@ public class RegisterActivity extends AppCompatActivity {
                 UserHelperClass helperClass = new UserHelperClass(firstname,lastname,email,phone,username,password);
                 reference.child(username).setValue(helperClass);
 
-
+                //Validation process
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is required . ");
                     return;
@@ -104,6 +107,8 @@ public class RegisterActivity extends AppCompatActivity {
                     mPassword.setError("Password must be >= 6 characters");
                     return;
                 }
+
+
                 if (phone.length() != 10){
                     mPhone.setError("Enter a valid phone number");
                     return;
@@ -126,6 +131,8 @@ public class RegisterActivity extends AppCompatActivity {
                             user.put("phone", phone);
                             user.put("username", username);
 
+                            //CLI comments
+
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
@@ -147,12 +154,5 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        addphoto = (TextView)findViewById(R.id.mAddPhotoTxt);
-        addphoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
     }
 }

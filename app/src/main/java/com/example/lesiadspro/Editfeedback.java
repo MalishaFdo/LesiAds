@@ -41,6 +41,9 @@ public class Editfeedback extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
+        //Add data bundle for update
+        //Save data with save button
+
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
             mSaveBtn.setText("Update");
@@ -56,6 +59,7 @@ public class Editfeedback extends AppCompatActivity {
             mSaveBtn.setText("Save");
         }
 
+        //Show inserted data
         mShowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,6 +67,7 @@ public class Editfeedback extends AppCompatActivity {
             }
         });
 
+        //Save data
         mSaveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,13 +84,12 @@ public class Editfeedback extends AppCompatActivity {
                     String id = UUID.randomUUID().toString();
                     savetoFireStore(id,name,email,feed);
                 }
-
-
             }
         });
 
     }
 
+    //update data to firestore
     private void updateToFireStore(String id, String name, String email, String feed) {
         db.collection("Comments").document(id).update("name",name,"email",email,"feed",feed)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -106,6 +110,8 @@ public class Editfeedback extends AppCompatActivity {
         });
     }
 
+    //Insert data to firestore
+
     private void savetoFireStore(String id, String name, String email, String feed) {
         if (!name.isEmpty() && !email.isEmpty() && !feed.isEmpty()){
             HashMap<String, Object> map = new HashMap<>();
@@ -114,6 +120,7 @@ public class Editfeedback extends AppCompatActivity {
             map.put("email", email);
             map.put("feed", feed);
 
+            //Call the collection path
             db.collection("Comments").document(id).set(map)
                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
