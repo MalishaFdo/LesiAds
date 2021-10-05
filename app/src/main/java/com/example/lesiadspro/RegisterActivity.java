@@ -98,6 +98,7 @@ public class RegisterActivity extends AppCompatActivity {
                     mEmail.setError("Email is required . ");
                     return;
                 }
+
                 if (TextUtils.isEmpty(password)){
                     mPassword.setError("Password is needed . ");
                     return;
@@ -107,6 +108,7 @@ public class RegisterActivity extends AppCompatActivity {
                     mPassword.setError("Password must be >= 6 characters");
                     return;
                 }
+
 
 
                 if (phone.length() != 10){

@@ -140,23 +140,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.775" />
 
-    <TextView
-        android:id="@+id/mAddPhotoTxt"
-        android:layout_width="100dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/ebrimabd"
-        android:text="@string/addphoto"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
-
     <Button
         android:id="@+id/mSignUpBtn"
         android:layout_width="162dp"
