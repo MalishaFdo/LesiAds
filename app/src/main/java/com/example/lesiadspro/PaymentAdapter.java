@@ -47,14 +47,12 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         Log.d("abc", user.toString());
-
         if (user != null) {
             Log.d("qwer", "User found null");
 
             String uid = FirebaseAuth.getInstance().getUid();
             for (UserInfo profile : user.getProviderData()) {
                 String providerId = profile.getProviderId();
-
 
                 holder.p_name.setText(model.getP_name());
                 holder.p_email.setText(model.getP_email());
@@ -73,7 +71,6 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
         holder.personPayEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 final DialogPlus dialogPlus = DialogPlus.newDialog(v.getContext())
                         .setContentHolder(new ViewHolder(R.layout.activity_editpayment))
                         .setExpanded(true, 1400)
@@ -90,7 +87,6 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
                 EditText cvv  = view.findViewById(R.id.number3);
                 EditText expireDate  = view.findViewById(R.id.cvv2);
 
-
                 Button btnUpdate = view.findViewById(R.id.Pay_EditButtn);
 
                 p_name.setText(model.getP_name());
@@ -103,18 +99,17 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
                 dialogPlus.show();
 
                 btnUpdate.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
 
-                        Map<String, Object> map = new HashMap<>();
-                        map.put("p_name",  p_name.getText().toString());
-                        map.put("p_email",p_email.getText().toString());
-                        map.put("crdName", crdName.getText().toString());
-                        map.put("crdNumber", crdNumber.getText().toString());
-                        map.put("cvv", cvv.getText().toString());
-                        map.put("expireDate", expireDate.getText().toString());
+                @Override
+                public void onClick(View v) {
+                   Map<String, Object> map = new HashMap<>();
+                   map.put("p_name",  p_name.getText().toString());
+                   map.put("p_email",p_email.getText().toString());
+                   map.put("crdName", crdName.getText().toString());
+                   map.put("crdNumber", crdNumber.getText().toString());
+                   map.put("cvv", cvv.getText().toString());
+                   map.put("expireDate", expireDate.getText().toString());
 
-//.child(getRef(position).getKey())
                         //DatabaseReference newref;
                         String uid = FirebaseAuth.getInstance().getUid();
                         Log.d("abcc", getRef(position).getKey());
@@ -128,25 +123,20 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
                                         Toast.makeText(holder.p_name.getContext(), "Data Updated Successfully.", Toast.LENGTH_SHORT).show();
                                         dialogPlus.dismiss();
 
-
                                     }
                                 })
-                                .addOnFailureListener(new OnFailureListener() {
-                                    @Override
-                                    public void onFailure(@NonNull Exception e) {
-                                        Toast.makeText(holder.p_name.getContext(), "Error While Updating.", Toast.LENGTH_SHORT).show();
-                                        dialogPlus.dismiss();
+                   .addOnFailureListener(new OnFailureListener() {
+                   @Override
+                   public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(holder.p_name.getContext(), "Error While Updating.", Toast.LENGTH_SHORT).show();
+                        dialogPlus.dismiss();
 
-                                    }
-                                });
-
-
-                    }
-                });
-
-
-            }
-        });
+                         }
+                   });
+                }
+            });
+        }
+    });
 
         //-----------------------DELETE---------------------------------------
 
@@ -163,7 +153,6 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
                         String uid = FirebaseAuth.getInstance().getUid();
                         FirebaseDatabase.getInstance().getReference().child("Payment")
                                 .child(uid).child(getRef(position).getKey()).removeValue();
-
 
                     }
                 });

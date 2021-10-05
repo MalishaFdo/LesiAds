@@ -31,6 +31,7 @@ public class Addpayment extends AppCompatActivity {
     private Object DatabaseError;
     private Object error;
 
+    //Save data in database
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +58,7 @@ public class Addpayment extends AppCompatActivity {
             }
         });
     }
-//hii
+
     //Calculate the total amount
     public int paymentAmount(int count) {
         int amount = 0;
