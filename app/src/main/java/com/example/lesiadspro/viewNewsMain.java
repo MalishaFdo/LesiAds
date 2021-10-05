@@ -29,7 +29,7 @@ public class viewNewsMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_main);
 
-
+        //Testing
         //Log.d("abc",user.toString());
         // Create a instance of the database and get
         // its reference
