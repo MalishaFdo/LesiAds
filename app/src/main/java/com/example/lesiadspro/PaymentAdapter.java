@@ -3,6 +3,7 @@ package com.example.lesiadspro;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -177,6 +178,7 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
 
             }
         });
+
     }
 
 

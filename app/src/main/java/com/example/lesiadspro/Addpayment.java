@@ -52,6 +52,7 @@ public class Addpayment extends AppCompatActivity {
         pay_AddButtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 SaveData();
             }
         });
@@ -126,6 +127,4 @@ public class Addpayment extends AppCompatActivity {
         }
     }
 
-
 }
-

@@ -16,7 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 public class person_payment extends AppCompatActivity {
     DatabaseReference dbRef;
     Button idbtnEdit1, personPayDel2;
-    ImageButton rate1;
+    ImageButton rate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,6 @@ public class person_payment extends AppCompatActivity {
 
         idbtnEdit1 = findViewById(R.id.personPayEdit);
         personPayDel2 = findViewById(R.id.personPayDel2);
-        rate1 = findViewById(R.id.rate);
     }
 
     public void next(View view){
@@ -37,10 +36,4 @@ public class person_payment extends AppCompatActivity {
         Intent intent = new Intent(person_payment.this, person_payment.class);
         startActivity(intent);
     }
-
-    public void next7(View view){
-        Intent intent = new Intent(person_payment.this, RateApp.class);
-        startActivity(intent);
-    }
-
 }

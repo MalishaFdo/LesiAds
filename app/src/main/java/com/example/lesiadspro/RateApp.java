@@ -27,11 +27,11 @@ public class RateApp extends AppCompatActivity {
             public void onClick(View view) {
                 String s = String.valueOf(ratingBar.getRating());
                 Toast.makeText(getApplicationContext(), s+"Star",Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(RateApp.this,profile.class);
+                startActivity(intent);
             }
         });
     }
-    public void next3(View view){
-        Intent intent = new Intent(this,profile.class);
-        startActivity(intent);
-    }
+
 }

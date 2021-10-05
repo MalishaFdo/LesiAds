@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
 
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -43,6 +46,7 @@ public class viewPaymentMain extends AppCompatActivity {
         adapter1 = new PaymentAdapter(options);
 
         recyclerView.setAdapter(adapter1);
+
     }
 
     @Override
@@ -56,5 +60,5 @@ public class viewPaymentMain extends AppCompatActivity {
         super.onStop();
         adapter1.stopListening();
     }
+
 }
-//bbb
