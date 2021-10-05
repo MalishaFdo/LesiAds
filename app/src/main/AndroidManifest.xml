@@ -103,6 +103,12 @@
         <activity
             android:name=".Editfeedback"
             android:exported="true" />
+        <activity
+            android:name=".person_payment"
+            android:exported="true" />
+        <activity
+            android:name=".viewPaymentMain"
+            android:exported="true" />
 
 
         <activity

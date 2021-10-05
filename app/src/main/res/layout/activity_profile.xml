@@ -95,12 +95,14 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/mMyAdsBtn"
         android:layout_width="350dp"
         android:layout_height="53dp"
+        android:layout_marginBottom="288dp"
         android:background="@drawable/button"
         android:backgroundTint="@color/darkblue"
         android:fontFamily="@font/ebrimabd"
@@ -111,9 +113,8 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.156"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -133,7 +134,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702"
+        app:layout_constraintVertical_bias="0.826"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -149,10 +150,10 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799"
+        app:layout_constraintVertical_bias="0.756"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -171,7 +172,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901"
+        app:layout_constraintVertical_bias="0.846"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -204,10 +205,10 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="0.947"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
@@ -223,10 +224,10 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="0.947"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
