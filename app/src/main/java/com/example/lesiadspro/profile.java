@@ -160,7 +160,7 @@ public class profile extends AppCompatActivity {
         payDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(profile.this, Addpayment.class);
+                Intent intent = new Intent(profile.this, cusPayHistory.class);
                 startActivity(intent);
             }
         });
