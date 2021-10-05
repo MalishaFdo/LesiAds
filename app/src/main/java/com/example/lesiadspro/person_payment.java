@@ -9,11 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.common.util.concurrent.RateLimiter;
 import com.google.firebase.database.DatabaseReference;
 
 public class person_payment extends AppCompatActivity {
     DatabaseReference dbRef;
-    Button idbtnEdit1, idbtnDelete1;
+    Button idbtnEdit1, personPayDel2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class person_payment extends AppCompatActivity {
         setContentView(R.layout.activity_person_payment);
 
         idbtnEdit1 = findViewById(R.id.personPayEdit);
-        idbtnDelete1 = findViewById(R.id.personPayDel2);
+        personPayDel2 = findViewById(R.id.personPayDel2);
     }
 
     public void next(View view){
@@ -34,14 +35,9 @@ public class person_payment extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void next4(View view){
+    public void next7(View view){
         Intent intent = new Intent(person_payment.this, RateApp.class);
         startActivity(intent);
     }
 
-
-    /*public void DeleteData() {
-        DatabseReference delRef
-    }
-   */
 }

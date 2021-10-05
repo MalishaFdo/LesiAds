@@ -2,27 +2,28 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ca"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="10dp"
     android:layout_marginTop="10dp"
     android:layout_marginBottom="20dp"
+    android:onClick="next7"
     android:scrollbars="vertical"
-    app:cardBackgroundColor="@color/larkblue"
     app:cardCornerRadius="40dp"
     tools:context=".person_payment">
 
   <androidx.constraintlayout.widget.ConstraintLayout
       android:id="@+id/back"
-      android:layout_width="match_parent"
+      android:layout_width="377dp"
       android:layout_height="347dp"
-      android:background="@color/browser_actions_title_color">
+      android:background="@color/design_default_color_background">
 
     <Button
         android:id="@+id/personPayDel2"
         android:layout_width="115dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginEnd="116dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/larkblue"
         android:text="@string/personPayDel2"
@@ -39,6 +40,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="Name :"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/payText2"
         app:layout_constraintEnd_toStartOf="@+id/inputName_1"
@@ -47,12 +49,13 @@
 
     <TextView
         android:id="@+id/inputName_1"
-        android:layout_width="267dp"
+        android:layout_width="250dp"
         android:layout_height="27dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/inputDate_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/payText1"
@@ -65,17 +68,19 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Email :"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/payText1" />
 
     <TextView
         android:id="@+id/inputDate_1"
-        android:layout_width="237dp"
+        android:layout_width="225dp"
         android:layout_height="26dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/payText2"
@@ -89,6 +94,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:text="Card Name :"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,6 +108,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Card Number :"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/payText3" />
@@ -113,6 +120,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:text="CVV :"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/payText4" />
@@ -124,6 +132,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="Expire Date :"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/payText5" />
@@ -134,6 +143,7 @@
         android:layout_height="26dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputDate_1" />
 
@@ -144,6 +154,7 @@
         android:layout_height="26dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/payText4"
         app:layout_constraintTop_toBottomOf="@+id/inputArticles_1" />
 
@@ -153,6 +164,7 @@
         android:layout_height="26dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputArticles_" />
 
@@ -162,6 +174,7 @@
         android:layout_height="26dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputArticles_2" />
 
@@ -169,7 +182,7 @@
         android:id="@+id/personPayEdit"
         android:layout_width="115dp"
         android:layout_height="60dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/larkblue"
         android:onClick="next"
@@ -184,7 +197,7 @@
         android:layout_height="61dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:onClick="next4"
+        android:onClick="next7"
         app:layout_constraintStart_toEndOf="@+id/personPayDel2"
         app:layout_constraintTop_toBottomOf="@+id/inputArticles_3"
         app:srcCompat="@android:drawable/btn_star_big_on"

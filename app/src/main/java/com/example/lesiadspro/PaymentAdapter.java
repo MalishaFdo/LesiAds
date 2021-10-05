@@ -1,6 +1,8 @@
 package com.example.lesiadspro;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -145,7 +147,38 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
             }
         });
 
+        //-----------------------DELETE---------------------------------------
+
+        holder.personPayDel2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(holder.p_name.getContext());
+                builder.setTitle("Are You Sure ?");
+                builder.setMessage("Deleted data can't be Undo.");
+
+                builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        String uid = FirebaseAuth.getInstance().getUid();
+                        FirebaseDatabase.getInstance().getReference().child("Payment")
+                                .child(uid).child(getRef(position).getKey()).removeValue();
+
+
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(holder.p_name.getContext(), "Cancelled", Toast.LENGTH_SHORT).show();
+
+                    }
+                });
+                builder.show();
+
+            }
+        });
     }
+
 
     @NonNull
     @Override
@@ -158,7 +191,7 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
 
     class payViewholder extends RecyclerView.ViewHolder {
         TextView p_name, p_email, crdName, crdNumber, cvv, expireDate;
-        Button personPayEdit;
+        Button personPayEdit, personPayDel2;
 
         public payViewholder(@NonNull View payView) {
             super(payView);
@@ -171,6 +204,7 @@ class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.pay
             expireDate = payView.findViewById(R.id.inputArticles_3);
 
             personPayEdit = (Button) payView.findViewById(R.id.personPayEdit);
+            personPayDel2 = (Button) payView.findViewById(R.id.personPayDel2);
         }
     }
 }
