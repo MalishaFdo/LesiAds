@@ -220,7 +220,7 @@ public class profile extends AppCompatActivity {
 
     //Upload images to Firebase storage
     private void uploadImageToFirebase(Uri imageUri) {
-
+        //upload image to firebase storage
         final StorageReference fileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
@@ -244,5 +244,14 @@ public class profile extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut(); //logout
         startActivity(new Intent(getApplicationContext(),LoginActivity.class));
         finish();
+    }
+
+    public void addNews(View view){
+        Intent intent = new Intent(this, AdSubmission.class);
+        startActivity(intent);
+    }
+    public void MyAds(View view){
+        Intent intent = new Intent(this, AdsCustomer.class);
+        startActivity(intent);
     }
 }
