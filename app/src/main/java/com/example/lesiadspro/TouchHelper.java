@@ -23,6 +23,7 @@ public class TouchHelper extends ItemTouchHelper.SimpleCallback {
         return false;
     }
 
+    //left swipe
     @Override
     public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
         final int position = viewHolder.getAdapterPosition();
@@ -34,6 +35,7 @@ public class TouchHelper extends ItemTouchHelper.SimpleCallback {
         }
     }
 
+    //Red and purple vectors when swipe
     @Override
     public void onChildDraw(@NonNull Canvas c, @NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
 
