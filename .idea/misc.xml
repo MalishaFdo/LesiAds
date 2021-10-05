@@ -3,6 +3,36 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_add_photo.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_addpayment.xml" value="0.25" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_adminpay_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_cus_pay_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_edit_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_editfeedback.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_editpayment.xml" value="0.25" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_givefeedback.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_login.xml" value="0.14166666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_pay_checkout.xml" value="0.25" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_rate_app.xml" value="0.25" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/activity_sidebar.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/nav_header.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/LesiAds/app/src/main/res/layout/toolbar.xml" value="0.20416666666666666" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_editfeedback.xml" value="0.264" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_givefeedback.xml" value="0.11594202898550725" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_list.xml" value="0.1" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_login.xml" value="0.16" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_main_main.xml" value="0.17916666666666667" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_person.xml" value="0.2" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_show_feedback.xml" value="0.17916666666666667" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/item.xml" value="0.2" />
+        <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/model_layout.xml" value="0.264" />
         <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_ad_review.xml" value="0.4" />
         <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_ad_submission.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.264" />
