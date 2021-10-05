@@ -160,17 +160,20 @@
 
 
     //Payment Page
-
+    <string name="payment">Payment</string>
+    <string name="name1">Full Name</string>
     <string name="email1">Email</string>
     <string name="payamount">Pay Amount Rs.2300.00</string>
     <string name="cardname">Card Name</string>
     <string name="cardno">Card Number</string>
     <string name="cvv">CVV</string>
     <string name="cardex">Card Expiery</string>
+    <string name="text">Cost of the first 15 words for Rs 1500.00 and cost of remaining words per Rs 10.00</string>
     <string name="buttn">ADD</string>
 
 
     //Edit Payment Page
+    <string name="edit">Edit Payment</string>
     <string name="name2">Aruna Gamage</string>
     <string name="email2">aruna@gmail.com</string>
     <string name="cardno1">5432123456789012</string>
@@ -201,6 +204,7 @@
     <string name="text4">Payment Completed !</string>
     <string name="name4">Aruna Gamage</string>
     <string name="email4">aruna@gmail.com</string>
+    <string name="date">08/08/2021</string>
     <string name="time">9:00AM</string>
     <string name="amount3">Card Rs 2300.00</string>
     <string name="buttn6">DELETE</string>
@@ -208,6 +212,8 @@
     <string name="text5">Payment Completed !</string>
     <string name="name5">Kamal Perera</string>
     <string name="email5">kamal12@gmai.com</string>
+    <string name="date1">19/12/2021</string>
+    <string name="time1">18:36PM</string>
     <string name="amount4">Card Rs 2000.00</string>
     <string name="buttn5">DELETE</string>
 
@@ -216,6 +222,8 @@
     <string name="name6">Aruna Gamage</string>
     <string name="email6">aruna@gmail.com</string>
     <string name="amount5">Card Rs 2300.00</string>
+    <string name="date2">08/08/2021</string>
+    <string name="time2">9:00AM</string>
     <string name="bank">BOC Bank</string>
     <string name="branch">Galle</string>
     <string name="buttn7">DELETE</string>
@@ -223,6 +231,7 @@
     <string name="name7">Kamal Perera</string>
     <string name="email7">kamal@gmail.com</string>
     <string name="amount6">Card Rs 2000.00</string>
+    <string name="date3">19/12/2021</string>
     <string name="time3">18:36AM</string>
     <string name="bank1">NSB Banak</string>
     <string name="branch1">Malabe</string>
@@ -238,6 +247,9 @@
     <string name="Pay_CusDelButtn1">delete</string>
     <string name="pay_ExpDate">DD/MM/YY</string>
     <string name="pay_name">Name</string>
+    <string name="personPayDelete">DELETE</string>
+    <string name="personPayEdit">EDIT</string>
+    <string name="personPayDel2">DELETE</string>
     <string name="btnedit_1">Edit</string>
     <string name="btnedit_2">Edit</string>
 </resources>

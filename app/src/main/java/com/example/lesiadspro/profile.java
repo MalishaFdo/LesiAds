@@ -5,7 +5,9 @@ import androidx.annotation.Nullable;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -50,6 +52,7 @@ public class profile extends AppCompatActivity {
     Button feedback;
     Button changepassword;
     Button newsdetails;
+    Button payDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -164,6 +167,14 @@ public class profile extends AppCompatActivity {
             }
         });
 
+        payDetails = findViewById(R.id.mPaymentHistoryBtn);
+        payDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(profile.this, cusPayHistory.class);
+                startActivity(intent);
+            }
+        });
 
 
         editprofile = findViewById(R.id.mEditProfileBtn);

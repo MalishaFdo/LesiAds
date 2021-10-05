@@ -14,8 +14,7 @@ public class cusPayHistory extends AppCompatActivity {
         setContentView(R.layout.activity_cus_pay_history);
     }
     public void next4(View view){
-        Intent intent = new Intent(this,payCheckout.class);
+        Intent intent = new Intent(this,RateApp.class);
         startActivity(intent);
     }
-
 }

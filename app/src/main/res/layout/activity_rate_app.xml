@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
     tools:context=".RateApp">
 
     <ImageView
@@ -42,7 +44,6 @@
         android:layout_marginEnd="175dp"
         android:layout_marginBottom="104dp"
         android:backgroundTint="@color/larkblue"
-        android:onClick="next3"
         android:text="@string/Pay_RateButtn"
         android:textColor="@color/black"
         android:textSize="18dp"
@@ -116,6 +117,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
         android:layout_marginTop="466dp"
+        android:numStars="5"
+        android:stepSize="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -123,6 +126,8 @@
     <include
         android:id="@+id/include"
         layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

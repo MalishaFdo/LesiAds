@@ -4,12 +4,18 @@ public class Payment {
     private String p_name;
     private String p_email;
     private String crdName;
-    private Integer crdNumber;
-    private Integer cvv;
+    private String crdNumber;
+    private String cvv;
     private String expireDate;
+    private String position;
 
     //Default constructor
     public Payment() {}
+
+    public Payment(String p_name, String position) {
+        this.p_name = p_name;
+        this.position = position;
+    }
 
     //Create Getters and Setters
     public String getP_name() {
@@ -36,19 +42,19 @@ public class Payment {
         this.crdName = crdName;
     }
 
-    public Integer getCrdNumber() {
+    public String getCrdNumber() {
         return crdNumber;
     }
 
-    public void setCrdNumber(Integer crdNumber) {
+    public void setCrdNumber(String crdNumber) {
         this.crdNumber = crdNumber;
     }
 
-    public Integer getCvv() {
+    public String getCvv() {
         return cvv;
     }
 
-    public void setCvv(Integer cvv) {
+    public void setCvv(String cvv) {
         this.cvv = cvv;
     }
 

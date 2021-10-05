@@ -3,6 +3,7 @@ package com.example.lesiadspro;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,54 +30,52 @@ import com.orhanobut.dialogplus.ViewHolder;
 import java.util.HashMap;
 import java.util.Map;
 
-// FirebaseRecyclerAdapter is a class provided by
-// FirebaseUI. it provides functions to bind, adapt and show
-// database contents in a Recycler View
-class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.newsViewholder> {
+class PaymentAdapter extends FirebaseRecyclerAdapter<Payment, PaymentAdapter.payViewholder> {
 
-    public NewspaperAdpter(
-            @NonNull FirebaseRecyclerOptions<AddNews> options) {
+    public PaymentAdapter(
+            @NonNull FirebaseRecyclerOptions<Payment> options) {
         super(options);
     }
-
-    // Function to bind the view in Card view(here
-    // "person.xml") iwth data in
-    // model class(here "person.class")
 
 
     @Override
     protected void
-    onBindViewHolder(@NonNull newsViewholder holder, @SuppressLint("RecyclerView") final int position, @NonNull AddNews model) {
+    onBindViewHolder(@NonNull payViewholder holder,
+                     @SuppressLint("RecyclerView") final int position, @NonNull Payment model) {
 
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-        Log.d("abc",user.toString());
+        Log.d("abc", user.toString());
+
         if (user != null) {
-            Log.d("qwer","User found null");
+            Log.d("qwer", "User found null");
+
             String uid = FirebaseAuth.getInstance().getUid();
             for (UserInfo profile : user.getProviderData()) {
                 String providerId = profile.getProviderId();
 
 
-                holder.newsName.setText(model.getNewsName());
-                holder.date.setText(model.getDate());
-                holder.articleName.setText((model.getArticleName()));
-                Log.d("holder",providerId.toString());
+                holder.p_name.setText(model.getP_name());
+                holder.p_email.setText(model.getP_email());
+                holder.crdName.setText((model.getCrdName()));
+                holder.crdNumber.setText((model.getCrdNumber()));
+                holder.cvv.setText((model.getCvv()));
+                holder.expireDate.setText((model.getExpireDate()));
 
             }
-        }else{
-            Log.d("qwe","User was null");
+        } else {
+            Log.d("qwe", "User was null");
         }
 
         //-----------------------EDIT---------------------------------------
 
-        holder.idbtnEdit.setOnClickListener(new View.OnClickListener() {
+        holder.personPayEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 final DialogPlus dialogPlus = DialogPlus.newDialog(v.getContext())
-                        .setContentHolder(new ViewHolder(R.layout.activity_edit_news_list))
+                        .setContentHolder(new ViewHolder(R.layout.activity_editpayment))
                         .setExpanded(true, 1400)
                         .create();
 
@@ -84,16 +83,22 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
 
                 View view = dialogPlus.getHolderView();
 
-                EditText newsName = view.findViewById(R.id.inputName2);
-                EditText date = view.findViewById(R.id.inputDate2);
-                EditText articleName  = view.findViewById(R.id.inputArticles2);
+                EditText p_name = view.findViewById(R.id.name3);
+                EditText p_email = view.findViewById(R.id.email2);
+                EditText crdName  = view.findViewById(R.id.cardname3);
+                EditText crdNumber  = view.findViewById(R.id.number2);
+                EditText cvv  = view.findViewById(R.id.number3);
+                EditText expireDate  = view.findViewById(R.id.cvv2);
 
 
-                Button btnUpdate = view.findViewById(R.id.butSubmit2);
+                Button btnUpdate = view.findViewById(R.id.Pay_EditButtn);
 
-                newsName.setText(model.getNewsName());
-                date.setText(model.getDate());
-                articleName.setText(model.getArticleName());
+                p_name.setText(model.getP_name());
+                p_email.setText(model.getP_email());
+                crdName.setText(model.getCrdName());
+                crdNumber.setText(model.getCrdNumber());
+                cvv.setText(model.getCvv());
+                expireDate.setText(model.getExpireDate());
 
                 dialogPlus.show();
 
@@ -102,9 +107,12 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
                     public void onClick(View v) {
 
                         Map<String, Object> map = new HashMap<>();
-                        map.put("newsName",  newsName.getText().toString());
-                        map.put("date",date.getText().toString());
-                        map.put("articleName", articleName.getText().toString());
+                        map.put("p_name",  p_name.getText().toString());
+                        map.put("p_email",p_email.getText().toString());
+                        map.put("crdName", crdName.getText().toString());
+                        map.put("crdNumber", crdNumber.getText().toString());
+                        map.put("cvv", cvv.getText().toString());
+                        map.put("expireDate", expireDate.getText().toString());
 
 //.child(getRef(position).getKey())
                         //DatabaseReference newref;
@@ -112,12 +120,12 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
                         Log.d("abcc", getRef(position).getKey());
                         Log.d("map", map.toString());
 
-                        FirebaseDatabase.getInstance().getReference().child("News")
+                        FirebaseDatabase.getInstance().getReference().child("Payment")
                                 .child(uid).child(getRef(position).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void unused) {
-                                        Toast.makeText(holder.newsName.getContext(), "Data Updated Successfully.", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(holder.p_name.getContext(), "Data Updated Successfully.", Toast.LENGTH_SHORT).show();
                                         dialogPlus.dismiss();
 
 
@@ -126,7 +134,7 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
                                 .addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
-                                        Toast.makeText(holder.newsName.getContext(), "Error While Updating.", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(holder.p_name.getContext(), "Error While Updating.", Toast.LENGTH_SHORT).show();
                                         dialogPlus.dismiss();
 
                                     }
@@ -142,10 +150,10 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
 
         //-----------------------DELETE---------------------------------------
 
-        holder.idbtnDelete.setOnClickListener(new View.OnClickListener() {
+        holder.personPayDel2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(holder.newsName.getContext());
+                AlertDialog.Builder builder = new AlertDialog.Builder(holder.p_name.getContext());
                 builder.setTitle("Are You Sure ?");
                 builder.setMessage("Deleted data can't be Undo.");
 
@@ -153,7 +161,7 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String uid = FirebaseAuth.getInstance().getUid();
-                        FirebaseDatabase.getInstance().getReference().child("News")
+                        FirebaseDatabase.getInstance().getReference().child("Payment")
                                 .child(uid).child(getRef(position).getKey()).removeValue();
 
 
@@ -162,47 +170,43 @@ class NewspaperAdpter extends FirebaseRecyclerAdapter<AddNews, NewspaperAdpter.n
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(holder.newsName.getContext(), "Cancelled", Toast.LENGTH_SHORT).show();
-
+                        Toast.makeText(holder.p_name.getContext(), "Cancelled", Toast.LENGTH_SHORT).show();
 
                     }
                 });
                 builder.show();
 
-
-
             }
         });
+
     }
 
 
-    // Function to tell the class about the Card view (here
-    // "person.xml")in
-    // which the data will be shown
     @NonNull
     @Override
-    public newsViewholder
-    onCreateViewHolder(@NonNull ViewGroup AddNews,
+    public payViewholder
+    onCreateViewHolder(@NonNull ViewGroup Payment,
                        int viewType) {
-        View view = LayoutInflater.from(AddNews.getContext()).inflate(R.layout.activity_person, AddNews, false);
-        return new NewspaperAdpter.newsViewholder(view);
+        View view = LayoutInflater.from(Payment.getContext()).inflate(R.layout.activity_person_payment, Payment, false);
+        return new PaymentAdapter.payViewholder(view);
     }
 
-    // Sub Class to create references of the views in Card
-    // view (here "person.xml")
-    class newsViewholder extends RecyclerView.ViewHolder {
-        TextView newsName, date, articleName;
-        Button idbtnEdit, idbtnDelete;
+    class payViewholder extends RecyclerView.ViewHolder {
+        TextView p_name, p_email, crdName, crdNumber, cvv, expireDate;
+        Button personPayEdit, personPayDel2;
 
-        public newsViewholder(@NonNull View itemView) {
-            super(itemView);
+        public payViewholder(@NonNull View payView) {
+            super(payView);
 
-            newsName = itemView.findViewById(R.id.inputName_1);
-            date = itemView.findViewById(R.id.inputDate_1);
-            articleName = itemView.findViewById(R.id.inputArticles_1);
+            p_name = payView.findViewById(R.id.inputName_1);
+            p_email = payView.findViewById(R.id.inputDate_1);
+            crdName = payView.findViewById(R.id.inputArticles_1);
+            crdNumber = payView.findViewById(R.id.inputArticles_);
+            cvv = payView.findViewById(R.id.inputArticles_2);
+            expireDate = payView.findViewById(R.id.inputArticles_3);
 
-            //idbtnEdit = (Button) itemView.findViewById(R.id.idbtnEdit);
-            //idbtnDelete = (Button) itemView.findViewById(R.id.idbtnDelete);
+            personPayEdit = (Button) payView.findViewById(R.id.personPayEdit);
+            personPayDel2 = (Button) payView.findViewById(R.id.personPayDel2);
         }
     }
 }

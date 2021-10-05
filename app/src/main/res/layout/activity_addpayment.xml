@@ -187,7 +187,6 @@
         android:layout_marginEnd="175dp"
         android:layout_marginBottom="96dp"
         android:backgroundTint="@color/larkblue"
-        android:onClick="SaveData"
         android:text="@string/Pay_AddButtn"
         android:textColor="@color/black"
         android:textSize="18dp"

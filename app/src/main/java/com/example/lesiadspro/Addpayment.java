@@ -12,10 +12,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Addpayment extends AppCompatActivity {
 
@@ -26,6 +28,8 @@ public class Addpayment extends AppCompatActivity {
 
     FirebaseStorage storage;
     StorageReference storageReference;
+    private Object DatabaseError;
+    private Object error;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,10 +52,22 @@ public class Addpayment extends AppCompatActivity {
         pay_AddButtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 SaveData();
             }
         });
-   }
+    }
+//hii
+    //Calculate the total amount
+    public int paymentAmount(int count) {
+        int amount = 0;
+        if (count <= 15)
+            amount = 1500;
+        else {
+            amount = 1500 + (count - 15) * 10;
+        }
+        return amount;
+    }
 
     public void ClearControls() {
         p_name.setText("");
@@ -61,13 +77,13 @@ public class Addpayment extends AppCompatActivity {
         cvv.setText("");
         expireDate.setText("");
     }
-//oo
+
 
     //save data in database
     public void SaveData() {
-        //String uid = FirebaseAuth.getInstance().getUid();
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Payment");
-//hii
+        String uid = FirebaseAuth.getInstance().getUid();
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Payment").child(uid);
+
         try {
             if (TextUtils.isEmpty(p_name.getText().toString()))
                 Toast.makeText(getApplicationContext(), "Please Enter a Name ", Toast.LENGTH_SHORT).show();
@@ -86,29 +102,29 @@ public class Addpayment extends AppCompatActivity {
                 payObj.setP_name(p_name.getText().toString().trim());
                 payObj.setP_email(p_email.getText().toString().trim());
                 payObj.setCrdName(crdName.getText().toString().trim());
-                payObj.setCrdNumber(Integer.parseInt(crdNumber.getText().toString().trim()));
-                payObj.setCvv(Integer.parseInt(cvv.getText().toString().trim()));
+                payObj.setCrdNumber(crdNumber.getText().toString().trim());
+                payObj.setCvv(cvv.getText().toString().trim());
                 payObj.setExpireDate(expireDate.getText().toString().trim());
 
-                Log.d("xyz",payObj.getCrdNumber().toString());
-                Log.d("xyza",payObj.getCvv().toString());
-                Log.d("xyzab",payObj.getExpireDate().toString());
+                Log.d("xyz", payObj.getCrdNumber().toString());
+                Log.d("xyza", payObj.getCvv().toString());
+                Log.d("xyzab", payObj.getExpireDate().toString());
 
                 //Insert in to the database
-                dbRef.push();
-                dbRef.setValue(payObj);
+                dbRef.push().setValue(payObj);
 
                 //Feedback to the user via toast
                 Toast.makeText(getApplicationContext(), "Data saved successfully !!!", Toast.LENGTH_SHORT).show();
                 ClearControls();
 
-                Intent intent = new Intent(Addpayment.this,payCheckout.class);
+                Intent intent = new Intent(Addpayment.this, viewPaymentMain.class);
                 startActivity(intent);
+//o
 
             }
-        }
-        catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             Toast.makeText(getApplicationContext(), "Invalid Card Number !!!", Toast.LENGTH_SHORT).show();
         }
     }
+
 }

@@ -18,7 +18,7 @@
         android:layout_height="209dp">
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/payText1"
             android:layout_width="55dp"
             android:layout_height="23dp"
             android:layout_marginStart="16dp"
@@ -27,7 +27,7 @@
             android:layout_marginBottom="16dp"
             android:text="Name :"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintBottom_toTopOf="@+id/payText2"
             app:layout_constraintEnd_toStartOf="@+id/inputName_1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -42,11 +42,11 @@
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toTopOf="@+id/inputDate_1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView1"
+            app:layout_constraintStart_toEndOf="@+id/payText1"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/payText2"
             android:layout_width="110dp"
             android:layout_height="25dp"
             android:layout_marginStart="16dp"
@@ -54,7 +54,7 @@
             android:text="Published Date :"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+            app:layout_constraintTop_toBottomOf="@+id/payText1" />
 
         <TextView
             android:id="@+id/inputDate_1"
@@ -65,11 +65,11 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/payText2"
             app:layout_constraintTop_toBottomOf="@+id/inputName_1" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/payText3"
             android:layout_width="97dp"
             android:layout_height="23dp"
             android:layout_marginStart="16dp"
@@ -79,7 +79,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/payText2"
             app:layout_constraintVertical_bias="0.021" />
 
         <TextView
@@ -93,12 +93,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toEndOf="@+id/payText3"
             app:layout_constraintTop_toBottomOf="@+id/inputDate_1"
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/idbtnDelete"
+            android:id="@+id/personPayDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -109,16 +109,16 @@
             app:layout_constraintTop_toBottomOf="@+id/inputArticles_1" />
 
         <Button
-            android:id="@+id/idbtnEdit"
+            android:id="@+id/personPayEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="next"
             android:text="@string/idbtnEdit"
-            app:layout_constraintEnd_toStartOf="@+id/idbtnDelete"
+            app:layout_constraintEnd_toStartOf="@+id/personPayDelete"
             app:layout_constraintHorizontal_bias="0.362"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintTop_toBottomOf="@+id/payText3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
