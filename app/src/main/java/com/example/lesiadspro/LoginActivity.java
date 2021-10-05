@@ -81,13 +81,26 @@ public class LoginActivity extends AppCompatActivity {
                 fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
+
+                        if (mEmail.getText().toString().equals("admin99@gmail.com") && mPassword.getText().toString().equals("12345678")){
+                            Toast.makeText(LoginActivity.this, "Admin logged in..", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(),AdminDashboardActivity.class));
+                        }else{
+                            if(task.isSuccessful()){
+                                Toast.makeText(LoginActivity.this,"Logged in successfully", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(getApplicationContext(),profile.class));
+                            }else {
+                                Toast.makeText(LoginActivity.this,"Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                progressBar.setVisibility(View.GONE);
+                            }
+                        }
+                        /*if(task.isSuccessful()){
                             Toast.makeText(LoginActivity.this,"Logged in successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),profile.class));
                         }else {
                             Toast.makeText(LoginActivity.this,"Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
-                        }
+                        }*/
                     }
                 });
             }
@@ -127,12 +140,9 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                        //close the dialog
-
                     }
                 });
-
                 passwordresetdialog.create().show();
-
             }
         });
 
