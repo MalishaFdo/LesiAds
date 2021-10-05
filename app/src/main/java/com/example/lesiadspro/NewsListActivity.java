@@ -34,7 +34,7 @@ import java.util.UUID;
 
 public class NewsListActivity extends AppCompatActivity {
     EditText inputName, inputDate, inputArticles;
-    Button btnSubmit, btnUpload;
+    Button btnSubmit;
     AddNews adNews;
     DatabaseReference dbRef;
 
@@ -85,7 +85,7 @@ public class NewsListActivity extends AppCompatActivity {
     }
 
         /*public void selectImage(){
-    //mmmmmmm
+
             // Defining Implicit Intent to mobile gallery
             Intent intent = new Intent();
             intent.setType("image/*");
@@ -99,6 +99,8 @@ public class NewsListActivity extends AppCompatActivity {
             inputArticles.setText("");
         }
 
+
+        //Inserting Details of the newspapers
         public void InsertData(){
             String uid = FirebaseAuth.getInstance().getUid();
             dbRef = FirebaseDatabase.getInstance().getReference().child("News").child(uid);
@@ -111,7 +113,8 @@ public class NewsListActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Please Enter the Article Name", Toast.LENGTH_SHORT).show();
                 else {
                     adNews.setNewsName(inputName.getText().toString());
-                    adNews.setDate(Integer.parseInt(inputDate.getText().toString()));
+                   // adNews.setDate(Integer.parseInt(inputDate.getText().toString()));
+                    adNews.setDate(inputDate.getText().toString());
                     adNews.setArticleName(inputArticles.getText().toString());
 
 
@@ -121,7 +124,7 @@ public class NewsListActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                     ClearControls();
 
-                    Intent intent1 = new Intent(NewsListActivity.this,person.class);
+                    Intent intent1 = new Intent(NewsListActivity.this,viewNewsMain.class);
                     startActivity(intent1);
 
 

@@ -17,5 +17,6 @@ public class Editpayment extends AppCompatActivity {
         Intent intent = new Intent(this,payCheckout.class);
         startActivity(intent);
     }
-    
+
+
 }

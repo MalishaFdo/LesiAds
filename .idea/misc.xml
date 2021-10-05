@@ -33,13 +33,29 @@
         <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/activity_show_feedback.xml" value="0.17916666666666667" />
         <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/item.xml" value="0.2" />
         <entry key="..\:/SLIIT Files/Year 2/Semester 2/LesiAdsPro/app/src/main/res/layout/model_layout.xml" value="0.264" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_ad_review.xml" value="0.4" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_ad_submission.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.264" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_adminpay_history.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_ads_admin.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_ads_customer.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_confirmation.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_edit_news_list.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_main_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_news_list.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_newspaper_history.xml" value="0.264" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_newspaper_panel.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_person.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_profile.xml" value="0.19701086956521738" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_rate_app.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_view_newspaper_details.xml" value="0.264" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_view_newspaper_details1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_view_newspaper_details2.xml" value="0.264" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/activity_view_newspaper_details3.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Maleesha Fernando/AndroidStudioProjects/LesiAds/app/src/main/res/layout/nav_header.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

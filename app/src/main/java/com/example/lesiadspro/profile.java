@@ -49,7 +49,7 @@ public class profile extends AppCompatActivity {
     Button editprofile, changeProfileImage;
     Button feedback;
     Button changepassword;
-
+    Button newsdetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,7 +154,18 @@ public class profile extends AppCompatActivity {
             }
         });
 
-        //Edit profile details
+
+        newsdetails = findViewById(R.id.mViewNewsBtn);
+        newsdetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Intent intent = new Intent(profile.this, NewspaperPanelActivity.class);
+                    startActivity(intent);
+            }
+        });
+
+
+
         editprofile = findViewById(R.id.mEditProfileBtn);
         editprofile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -178,6 +189,17 @@ public class profile extends AppCompatActivity {
                 startActivity(intent7);
             }
         });
+
+       // viewnews = findViewById(R.id.mViewNewsBtn);
+        //viewnews.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+            //public void onClick(View view) {
+                //Intent intent14 = new Intent(profile.this,sidebar.class);
+               // startActivity(intent14);
+           // }
+      //  });
+
+
     }
 
     @Override
@@ -193,6 +215,7 @@ public class profile extends AppCompatActivity {
 
             }
         }
+
     }
 
     //Upload images to Firebase storage
@@ -204,9 +227,7 @@ public class profile extends AppCompatActivity {
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
-                    public void onSuccess(Uri uri) {
-                        Picasso.get().load(uri).into(profileImage);
-                    }
+                    public void onSuccess(Uri uri) {Picasso.get().load(uri).into(profileImage); }
                 });
 
             }
